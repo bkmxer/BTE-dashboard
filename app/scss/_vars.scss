@@ -1,0 +1,27 @@
+@import "bourbon";
+
+@mixin font($font, $weight, $style) {
+    font-family: $font;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+$default-font: "Roboto", sans-serif;
+$default-font-weight: normal;
+$default-font-style: normal;
+$default_font_color: #000;
+
+$white: #fff;
+$red: #b92323;
+$blue: #4492da;
+$grey: #2d2d2d;
+$grey2: #4b4b4b;
+$light-grey: #808181;
+$light-grey2: #ced4da;
+$light-grey3: #6c757d;
+$light-grey4: #c8cacc;
+
+
+$footer-bg-color: $grey;
+$border-color: $light-grey2;
+$error-color: $red;
