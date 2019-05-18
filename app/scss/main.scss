@@ -20,6 +20,10 @@ body {
     &.body--alert {
         background-color: $light-grey4;
     }
+
+    &.dashboard {
+        background-color: $light-grey5;
+    }
 }
 
 .hide {
@@ -299,6 +303,10 @@ textarea.input {
         height: 190px;
     }
 
+    &.height-150 {
+        height: 150px;
+    }
+
     .label {
         border-radius: 3px;
         background-color: $blue;
@@ -449,10 +457,29 @@ button,
         color: $blue;
     }
 
+    &--post-big {
+        height: 50px;
+        width: 285px;
+        max-width: 100%;
+    }
+
     &:hover,
     &.hover {
         background-color: #297fcf;
         color: $white;
+    }
+
+    &--no-style {
+        border: none;
+        background: none;
+        padding: 0;
+        width: auto;
+        height: auto;
+            
+        &:hover,
+        &.hover {
+            background: none;
+        }
     }
 }
 
@@ -650,6 +677,723 @@ hr {
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+// New styles for the dashboard START
+*:not(.dropdown) > .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+    &__item {
+        margin-right: 20px;
+        white-space: nowrap;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        a {
+            color: $light-grey3;
+        }
+
+        &--active,
+        &:hover {
+            a {
+                color: $blue2;
+            }
+        }
+    }
+}
+
+.account-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+
+    &__item {
+        margin-right: 30px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+.message-icon {
+    height: 25px;
+    display: inline-block;
+
+    &:before {
+        content: '';
+        width: 22px;
+        height: 25px;
+        display: inline-block;
+        background-image: url('../img/message.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    &:hover {
+        &:before {
+            background-image: url('../img/message-blue.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+    }
+}
+
+.bell-notifications {
+    height: 25px;
+    display: inline-block;
+
+    &:before {
+        content: '';
+        width: 20px;
+        height: 25px;
+        display: inline-block;
+        background-image: url('../img/notification-bell.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .account-menu__item--active & {
+        &:before {
+            background-image: url('../img/notification-bell-blue.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+    }
+
+    &:hover {
+        &:before {
+            background-image: url('../img/notification-bell-blue.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+    }
+}
+
+.search-icon-blue {
+    height: 25px;
+    display: inline-block;
+
+    &:before {
+        content: '';
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        background-image: url('../img/search-icon-blue.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}
+
+.dropdown-cta {
+    height: 25px;
+    display: inline-block;
+
+    &:before {
+        content: '';
+        width: 12px;
+        height: 25px;
+        display: inline-block;
+        background-image: url('../img/dropdown.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}
+
+
+.account-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.account__img {
+    width: 30px;
+    height: 30px;
+    background-color: $blue2;
+    display: block;
+    border-radius: 50%;
+    margin-right: 14px;
+}
+
+.account__name {
+    color: $light-grey3;
+}
+
+.account__dropdown-cta {
+    margin-left: 20px;
+}
+
+.main-content {
+    &--dashboard {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+}
+
+.tile {
+    &--no-tickets {
+        height: 200px;
+        text-align: center;
+        padding-top: 30px;
+        font-weight: 500;
+        font-size: 16px;
+        color: $dark-grey;
+    }
+
+    &--2 {
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+    }
+}
+
+.ui.selection.dropdown {
+    .menu {
+        height: auto;
+    }
+
+    &.dropdown-2 {
+        border: none;
+
+        &:hover {
+            .menu {
+                border-color: rgba(0, 0, 0, 0.26);
+            }
+        }
+
+        .menu {
+            height: auto;
+            border-color: rgba(0, 0, 0, 0.16);
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+
+            > .item {
+                border-top: 0;
+                color: $blue2;
+
+                &.active {
+                    color: $white;
+                    background-color: $blue;
+                    font-weight: normal;
+                }
+
+                &:hover {
+                    color: $white;
+                    background-color: $blue3;
+                }
+            }
+        }
+
+        > .text {
+            color: $blue2;
+
+            &:not(.default) {
+                color: $blue2;
+            }
+        }
+    }
+}
+
+.input__wrapper--search {
+    position: relative;
+
+    .input {
+        border-color: $blue;
+        color: $dark-grey;
+
+        &:focus {
+            box-shadow: 0 0 1px 1px $blue;
+        }
+    }
+
+    button {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.search-title {
+    margin-bottom: 7px; 
+}
+
+.search-subtitle {
+    max-width: 350px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-size: contain;
+        background-image: url('../img/arrow-subtitle.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 75px;
+        height: 78px;
+        right: -35px;
+    }
+}
+
+.search-post-cta {
+    margin-top: 30px;
+    width: 256px;
+    max-width: 256px;
+}
+
+.how-it-works {
+    padding: 28px 50px;
+    padding-bottom: 0;
+    margin-top: 30px;
+    position: relative;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__list-item {
+        padding-left: 95px;
+        padding-right: 95px;
+        width: 50%;
+        position: relative;
+        margin-bottom: 35px;
+    }
+
+    &__list-item-title {
+        margin-top: 0;
+        margin-bottom: 6px;
+
+        > span {
+            color: $blue;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    }
+
+    &__list-item-text {
+        color: $light-grey3;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    &__img {
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__remove-button {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 25px;
+        top: 19px;
+    }
+}
+
+.dropdown--my-tickets {
+    &.ui.dropdown {
+        .menu {
+            height: auto;
+            top: 40px;
+            border-color: rgba(0, 0, 0, 0.16);
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+
+            > .item {
+                border-top: 0;
+                color: $blue2;
+
+                &.active {
+                    color: $white;
+                    background-color: $blue;
+                    font-weight: normal;
+                }
+
+                &:hover {
+                    color: $white;
+                    background-color: $blue3;
+                }
+            }
+            
+            > .item {
+                width: 200px;
+            }
+        }
+    }
+}
+
+.dropdown--notifications {
+    &.ui.dropdown {
+        .menu {
+            right: 0;
+            left: auto;
+
+            .item {
+                width: 300px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.tickets-list {
+    &__item {
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: row;
+
+        &:hover {
+            background-color: $blue5;
+            cursor: pointer;
+        }
+    }
+
+    &__img {
+        background-color: $blue4;
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        position: relative;
+
+        .status-icon {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            right: 2px;
+            bottom: 2px;
+            border-radius: 50%;
+            border: 1px solid $white;
+            &.online {
+                background-color: $blue2;
+            }
+            &.away {
+                background-color: $dark-yellow;
+            }
+            &.off {
+                background-color: $dark-yellow2;
+            }
+        }
+    }
+
+    &__text {
+        max-width: 60%;
+        margin-left: 8px;
+    }
+
+    &__name {
+        text-overflow: ellipsis;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0;
+        color: $dark-grey;
+    }
+
+    &__subtext {
+        padding: 0;
+        margin: 0;
+        text-overflow: ellipsis;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 14px;
+        color: $dark-grey;
+    }
+
+    &__price {
+        margin: 0;
+    }
+
+    &__rate {
+        color: $light-grey3;
+        margin: 0;
+        font-size: 12px;
+        margin-top: 2px;
+    }
+}
+
+.tile--tickets-list {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.notifications {
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+    &__list {
+        border-top: 1px solid $grey3;
+        border-bottom: 1px solid $grey3;
+    }
+
+    &__list-item {
+        border-bottom: 1px solid $grey3;
+        display: flex;
+        padding: 22px 115px 22px 65px;
+        height: 90px;
+        position: relative;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 0%;
+            transition: width 0.5s linear;
+            
+            z-index: 4;   
+            background-color: $blue;         
+        }
+
+        &.to-be-removed {
+            position: relative;
+
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__link {
+        color: $blue;
+    }
+
+    &__date-time {
+        font-size: 12px;
+        color: $light-grey3;
+        white-space: nowrap;
+        width: 60px;
+    }
+
+    &__estimate {
+        width: 80px;
+    }
+
+    &__main {
+        width: 380px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    &__main-title {
+        font-size: 14px;
+        color: $blue;
+        margin-bottom: 6px;
+
+        &--italic {
+            font-style: italic;
+        }
+    }
+
+    &__main-text {
+        margin: 0;
+        text-overflow: ellipsis;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.estimate {
+    &__title {
+        color: $light-grey3;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    &__value {
+        margin: 0;
+        margin-top: 5px;
+        color: #000;
+    }
+}
+
+.ticket-header {
+    border-bottom: 1px solid $grey3;
+
+    &__list {
+        display: flex;
+    }
+
+    &__list-item {
+        padding: 19px 29px;
+        display: inline-block;
+        cursor: pointer;
+
+        &--active {
+            padding-bottom: 16px;
+            border-bottom: 3px solid $blue2;
+        }
+
+        a {
+            color: $blue;
+            font-size: 14px;
+        }
+    }
+}
+
+.ticket-body {
+    padding: 38px 33px;
+}
+
+.ticket {
+    &__name {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    &__details-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__category {
+        margin: 0;
+    }
+
+    &__rate {
+        margin-left: auto;
+        color: #000;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__rate-2 {
+        margin-left: auto;
+        margin-top: 3px;
+        margin-bottom: 0;
+    }
+
+    &__price {
+        text-align: right;
+        color: #000;
+        font-weight: 500;
+        margin-left: 10px;
+        width: 70px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__date {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    &__description {
+        margin-top: 36px;
+        color: $light-grey3;
+        margin-bottom: 14px;
+    }
+
+    &__description-text {
+        margin: 0;
+        color: $light-grey;
+        margin-bottom: 36px;
+    }
+}
+
+.post-ticket {
+    &__title {
+        margin-top: 0;
+        margin-bottom: 68px;
+    }
+
+    &__input-title {
+        margin-top: 0;
+        margin-bottom: 3px;
+    }
+
+    &__form {
+        padding: 63px 65px 65px;
+    }
+
+    &__subtitle {
+        color: $light-grey3;
+        font-size: 12px;
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+}
+
+.fileupload {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+
+        .post-ticket__subtitle {
+            margin-bottom: 0;
+        }
+    }
+
+    &__button {
+        border: 1px solid $blue;
+        width: 120px;
+        height: 40px;
+        margin-right: 15px;
+        font-size: 12px;
+        color: $blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+        span {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        &:hover {
+            border: 1px solid $blue;
+            color: $white;
+            background-color: $blue;
+        }
+    }
+
 }
 
 @import "media";

@@ -76,7 +76,7 @@
                     </div>
                     <div class="col-5">
                         <ul class="menu">
-                            <li class="menu__item menu__item--active">
+                            <li class="menu__item">
                                 <div class="ui dropdown dropdown-2 dropdown--my-tickets">
                                     <a href="#" class="text">My tickets</a>
                                         <div class="menu">
@@ -105,9 +105,20 @@
                                 </a>
                             </div>
 
-                            <div class="account-menu__item">
+                            <div class="account-menu__item account-menu__item--active">
                                 <a href="#">
-                                    <i class="bell-notifications"></i>
+                                    <div class="ui dropdown dropdown-2 dropdown--notifications">
+                                            <i class="bell-notifications"></i>
+                                            <div class="menu">
+                                            <div class="item">
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                            </div>
+                                            <div class="item">Recent</div>
+                                            <div class="item">Archived</div>
+                                            </div>
+                                    </div>
                                 </a>
                             </div>
                             
@@ -140,108 +151,103 @@
     <main class="main-content main-content--dashboard">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-4">
-                    <div class="tile tile--2">
-                            <label class="input__wrapper input__wrapper--half">
-                                <select name="Ticket-status" class="ui dropdown dropdown-2" id="select-status">
-                                    <option value="" selected disabled>Please select..</option>
-                                    <option value="In-progress">In progress</option>
-                                    <option value="Posted">Posted</option>
-                                    <option value="Archived">Archived</option>
-                                </select>
-                            </label>
-                        </div>
-                </div>
-
-                <div class="col-6"> 
-                    <form action="#">
-                        <label class="input__wrapper input__wrapper--search">
-                            <input type="text" class="input input-seach" placeholder="Search Expert" name="search-expert">
-                            <button type="button" class="button button--no-style">
-                                <i class="search-icon-blue"></i>
-                            </button>
-                        </label>
-                    </form>
-                </div>
-
-
-                <div class="col-2"> 
-                    <button type="button">
-                        Post a ticket
-                    </button>
-                </div>
-
-                <div class="col-4">
-                    <div class="tile tile--2 tile--no-tickets">
-                        No tickets yet
-                    </div>
-                </div>
-
                 <div class="col-8">
-                    <h1 class="text-align-center search-title">Need help with some work?</h1>
-                    <p class="search-subtitle">Select the field of your interests <br>
-                            Post a ticket and find the right expert for your job</p>
-
-                    <button type="button" class="search-post-cta">
-                        Post a ticket
-                    </button>                            
+                        <h1 class="post-ticket__title">
+                            Tell us what's type of job you need to get done
+                        </h1>
                 </div>
-
-                <div class="col-12">
+                <div class="col-8">
                     <div class="tile tile--2">
-                        <section class="how-it-works">
-                            <!-- <button type="button" class="button button--no-style how-it-works__remove-button">
-                                <img src="img/close.png" alt="">
-                            </button> -->
-                            <h2 class="how-it-works__title">How it works</h2>
-                            <ul class="how-it-works__list">
-                                <li class="how-it-works__list-item">
-                                    <img src="img/step-1-pic.svg" alt="" class="how-it-works__img">
-                                    <h3 class="how-it-works__list-item-title">
-                                    <span>1</span>    You fill the form
-                                    </h3>
-                                    <p class="how-it-works__list-item-text">
-                                        You feel the required fields in the form and determine what
-                                        type of job you want to get done                                            
-                                    </p>
-                                </li>
-                                <li class="how-it-works__list-item">
-                                    <img src="img/step-2-pic.svg" alt="" class="how-it-works__img">
-                                    <h3 class="how-it-works__list-item-title">
-                                    <span>2</span>    Find your Expert
-                                    </h3>
-                                    <p class="how-it-works__list-item-text">
-                                            After you post, Expert from the needed by you field
-                                            will approach to you or you can find one by your own
-                                                                                  
-                                    </p>
-                                </li>
-                                <li class="how-it-works__list-item">
-                                    <img src="img/step-3-pic.svg" alt="" class="how-it-works__img">
-                                    <h3 class="how-it-works__list-item-title">
-                                    <span>3</span>    You sign a deal
-                                    </h3>
-                                    <p class="how-it-works__list-item-text">
-                                            After you choose the right expert youstart
-                                            working with him. 
-                                                                                      
-                                    </p>
-                                </li>                                                                
-                                <li class="how-it-works__list-item">
-                                    <img src="img/step-4-pic.svg" alt="" class="how-it-works__img">
-                                    <h3 class="how-it-works__list-item-title">
-                                    <span>4</span>    Receive the work and Payment
-                                    </h3>
-                                    <p class="how-it-works__list-item-text">
-                                            After the work is done, you pay the estimate
-                                            to your Expert and that's it!                                         
-                                    </p>
-                                </li>                                
-                            </ul>
-                        </section>
+                        <form action="#" class="post-ticket__form">
+                            <h2 class="post-ticket__input-title">Subject title</h2>
+                            <p class="post-ticket__subtitle">
+                                Please Name your project in few words
+                            </p>
+                            <label class="input__wrapper mb-5">
+                                <input type="text" class="input" placeholder="Web developer" name="prof-title" required>
+                                <p class="input__notification">Proffesion title is required</p>
+                            </label>
+
+                            <h2 class="post-ticket__input-title">
+                                Details
+                            </h2>
+                            <p class="post-ticket__subtitle">
+                                Tell us more about your business and the whole project overall. (2000 Caracters max)
+                            </p>
+                            <label class="input__wrapper mb-2">
+                                <textarea class="input height-150" name="description" placeholder="Dscribe what's need to be done…." maxlength="2000"></textarea>
+                                <p class="input__notification">Proffesion title is required</p>
+                            </label>
+
+                            <div class="fileupload__wrapper mb-5">
+                                <input type="file" name="fileupload" value="fileupload" id="fileupload" class="visually-hidden">
+                                <label for="fileupload" class="fileupload__button"> <span>+</span>    Upload Files </label>
+                                <p class="post-ticket__subtitle">Attach necessary files to show ideas of your project more understandable</p>
+                            </div>
+
+                             <h2 class="post-ticket__input-title">
+                                Category
+                            </h2>
+                            <p class="post-ticket__subtitle">
+                                Select appropriate category that fits your project
+                            </p>
+                            <label class="input__wrapper mb-5">
+                                <select name="category" class="ui dropdown" id="category-select" required>
+                                    <option value="" selected disabled>Please select..</option>
+                                    <option value="FD">FrontEnd</option>
+                                    <option value="BD">BackEnd</option>
+                                    <option value="Design">Design</option>
+                                </select>
+                                <p class="input__notification">Category is required</p>
+                            </label>
+
+
+                            <h2 class="post-ticket__input-title">
+                                    Skills required
+                            </h2>
+                            <p class="post-ticket__subtitle">
+                                    Select appropriate Skills that  fits your project
+                            </p>
+                            <label class="input__wrapper mb-5">
+                                <select name="skills" class="ui dropdown multiple" id="skills-select" required>
+                                    <option value="" selected disabled>Please select required skills</option>
+                                    <option value="HTML">HTML</option>
+                                    <option value="CSS">CSS</option>
+                                    <option value="PHP">PHP3</option>
+                                    <option value="HTML1">HTML</option>
+                                    <option value="CSS1">CSS</option>
+                                    <option value="PHP1">PHP3</option>
+                                    <option value="HTML2">HTML</option>
+                                    <option value="CSS2">CSS</option>
+                                    <option value="PHP2">PHP3</option>
+                                    <option value="HTML3">HTML</option>
+                                    <option value="CSS3">CSS</option>
+                                    <option value="PHP3">PHP3</option>
+                                </select>
+                                <p class="input__notification">Category is required</p>
+                            </label>
+                            
+
+                             <h2 class="post-ticket__input-title">
+                                    Want to assign this project to a favorite expert?
+                            </h2>
+                            <p class="post-ticket__subtitle">
+                                If you already know who do you want to assign this project to, just select from the drop down
+                            </p>
+                            <label class="input__wrapper mb-5">
+                                <select name="expert" class="ui dropdown" id="expert-select" required>
+                                    <option value="" selected disabled>Noone for this project</option>
+                                    <option value="a111">Front End Guy name</option>
+                                    <option value="a222">Back End Guy name</option>
+                                    <option value="a333">Designer name</option>
+                                </select>
+                                <p class="input__notification">Category is required</p>
+                            </label>  
+                            
+                            <input type="submit" class="button button--post-big" value="Post my ticket">
+                        </form>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
