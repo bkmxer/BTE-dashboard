@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <!-- [TODO] Add the proper title if needed -->
+    <title>Back to Experts</title>
+
+    <!-- [TODO] Add the description -->
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="img/Logo.jpg">
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Template Basic Images End -->
+
+    <!-- Load Fonts CSS Start -->
+    <link rel="stylesheet" href="css/fonts.min.css">
+    <!-- Load Fonts CSS End -->
+
+    <!-- Load Bootstrap 4 Grid Start -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- Load CusBootstrap 4 Grid End -->
+
+    <!-- Load Custom CSS Start -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- Load Custom CSS End -->
+
+
+    <!-- Custom Browsers Color Start -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content=" #2871C6">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content=" #2871C6">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content=" #2871C6">
+    <!-- Custom Browsers Color End -->
+
+</head>
+
+<body class="dashboard tickets">
+    <!--[Structure] Header START -->
+    <header>
+            <!--[Structure] Navbar START -->
+            <nav class="navigation">
+                <div class="container container-fluid-small">
+                    <div class="row">
+                        <div class="col-4 col-lg-2">
+                            <div class="main-logo">
+                                <a href="./Client_dashboard.html"><img src="img/logo.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-5  d-none d-lg-flex">
+                            <ul class="menu">
+                            <li class="menu__item menu__item--active">
+                                <div class="ui dropdown dropdown-2 dropdown--my-tickets dropdown--my-experts">
+                                    <a href="#">My tickets</a>
+                                    <div class="menu">
+                                        <div class="item">
+                                            <a href="./Tickets-progress.html">Tickets in progress</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./Tickets-posted.html">Posted tickets</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./Tickets-closed.html">Closed tickets</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                                <li class="menu__item">
+                                    <div class="ui dropdown dropdown-2 dropdown--my-tickets dropdown--my-experts">
+                                        <a href="#">My Experts</a>
+                                        <div class="menu">
+                                            <div class="item">
+                                                <a href="./My_Experts.html?data-tab=workingnow">Working Now</a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="./My_Experts.html?data-tab=recent">Recent</a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="./My_Experts.html?data-tab=archived">Archived</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu__item">
+                                    <div class="ui dropdown dropdown-2">
+                                        <a href="#">Payments</a>
+                                        <div class="menu">
+                                            <div class="item">
+                                                <a href="./Payments.html?data-tab=all">All Payments</a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="./Payments.html?data-tab=recent">Recent</a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="./Payments.html?data-tab=closed">Closed</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#">Reports</a>
+                                </li>                                                                                                                
+                            </ul>
+                            
+                        </div>
+                        <div class="col-8 col-lg-5">
+                            <div class="account-menu">
+    
+                                <!-- Messages block START -->
+                                <div class="account-menu__item">
+                                    <a href="././Client_dashboard.html?data-tab=dialog">
+                                        <i class="message-icon"></i>
+                                    </a>
+                                </div>
+                                <!-- Messages block END -->
+    
+                                <!-- Notification block START -->
+                                <div class="account-menu__item">
+                                <!-- Notifications icon for mobile START -->
+                                <a href="./Notifications.html" class="d-inline-block d-md-none">
+                                    <i class="bell-notifications"></i>
+                                </a>
+                                <!-- Notifications icon for mobile END -->
+
+                                <!-- Notifications icon for desktop START -->
+                                <div class="d-none d-md-inline-block on-click-notifications">
+                                    <div class="ui dropdown dropdown-2 dropdown--notifications">
+                                        <i class="bell-notifications"></i>
+                                        <div class="menu">
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>  
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>                                              
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>  
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>                                                                                        
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Notifications icon for desktop END -->
+                                </div>
+                                <!-- Notification block END -->
+    
+                                <!-- Burger START -->
+                                <div id="burger">
+                                    <i></i>
+                                </div>
+                                <!-- Burger END -->
+    
+                                <!-- Account Menu DESKTOP START -->
+                                <div class="account-menu__item  d-none d-lg-flex">
+                                    <div class="account-wrapper ui dropdown">
+                                        <div class="account__img">
+                                        <!-- <img src="../img" alt="profile-photo"> -->
+                                        </div>
+                                        <div class="account__name">
+                                            <span>Name Surname</span>
+                                        </div>
+    
+                                        <div class="account__dropdown-cta">
+                                            <a href="#">
+                                                <i class="dropdown-cta"></i>
+                                            </a>
+                                        </div>
+                                        <div class="menu">
+                                            <a href="#" class="item account-menu__link account-menu__link--settings">
+                                                Account settings
+                                            </a>
+                                            <a href="#" class="item account-menu__link account-menu__link--signout">
+                                                Logout
+                                            </a>                                   
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Account Menu DESKTOP END -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--[Structure] Navbar END -->
+        </header>
+        <!--[Structure] Header END -->
+
+    <!--[Structure] Main START -->
+    <main class="main-content main-content--dashboard">
+        <div class="container container-fluid-small">
+            <div class="row justify-content-center por moving-container">
+
+                <div class="col-12 col-lg-8 order-0 order-lg-1 search-box-wrapper"> 
+                    <form action="#" id="search-box" class="">
+                        <label class="input__wrapper input__wrapper--search">
+                            <input type="text" class="input input-seach" placeholder="Search Expert" name="search-expert">
+                            <button type="button" class="button button--no-style">
+                                <i class="search-icon-blue"></i>
+                            </button>
+                        </label>
+                    </form>
+                    <a href='./Post_Ticket.html' type="button" class="button rounded-small post-a-ticket-cta max-160">
+                        <span class="d-none d-md-inline">Post a ticket</span>
+                        <span class="d-inline d-md-none">+</span>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg-4 order-1 order-lg-1" id="tickets-list">
+                    <div class="tile tile--2">
+                        <label class="input__wrapper input__wrapper--select">
+                            <div class="ui dropdown dropdown-2 dropdown-3 selection dropdown--my-tickets">
+                                <a href="#" class="text">My tickets</a>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item"><a href="./Tickets-progress.html">Tickets in progress</a></div>
+                                    <div class="item"><a href="./Tickets-posted.html">Posted tickets</a></div>
+                                    <div class="item"><a href="./Tickets-closed.html">Closed tickets</a></div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="tile tile--2 tile--tickets-list">
+                        <ul class="tickets-list">
+                            <li class="tickets-list__item js-tickets-list__item tickets-list__item--active" data-ticket-id="1">
+                                <div class="tickets-list__img">
+                                    <!-- <img src="" alt=""> -->
+                                    <span class="status-icon online"></span>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__name">
+                                        Expert name
+                                    </h3>
+                                    <p class="tickets-list__subtext">
+                                        Here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something
+                                    </p>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__price">
+                                        $338.05
+                                    </h3>
+                                    <p class="tickets-list__rate">
+                                        $17/hour
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="tickets-list__item js-tickets-list__item" data-ticket-id="2">
+                                <div class="tickets-list__img">
+                                    <!-- <img src="" alt=""> -->
+                                    <span class="status-icon off"></span>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__name">
+                                        Expert name
+                                    </h3>
+                                    <p class="tickets-list__subtext">
+                                        Here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something
+                                    </p>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__price">
+                                        $338.05
+                                    </h3>
+                                    <p class="tickets-list__rate">
+                                        $17/hour
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="tickets-list__item js-tickets-list__item" data-ticket-id="3">
+                                <div class="tickets-list__img">
+                                    <!-- <img src="" alt=""> -->
+                                    <span class="status-icon away"></span>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__name">
+                                        Expert name
+                                    </h3>
+                                    <p class="tickets-list__subtext">
+                                        Here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something
+                                    </p>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__price">
+                                        $338.05
+                                    </h3>
+                                    <p class="tickets-list__rate">
+                                        $17/hour
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="tickets-list__item js-tickets-list__item" data-ticket-id="4">
+                                    <div class="tickets-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon off"></span>
+                                    </div>
+                                    <div class="tickets-list__text">
+                                        <h3 class="tickets-list__name">
+                                            Expert name
+                                        </h3>
+                                        <p class="tickets-list__subtext">
+                                            Here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something
+                                        </p>
+                                    </div>
+                                    <div class="tickets-list__text">
+                                        <h3 class="tickets-list__price">
+                                            $338.05
+                                        </h3>
+                                        <p class="tickets-list__rate">
+                                            $17/hour
+                                        </p>
+                                    </div>
+                                </li>
+                            <li class="tickets-list__item js-tickets-list__item" data-ticket-id="5">
+                                <div class="tickets-list__img">
+                                    <!-- <img src="" alt=""> -->
+                                    <span class="status-icon online"></span>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__name">
+                                        Expert name
+                                    </h3>
+                                    <p class="tickets-list__subtext">
+                                        Here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something
+                                    </p>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__price">
+                                        $338.05
+                                    </h3>
+                                    <p class="tickets-list__rate">
+                                        $17/hour
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="tickets-list__item js-tickets-list__item" data-ticket-id="6">
+                                <div class="tickets-list__img">
+                                    <!-- <img src="" alt=""> -->
+                                    <span class="status-icon away"></span>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__name">
+                                        Expert name
+                                    </h3>
+                                    <p class="tickets-list__subtext">
+                                        Here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something
+                                    </p>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__price">
+                                        $338.05
+                                    </h3>
+                                    <p class="tickets-list__rate">
+                                        $17/hour
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="tickets-list__item js-tickets-list__item" data-ticket-id="7">
+                                <div class="tickets-list__img">
+                                    <!-- <img src="" alt=""> -->
+                                    <span class="status-icon off"></span>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__name">
+                                        Expert name
+                                    </h3>
+                                    <p class="tickets-list__subtext">
+                                        Here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something
+                                    </p>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__price">
+                                        $500
+                                    </h3>
+                                    <p class="tickets-list__rate">
+                                        Fixed price
+                                    </p>
+                                </div>
+                            </li>                            
+                            <li class="tickets-list__item js-tickets-list__item" data-ticket-id="8">
+                                <div class="tickets-list__img">
+                                    <!-- <img src="" alt=""> -->
+                                    <span class="status-icon away"></span>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__name">
+                                        Expert name
+                                    </h3>
+                                    <p class="tickets-list__subtext">
+                                        Here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something
+                                    </p>
+                                </div>
+                                <div class="tickets-list__text">
+                                    <h3 class="tickets-list__price">
+                                        $338.05
+                                    </h3>
+                                    <p class="tickets-list__rate">
+                                        $17/hour
+                                    </p>
+                                </div>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-8 order-1 order-lg-1 d-block" id="ticket-section-wrapper">
+                    <div class="tile tile--2 tile--ticket tile--ticket-active tile--ticket-posted tile--ticket-hourly" data-ticket-id="1">
+                        <div class="ticket-header">
+                            <ul class="ticket-header__list">
+                                <li class="d-block d-lg-none">
+                                    <button class="button button--no-style mobile-section-title__back-button">
+                                        <i class="back-blue-icon"></i>
+                                    </button>
+                                </li>
+                                <li class="ticket-header__list-item ticket-header__list-item--active d-block"  data-tab="ticket">
+                                    <a href="#">
+                                        Ticket
+                                    </a>
+                                </li>
+                                <li class="ticket-header__list-item d-block"  data-tab="dialog">
+                                    <a href="#">
+                                        Dialog
+                                    </a>
+                                </li>   
+                                <li class="ticket-header__list-item d-block"  data-tab="files">
+                                    <a href="#">
+                                        Files
+                                    </a>
+                                </li>
+                                <li class="ticket-header__list-item d-block"  data-tab="payment">
+                                    <a href="#">
+                                        Payment
+                                    </a>
+                                </li>
+                                <li class="active-indicator d-block"></li>
+                            </ul>
+                        </div>
+                        <!-- Ticket info START -->
+                        <div class="ticket-body" data-tab="ticket">
+                            <h2 class="ticket__name">
+                                Anti Virus not Functioning
+                            </h2>
+                            <div class="ticket__details-row">
+                                <p class="ticket__category">
+                                    Category: Security
+                                </p>
+                                <p class="ticket__rate">
+                                        18/40 hours 
+                                </p>
+                                <p class="ticket__price">
+                                        $338.05
+                                </p> 
+                            </div>
+                            <div class="ticket__details-row">
+                                <p class="ticket__date">
+                                    February 2019 - Present
+                                </p>
+                                <p class="ticket__rate-2">
+                                    $17/hour
+                                </p>
+                            </div>
+                            <div class="ticket__description">
+                                Project description
+                            </div>
+
+                            <p class="ticket__description-text">
+                                    Here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something
+                            </p>
+                            <hr>
+                            <div class="expert-lineitem expert-line-static">
+                                <div class="expert-lineitem__img">
+                                    <!-- <img src="" alt=""> -->
+                                </div>
+                                <div class="expert-lineitem__info-wrapper">
+                                    <div class="expert-lineitem__line">
+                                        <div class="expert-lineitem__name-section">
+                                            <p class="expert-lineitem__name">
+                                                Expert name
+                                            </p>
+                                            <p class="expert-lineitem__title">
+                                                Antivirus specialist <span class="d-none d-md-inline">antivirus specialist </span>
+                                            </p>               
+                                        </div>
+                                        <a href="#" class="expert-lineitem__action expert-lineitem__action--hired">
+                                            <img src="./img/checkmar-blue.svg" alt="archive icon">
+                                            <span class="d-inline">Hired</span>
+                                        </a>                                   
+                                    </div>
+                                    <div class="expert-lineitem__line">
+                                        <div class="expert-lineitem__hourly-rate">
+                                            <span>$17</span>/hour
+                                        </div>
+
+                                        <div class="expert-lineitem__location">
+                                            <img src="./img/location.svg" alt="location icon">
+                                            Australia
+                                        </div>
+
+                                        <div class="expert-lineitem__rating">
+
+                                            <div class="stars-wrapper stars-wrapper--static">
+                                                <label for="r1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                                <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                    <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"/>
+                                                </g>
+                                                </svg>
+                                                </label>
+                                                <input type="radio" class="visually-hidden" value="1" name="rating"  id="r1">
+                                                
+                                                <label for="r2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                                <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                    <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"/>
+                                                </g>
+                                                </svg>
+                                                </label>
+                                                <input type="radio" class="visually-hidden" value="2" name="rating" id="r2">
+                                                
+                                                <label for="r3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                                <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                    <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"/>
+                                                </g>
+                                                </svg>
+                                                </label>
+                                                <input type="radio" class="visually-hidden" value="3" name="rating"  id="r3">
+                                                
+                                                <label for="r4">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                                <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                    <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"/>
+                                                </g>
+                                                </svg>
+                                                </label>
+                                                <input type="radio" class="visually-hidden" value="4" name="rating"  id="r4">
+                                                
+                                                <label for="r5">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                                <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                    <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"/>
+                                                </g>
+                                                </svg>
+                                                </label>
+                                                <input type="radio" class="visually-hidden" value="5" name="rating"  id="r5" checked> 
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="expert-lineitem__status">
+                                                <img src="./img/golden.svg" alt="golden status icon">
+                                            Golden status
+                                        </div> -->
+                                        <div class="expert-lineitem__status">
+                                                <img src="./img/silver.svg" alt="silver status icon">
+                                            Silver status
+                                        </div>
+                                        <!-- <div class="expert-lineitem__status">
+                                                <img src="./img/bronze.svg" alt="bronze status icon">
+                                            Bronze status
+                                        </div>-->
+                                    </div>
+                                    <div class="expert-lineitem__line mb-2">
+                                        <p class="expert-lineitem__title-text">
+                                            Cover letter
+                                        </p>
+                                    </div>                                            
+                                    <div class="expert-lineitem__line">
+                                        <p class="expert-lineitem__text">
+                                            Hello imma Mcafee Expert how can i help you sir? s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                        </p>
+                                    </div>                                
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Ticket info END -->
+                        
+                        <!-- Ticket dialog START -->
+                        <div class="ticket-body ticket-body--dialog" data-tab="dialog">
+                            <ul class="messages">
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Expert name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Clients name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Expert name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Clients name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Expert name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Clients name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>       
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Clients name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>    
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Clients name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>                                                                                                                             
+                            </ul>
+
+                            <div class="new-message-container">
+                                <form action="#">
+                                    <input type="text" placeholder="Here will be written the message" class="input">
+                                    <button type="button" class="button new-message-container__send-button">
+                                        Send
+                                    </button>
+                                    <label class="button button--no-style button--attach">
+                                        <span class="visually-hidden">Attach</span>
+                                        <input type="file" class="visually-hidden">
+                                    </label>
+                                </form>
+                            </div>
+                        </div> 
+                        <!-- Ticket dialog END -->
+
+                        <!-- Ticket files START -->
+                        <div class="ticket-body ticket-body--files" data-tab="files">
+                            <div class="files-container">
+                                <div class="file-container">
+                                    <img src="./img/chantel-landing-page-new-in-process.jpg" alt="file">
+                                </div>
+                                <div class="file-container">
+                                    <img src="./img/chantel-landing-page-new-in-process.jpg" alt="file">
+                                </div>
+                                <div class="file-container">
+                                    <img src="./img/chantel-landing-page-new-in-process.jpg" alt="file">
+                                </div>
+                                <div class="file-container">
+                                    <img src="./img/chantel-landing-page-new-in-process.jpg" alt="file">
+                                </div>
+
+                                <div class="file-container">
+                                    <img src="./img/chantel-landing-page-new-in-process.jpg" alt="file">
+                                </div>   
+                                <div class="file-container">
+                                    <img src="./img/chantel-landing-page-new-in-process.jpg" alt="file">
+                                </div>    
+                                <div class="file-container">
+                                    <img src="./img/chantel-landing-page-new-in-process.jpg" alt="file">
+                                </div>    
+                                <div class="file-container">
+                                    <img src="./img/chantel-landing-page-new-in-process.jpg" alt="file">
+                                </div> 
+                                <div class="file-container">
+                                    <img src="./img/chantel-landing-page-new-in-process.jpg" alt="file">
+                                </div>
+                                <div class="file-container">
+                                    <img src="./img/chantel-landing-page-new-in-process.jpg" alt="file">
+                                </div>                                        
+                            </div>
+                            <div class="new-message-container">
+                                <form action="#">
+                                    <input type="text" placeholder="Here will be written the message" class="input">
+                                    <button type="button" class="button new-message-container__send-button">
+                                        Send
+                                    </button>
+                                    <label class="button button--no-style button--attach">
+                                        <span class="visually-hidden">Attach</span>
+                                        <input type="file" class="visually-hidden">
+                                    </label>
+                                </form>
+                            </div>
+                        </div> 
+                        <!-- Ticket files END -->
+                        
+                        <!-- Ticket payment START -->
+                        <div class="ticket-body ticket-body--payment" data-tab="payment">
+                            <h2 class="ticket__name">
+                                    Anti Virus not Functioning
+                            </h2>
+
+                            <div class="ticket__details-row payment-row">
+                                <div class="payment-info-block payment-info-block-1">
+                                    <p class="estimate__title">Hourly rate</p>
+                                    <p class="estimate__value">$17/hour</p>
+                                </div>
+                                <div class="payment-info-block payment-info-block-1">
+                                    <p class="estimate__title">Hours deposit </p>
+                                    <p class="estimate__value">8/40</p>
+                                </div>
+                            </div>
+
+                            <div class="ticket__details-row payment-row payment-row--last">
+                                <div class="payment-info-block payment-info-block-2">
+                                    <p class="estimate__title">Deposit</p>
+                                    <p class="estimate__value line-1">$0</p>
+                                    <p class="estimate__value estimate__value---input d-none">
+                                        <input type="text" 
+                                                class="input deposit-input" 
+                                                id="deposit-input" 
+                                                maxlength="5" 
+                                                pattern="[0-9]">
+                                    </p>
+                                </div>
+                                <div class="payment-info-block payment-info-block-2">
+                                    <p class="estimate__title">Current hour payment </p>
+                                    <p class="estimate__value">$0</p>
+                                </div>
+                                <div class="payment-info-block payment-info-block-2">
+                                    <p class="estimate__title">Estimate</p>
+                                    <p class="estimate__value">$0</p>
+                                </div>
+                            </div>
+
+                            <div class="ticket__details-row payment-row payment-row--info payment-row--last d-none">
+                                <div class="estimate__title">
+                                    To make a new deposit you need to pay the existing one
+                                </div>
+                            </div>
+
+                            <div class="payment-buttons">
+                                <button type="button" class="button max-160 js-add-deposit">
+                                    Add Deposit
+                                </button>
+
+                                <button type="button" class="button max-160 js-pay-deposit d-none">
+                                    Pay ticket
+                                </button>
+
+                                <button class="button button--no-style link">
+                                    Close Ticket
+                                </button>
+                            </div>
+
+                            <!-- Payment closure section START -->
+                            <h2 class="ticket__name d-none js-payment-closure">
+                                Payment closure
+                            </h2>
+
+                            <div class="ticket__details-row payment-row d-none js-payment-closure">
+                                <div class="row align-items-center full-width">
+                                    <div class="col-6">
+                                        <div class="estimate__title">
+                                            Total Expert Amount
+                                        </div>
+                                    </div>
+                                    <div class="col-4 offset-2">
+                                        <div class="estimate__value">
+                                            $400
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ticket__details-row payment-row d-none js-payment-closure">
+                                    <div class="row align-items-center full-width">
+                                        <div class="col-6">
+                                            <div class="estimate__title">
+                                                Initial Deposit
+                                            </div>
+                                        </div>
+                                        <div class="col-4 offset-2">
+                                            <div class="estimate__value">
+                                                $200
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <div class="ticket__details-row payment-row d-none js-payment-closure">
+                                    <div class="row align-items-center full-width">
+                                        <div class="col-6">
+                                            <div class="estimate__title">
+                                                Balance
+                                            </div>
+                                        </div>
+                                        <div class="col-4 offset-2">
+                                            <div class="estimate__value">
+                                                $200
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>         
+                                
+                            <div class="ticket__details-row payment-row d-none js-payment-closure">
+                                    <div class="row align-items-center full-width">
+                                        <div class="col-6">
+                                            <div class="estimate__title">
+                                                BTE Collaboration charges
+                                            </div>
+                                        </div>
+                                        <div class="col-4 offset-2">
+                                            <div class="estimate__value">
+                                                $10
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>         
+                                
+                            <div class="ticket__details-row payment-row payment-row--last d-none js-payment-closure">
+                                    <div class="row align-items-center full-width">
+                                        <div class="col-6">
+                                            <div class="estimate__title">
+                                                Total Amount Due
+                                            </div>
+                                        </div>
+                                        <div class="col-4 offset-2">
+                                            <div class="estimate__value">
+                                                $360.05
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+    
+
+                            <div class="payment-buttons d-none js-payment-closure">
+                                <button type="button" class="button max-160 js-get-report">
+                                    Get report
+                                </button>
+                            </div>
+                            <!-- Payment closure section END -->
+
+                        </div>
+                        <!-- Ticket payment END -->               
+                    </div>
+                    <div class="tile tile--2 tile--ticket tile--ticket-posted tile--ticket-fixed" data-ticket-id="2">
+                        <div class="ticket-header">
+                            <ul class="ticket-header__list">
+                                <li class="d-block d-lg-none">
+                                    <button class="button button--no-style mobile-section-title__back-button">
+                                        <i class="back-blue-icon"></i>
+                                    </button>
+                                </li>
+                                <li class="ticket-header__list-item ticket-header__list-item--active d-block"  data-tab="ticket">
+                                    <a href="#">
+                                        Ticket
+                                    </a>
+                                </li>
+                                <li class="ticket-header__list-item d-block"  data-tab="dialog">
+                                    <a href="#">
+                                        Dialog
+                                    </a>
+                                </li>   
+                                <li class="ticket-header__list-item d-block"  data-tab="files">
+                                    <a href="#">
+                                        Files
+                                    </a>
+                                </li>
+                                <li class="ticket-header__list-item d-block"  data-tab="payment">
+                                    <a href="#">
+                                        Payment
+                                    </a>
+                                </li>
+                                <li class="active-indicator d-block"></li>
+                            </ul>
+                        </div>
+                        <div class="ticket-body" data-tab="ticket">
+                            <h2 class="ticket__name">Anti Virus not Functioning</h2>
+                            <div class="ticket__details-row">
+                                <p class="ticket__category">Category: Security</p>
+                                <p class="ticket__rate"></p>
+                                <p class="ticket__price">$400</p> 
+                            </div>
+                            <div class="ticket__details-row">
+                                <p class="ticket__date">February 2019 - Present</p>
+                                <p class="ticket__rate-2">Fixed price</p>
+                            </div>
+                            <div class="ticket__description">Project description</div>
+
+                            <p class="ticket__description-text">
+                                Here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something
+                            </p>
+                            <hr>
+                            <div class="expert-lineitem expert-line-static">
+                                <div class="expert-lineitem__img">
+                                    <!-- <img src="" alt=""> -->
+                                </div>
+                                <div class="expert-lineitem__info-wrapper">
+                                    <div class="expert-lineitem__line">
+                                        <div class="expert-lineitem__name-section">
+                                            <p class="expert-lineitem__name">
+                                                Expert name
+                                            </p>
+                                            <p class="expert-lineitem__title">
+                                                Antivirus specialist <span class="d-none d-md-inline">antivirus specialist </span>
+                                            </p>               
+                                        </div>
+                                        <a href="#" class="expert-lineitem__action expert-lineitem__action--hired">
+                                            <img src="./img/checkmar-blue.svg" alt="archive icon">
+                                            <span class="d-inline">Hired</span>
+                                        </a>                                   
+                                    </div>
+                                    <div class="expert-lineitem__line">
+                                        <div class="expert-lineitem__hourly-rate">
+                                            <span>$17</span>/hour
+                                        </div>
+
+                                        <div class="expert-lineitem__location">
+                                            <img src="./img/location.svg" alt="location icon">
+                                            Australia
+                                        </div>
+
+                                        <!-- rating START -->
+                                        <div class="expert-lineitem__rating">
+                                            <div class="stars-wrapper stars-wrapper--static">
+                                                <label for="r1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                                <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                    <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"/>
+                                                </g>
+                                                </svg>
+                                                </label>
+                                                <input type="radio" class="visually-hidden" value="1" name="rating"  id="r1">
+                                                
+                                                <label for="r2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                                <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                    <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"/>
+                                                </g>
+                                                </svg>
+                                                </label>
+                                                <input type="radio" class="visually-hidden" value="2" name="rating" id="r2">
+                                                
+                                                <label for="r3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                                <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                    <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"/>
+                                                </g>
+                                                </svg>
+                                                </label>
+                                                <input type="radio" class="visually-hidden" value="3" name="rating"  id="r3">
+                                                
+                                                <label for="r4">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                                <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                    <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"/>
+                                                </g>
+                                                </svg>
+                                                </label>
+                                                <input type="radio" class="visually-hidden" value="4" name="rating"  id="r4">
+                                                
+                                                <label for="r5">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                                <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                    <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"/>
+                                                </g>
+                                                </svg>
+                                                </label>
+                                                <input type="radio" class="visually-hidden" value="5" name="rating"  id="r5" checked> 
+                                            </div>
+                                        </div>
+                                        <!-- rating END -->
+
+                                        <div class="expert-lineitem__status">
+                                                <img src="./img/golden.svg" alt="golden status icon">
+                                            Golden status
+                                        </div>
+                                        <!-- <div class="expert-lineitem__status">
+                                                <img src="./img/silver.svg" alt="silver status icon">
+                                            Silver status
+                                        </div> -->
+                                        <!-- <div class="expert-lineitem__status">
+                                                <img src="./img/bronze.svg" alt="bronze status icon">
+                                            Bronze status
+                                        </div>-->
+                                    </div>
+                                    <div class="expert-lineitem__line mb-2">
+                                        <p class="expert-lineitem__title-text">
+                                            Cover letter
+                                        </p>
+                                    </div>                                            
+                                    <div class="expert-lineitem__line">
+                                        <p class="expert-lineitem__text">
+                                            Hello imma Mcafee Expert how can i help you sir? s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                        </p>
+                                    </div>                                
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!-- Ticket dialog START -->
+                        <div class="ticket-body ticket-body--dialog" data-tab="dialog">
+                            <ul class="messages">
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Expert name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Clients name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Expert name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Clients name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Expert name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Clients name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>       
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Clients name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>    
+                                <li class="tickets-list__item message-list__item" data-ticket-id="1">
+                                    <div class="tickets-list__img message-list__img">
+                                        <!-- <img src="" alt=""> -->
+                                        <span class="status-icon online"></span>
+                                    </div>
+                                    <div class="tickets-list__text message__text-container">
+                                        <h3 class="tickets-list__name message__name">
+                                            Clients name
+                                        </h3>
+                                        <p class="tickets-list__subtext message__text">
+                                            Here Should be some info about the problem.
+                                        </p>
+                                        <span class="message__time">
+                                                8:58 PM
+                                        </span>
+                                    </div>
+                                </li>                                                                                                                             
+                            </ul>
+
+                            <div class="new-message-container">
+                                <form action="#">
+                                    <input type="text" placeholder="Here will be written the message" class="input">
+                                    <button type="button" class="button new-message-container__send-button">
+                                        Send
+                                    </button>
+                                    <label class="button button--no-style button--attach">
+                                        <span class="visually-hidden">Attach</span>
+                                        <input type="file" class="visually-hidden">
+                                    </label>
+                                </form>
+                            </div>
+                        </div> 
+                        <!-- Ticket dialog END -->
+
+                        <div class="ticket-body" data-tab="files">
+                            <h2 class="ticket__name">
+                                Files
+                            </h2>
+                        </div> 
+                        
+                        <!-- Ticket payment START -->
+                        <div class="ticket-body ticket-body--payment" data-tab="payment">
+                            <h2 class="ticket__name">
+                                    Anti Virus not Functioning
+                            </h2>
+
+                            <div class="ticket__details-row payment-row payment-row--last">
+                                <div class="payment-info-block payment-info-block-2">
+                                    <p class="estimate__title">Deposit</p>
+                                    <p class="estimate__value line-1">$200</p>
+                                </div>
+                                <div class="payment-info-block payment-info-block-2">
+                                    <p class="estimate__title">Fixed Price </p>
+                                    <p class="estimate__value">$400</p>
+                                </div>
+                                <div class="payment-info-block payment-info-block-2">
+                                    <p class="estimate__title">Estimate</p>
+                                    <p class="estimate__value">$400</p>
+                                </div>
+                            </div>
+
+                            <div class="ticket__details-row payment-row payment-row--info payment-row--last d-none">
+                                <div class="estimate__title">
+                                    To make a new deposit you need to pay the existing one
+                                </div>
+                            </div>
+
+                            <div class="payment-buttons">
+                                <button type="button" class="button max-160 js-pay-deposit">
+                                    Pay deposit
+                                </button>
+
+                                <button class="button button--no-style link">
+                                    Close Ticket
+                                </button>
+                            </div>
+
+                            <!-- Payment closure section START -->
+                            <h2 class="ticket__name d-none js-payment-closure">
+                                Payment closure
+                            </h2>
+
+                            <div class="ticket__details-row payment-row d-none js-payment-closure">
+                                <div class="row align-items-center full-width">
+                                    <div class="col-6">
+                                        <div class="estimate__title">
+                                            Total Expert Amount
+                                        </div>
+                                    </div>
+                                    <div class="col-4 offset-2">
+                                        <div class="estimate__value">
+                                            $400
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ticket__details-row payment-row d-none js-payment-closure">
+                                    <div class="row align-items-center full-width">
+                                        <div class="col-6">
+                                            <div class="estimate__title">
+                                                Initial Deposit
+                                            </div>
+                                        </div>
+                                        <div class="col-4 offset-2">
+                                            <div class="estimate__value">
+                                                $200
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <div class="ticket__details-row payment-row d-none js-payment-closure">
+                                    <div class="row align-items-center full-width">
+                                        <div class="col-6">
+                                            <div class="estimate__title">
+                                                Balance
+                                            </div>
+                                        </div>
+                                        <div class="col-4 offset-2">
+                                            <div class="estimate__value">
+                                                $200
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>         
+                                
+                            <div class="ticket__details-row payment-row d-none js-payment-closure">
+                                    <div class="row align-items-center full-width">
+                                        <div class="col-6">
+                                            <div class="estimate__title">
+                                                BTE Collaboration charges
+                                            </div>
+                                        </div>
+                                        <div class="col-4 offset-2">
+                                            <div class="estimate__value">
+                                                $10
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>         
+                                
+                            <div class="ticket__details-row payment-row payment-row--last d-none js-payment-closure">
+                                    <div class="row align-items-center full-width">
+                                        <div class="col-6">
+                                            <div class="estimate__title">
+                                                Total Amount Due
+                                            </div>
+                                        </div>
+                                        <div class="col-4 offset-2">
+                                            <div class="estimate__value">
+                                                $360.05
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+    
+
+                            <div class="payment-buttons d-none js-payment-closure">
+                                <button type="button" class="button max-160 js-get-report">
+                                    Get report
+                                </button>
+                            </div>
+                            <!-- Payment closure section END -->
+
+                        </div>
+                        <!-- Ticket payment END -->                   
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--[Structure] Main END -->
+
+    <!--[Structure] Mobile Header START -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="ui accordion">
+            <div class="title">
+                <i class="dropdown icon"></i>
+                <a href="#">My tickets</a>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li><a href="./Tickets-progress.html">Tickets in progress</a></li>
+                    <li><a href="./Tickets-posted.html">Tickets posted</a></li>                    
+                    <li><a href="./Tickets-closed.html">Tickets closed</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                <a href="#">My Experts</a>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li><a href="./My_Experts.html?data-tab=all">All Experts</a></li>
+                    <li><a href="./My_Experts.html?data-tab=workingnow">Working Now</a></li>
+                    <li><a href="./My_Experts.html?data-tab=recent">Recent</a></li>
+                    <li><a href="./My_Experts.html?data-tab=archived">Archived</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                <a href="#">Payments</a>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li><a href="./Payments.html?data-tab=all">All Payments</a></li>
+                    <li><a href="./Payments.html?data-tab=recent">Recent</a></li>
+                    <li><a href="./Payments.html?data-tab=closed">Closed</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                <a href="#">Reports</a>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li>
+                        <a href="#">
+                            All Reports
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Recent
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="#">
+                            Closed
+                        </a>
+                    </li>    
+                    <li>
+                        <a href="#">
+                            Archived
+                        </a>
+                    </li>
+                </ul>
+            </div>   
+             <div class="title">
+                <i class="dropdown icon"></i>
+                 <div class="account-wrapper">
+                    <div class="account__img">
+                        <!-- <img src="../img" alt="profile-photo"> -->
+                    </div>
+                    <div class="account__name">
+                        <span>Name Surname</span>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li><a href="#" class="item account-menu__link account-menu__link--settings">Account settings</a></li>
+                    <li><a href="#" class="item account-menu__link account-menu__link--signout">Logout</a></li>
+                </ul>
+            </div>            
+        </div>        
+    </div>
+    <!--[Structure] Mobile Header END -->
+
+
+    <!--[Structure] Footer START -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 pl-0 pr-0 col-lg-4">
+                    <div class="main-logo">
+                        <img src="img/logo-black.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-sm-4 pl-0 pr-0 col-lg-4 d-none d-md-block">
+                    <div class="terms-conditions">
+                        <a href="#">Terms  & Conditions Privacy statement</a>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-9 pl-0 pr-0 col-md-5 col-lg-4 flex-dir-column-small">
+                    <div class="terms-conditions d-flex d-md-none">
+                        <a href="#">Terms  & Conditions Privacy statement</a>
+                    </div>
+                    <div class="legal-notes">
+                        © 2017-2019 Back to Experts Pty Ltd.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--[Structure] Footer END -->
+
+
+    <!-- Optimized loading JS Start -->
+
+    <script>
+        var scr={scripts:[{src:"js/libs.min.js",async:!1},{src:"js/common.js",async:!1}]};!function(t,n,c){"use strict";var r=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var c=0;c<t.length;c++){var r=n.createElement("script"),s=t[c];r.src=s.src,r.async=s.async,n.body.appendChild(r)}return!0};t.addEventListener?t.addEventListener("load",function(){r(c.scripts)},!1):t.attachEvent?t.attachEvent("onload",function(){r(c.scripts)}):t.onload=function(){r(c.scripts)}}(window,document,scr);
+    </script>
+
+
+    <!-- Optimized loading JS End -->
+
+</body>
+
+</html>

@@ -1,6 +1,18 @@
 @import "bourbon";
 @import "vars";
 
+@media (min-width: 768px) {
+    .container-fluid {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container-fluid {
+        max-width: 100%;
+    }
+}
+
 /*==========  Desktop First  ==========*/
 
 @media only screen and (max-width: 1679px) {
@@ -8,7 +20,10 @@
 }
 
 @media only screen and (max-width: 1279px) {
-
+    .payment-lineitem {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 /* Desktops */
@@ -18,11 +33,219 @@
 
 /* Laptops, big tablet screens */
 @media only screen and (max-width : 991px) {
+    #burger {
+        display: block;
+    }
 
+    .container-fluid-small {
+        max-width: 100%;
+    }
+
+    .main-content--dashboard {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .post-ticket {
+        &__title {
+            margin-bottom: 33px;
+            margin-top: 13px;
+        }
+    }
+
+    .notifications__estimate {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .notifications__content {
+        padding: 32px 28px;
+    }
+
+    .tile--no-tickets {
+        height: 95px;
+        padding-top: 22px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 22px;
+        margin-bottom: 55px;
+    }
+    
+    .no-tickets-text {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .how-it-works {
+        margin-top: 55px;
+    }
+
+    .how-it-works__list {
+        flex-direction: column;
+    }
+
+    .how-it-works__list-item {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .how-it-works__title {
+        padding-left: 95px;
+    }
+
+    .expert-lineitem {
+        padding-left: 35px;
+    }
+
+    .experts-footer .pagination {
+        padding-right: 60px;
+    }
+
+    .tickets-list__text:last-of-type {
+        margin-left: auto;
+    }
+
+    .message-list__img {
+        margin-right: 10px;
+    }
+
+    .tile--tickets-list {
+        margin-top: 22px;
+        padding-left: 0px;
+        padding-right: 0px;
+        max-height: 70vh
+    }
+
+    .tickets-list__item {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .payment-lineitem {
+        justify-content: flex-start;
+    }
+
+    .payment-lineitem .notifications__estimate {
+        min-width: 20%;
+    }
+
+    .payment-lineitem .notifications__estimate--center {
+        margin-left: auto;
+    }
+
+    .payment-lineitem__info h3 {
+        font-size: 16px;
+    }
+
+    .payment-lineitem__info p {
+        font-size: 14px;
+    }
+
+    .payment-lineitem .estimate__value {
+        font-size: 16px;
+    }
+
+    .payment-lineitem .estimate__title {
+        font-size: 14px;
+    }
+
+    .payment-lineitem .payment-lineitem__cta {
+        font-size: 14px;
+    }
+
+    .payment-lineitem .payment-lineitem__img {
+        width: 36px;
+        min-width: 36px;
+        height: 36px;
+        margin-right: 14px;
+    }
+
+    .filters-wrapper-content {
+        max-height: 780px;
+        flex-direction: column;
+        padding-bottom: 100px;
+        position: relative;
+
+        .payment-buttons {
+            position: absolute;
+            width: 100%;
+            left: 65px;
+            bottom: 40px;
+        }
+    }
+
+    .filter-section-1:not(.filter-section-3) {
+        flex-direction: column;
+        width: 250px;
+
+        .filters-checks {
+            margin-bottom: 20px;
+        }
+    }
+
+    .filter__section-label {
+        margin-bottom: 10px;
+    }
+
+    .filter-section-2 {
+        padding-left: 0;
+    }
+
+    .filter-section-2,
+    .filter-section-3,
+    .filter-section-4 {
+        width: calc(100% - 250px);
+    }
+
+    .filter-section-3 .ui.multiple.search.dropdown {
+        min-height: 120px;
+    }
+
+    .search {
+        .ticket-header__list {
+            height: 56px;
+            border-bottom: 1px solid $light-grey2;
+        }
+    }
+
+    .filters-wrapper {
+        top: 55px;
+    }
+
+    .moving-container {
+        width: 200vw;
+        transition: transform 0.4s ease-out;
+
+        > .col-6 {
+            margin-top: 100px;
+        }
+    
+        &.active {
+            transform: translateX(-100vw);
+
+            .search-box-wrapper  {
+                transform: translateX(100vw);
+                transition: transform 0.4s ease-out;
+            }
+        }
+    }
+
+    .tickets {
+        .search-box-wrapper {
+            position: absolute;
+            left: 0;
+            width: 100vw;
+            transition: transform 0.4s ease-out;
+        }
+    }
+    
+     
 }
 
 /* Tablet screens */
 @media only screen and (max-width : 767px) {
+
     body {
         font-size: 14px;
     }
@@ -144,11 +367,482 @@
     }
 
 
-.row {
-    &--select-type {
-        margin-bottom: 30px;
+    .row {
+        &--select-type {
+            margin-bottom: 30px;
+        }
     }
-} 
+
+    .rounded-small {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        font-size: 32px;
+        line-height: 30px;
+        font-weight: 300;
+
+        span {
+            line-height: 35px;
+            height: 35px;
+        }
+    }
+
+    #burger {
+        margin-right: 0px;
+    }
+    
+    #mobile-menu {
+        width: 100vw;
+        padding-top: 20px;
+    }
+
+    .post-ticket {
+        &__title {
+            margin-top: 7px; 
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        &__form {
+            padding: 26px 18px 45px;
+        }
+
+        &__input-title {
+            font-size: 16px;
+        }
+    }
+
+    .post-ticket__buttons .button {
+        max-width: 50%;
+        height: 54px;
+    }
+
+    .post-ticket__subtitle {
+        margin-bottom: 16px;
+    }
+
+    #multiple-upload {
+        margin-top: 0;
+    }
+
+    .fileupload {
+        &__wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 16px;
+        }
+
+        .file_uploaded__name {
+            max-width: 65%;
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .fileupload__button {
+        width: 160px;
+    }
+
+    textarea.input.height-150 {
+        height: 90px;
+    }
+
+    
+    .ui.modal {
+        > .content {
+            padding: 30px 50px !important;
+        }
+    }
+
+    .ticket-posted-modal__subtitle {
+        margin-bottom: 20px;
+    }
+
+    .ticket-posted-modal__title {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .ticket-posted-modal__subtitle {
+        font-size: 14px;
+    }
+
+    .notifications__date-time {
+        display: none;
+    }
+
+    .notifications__content {
+        padding: 18px 16px;
+    }
+
+    .notifications__main-text {
+        white-space: normal;
+    }
+
+    .notifications__list-item {
+        height: auto;
+    }
+
+    .notifications__main {
+        width: auto;
+        max-width: calc(100% - 50px);
+    }
+
+    .notifications {
+        padding-top: 40px;
+    }
+
+    .notifications__list {
+        border-top: 0;
+    }
+
+    .how-it-works {
+        padding: 20px 40px 20px 30px;
+    }
+    
+    .how-it-works__list-item {
+        padding-left: 75px;
+    }
+
+    .neeed-some-help {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .ticket-header__list {
+        min-height: 40px;
+    }
+
+    .ticket-header {
+        border-bottom: none;
+    }
+
+    .expert-lineitem {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .expert-lineitem__img {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+    }
+
+    .expert-lineitem__title {
+        font-size: 14px;
+    }
+
+    .expert-lineitem__action:not(.expert-lineitem__action--hired) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        margin-right: 15px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: $white;
+        border: 1px solid $blue2;
+
+        img {
+            margin: 0;
+        }
+
+        &:hover {
+            background-color: $blue2;
+        }
+    }
+
+    .expert-lineitem__line {
+        margin-left: -55px;
+        margin-bottom: 22px;
+    }
+
+    .stars-wrapper {
+        white-space: nowrap;
+
+        svg {
+            width: 11px;
+            height: 11px;
+        }
+    }
+
+    .expert-lineitem__name-section {
+        margin-left: 55px;
+    }
+
+    .expert-lineitem__status {
+        font-size: 12px;
+    }
+
+    .expert-lineitem__line .expert-lineitem__hourly-rate, 
+    .expert-lineitem__line .expert-lineitem__location {
+        margin-right: 15px;
+    }
+
+    .expert-lineitem__line .expert-lineitem__location {
+        max-width: 35px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: clip;
+    }
+
+    .hide-hover-mobile-only {
+        display: initial;
+    }
+
+    .hover-mobile-only {
+        display: none;
+    }
+
+
+
+    *:hover > {
+        .hide-hover-mobile-only {
+            display: none;
+        }
+
+        .hover-mobile-only {
+            display: initial;
+        }
+    }
+
+    .pagination {
+        display: none !important;
+    }
+
+    .experts-footer .load-more-link  {
+        display: block;
+    }
+
+    .active-indicator {
+        left: 65px;
+    }
+
+    .d-none + .dropdown--notifications.ui.dropdown {
+        display: none !important;
+    }
+
+    .post-a-ticket-cta {
+        margin-left: 14px;
+    }
+
+    .payment-lineitem {
+        padding: 31px 20px;
+
+        &:first-of-type {
+            margin-top: 20px;
+        }
+
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        &__img {
+            width: 37px;
+            min-width: 37px;
+            height: 37px;
+        }
+
+        &__info {
+            h3 {
+                color: $dark-grey;
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+            p {
+                color: $dark-grey;
+                font-size: 12px;
+                margin-top: 2px;
+            }
+        }
+
+        .estimate__value {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 0;
+        }
+
+        .estimate__title {
+            font-size: 12px;
+            color: $light-grey3;
+            margin-top: 2px;
+        }
+
+        .notifications__estimate {
+            margin-left: auto;
+        }
+    }
+
+    .line-1-mobile {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+    }
+    
+    .line-2-mobile {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+    }
+    
+    .line-3-mobile {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+    }
+
+    .tile--2-custom {
+        min-height: 50px;
+    }
+
+    .filters-cta {
+        background-image: url('../img/filters-blue.svg');
+        background-color: $white;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 24px 24px;
+    
+        &:hover {
+            background-image: url('../img/filters-white.svg');
+            background-color: $blue;
+        }
+    }
+
+    .ticket-header__list {
+        > li:last-of-type {
+            margin-left: auto;
+        }
+    }
+
+    .checkbox__wrapper--bold {
+        background-color: $blue5;
+        border-bottom: 1px solid $white;
+    }
+
+    .filters-wrapper-content {
+        padding-left: 0;
+        padding-right: 0;
+        max-height: none;
+    }
+
+    .filter__section-label {
+        padding: 0 20px;
+    }
+
+    .filter-section-1:not(.filter-section-3),
+    .filter-section-2, .filter-section-3, .filter-section-4 {
+        width: 100%;
+    }
+
+    .checkbox__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .filter-section-2, .filter-section-3, .filter-section-4 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .filter-section-4 {
+        display: flex;
+        flex-direction: column;
+    }
+     
+    .filter-section-4 .filters-checks {
+        width: 100%;
+    }
+
+    .filter-section-4 .filters-checks:last-of-type {
+        margin: 0;
+    }
+
+    .filters-wrapper.active {
+        max-height: none;
+    }
+
+    .filters-wrapper-content .payment-buttons {
+        left: 20px
+    }
+
+    .tile--ticket.tile--ticket-in-progress,
+    .tile--ticket.tile--ticket-posted,
+    .tile--ticket.tile--ticket-closed {
+        .ticket-header__list:after {
+            content: '';
+        }
+     }
+
+    .messages {
+        max-height: calc(100vh - 200px);
+    }
+
+    .ticket-header__list-item {
+        padding: 19px 15px;
+    }
+
+    .ticket-body--dialog {
+        padding-top: 0px;
+    }
+
+    .message-list__item {
+        padding: 15px;
+    }
+
+    .new-message-container form {
+        padding: 15px;
+    }
+
+    .new-message-container__send-button {
+        margin-left: 10px;
+    }
+
+    .ticket-body--files,
+    .ticket-body--payment {
+        padding: 15px;
+    }
+
+    .ui.modal.payment-method-add-modal .payment-method-add-modal__item, 
+    .ui.modal.payment-method-add-modal .payment-method-paypal-modal__item, 
+    .ui.modal.payment-method-paypal-modal .payment-method-add-modal__item, 
+    .ui.modal.payment-method-paypal-modal .payment-method-paypal-modal__item {
+        flex-direction: column;
+    }
+
+    .ui.modal.payment-method-add-modal .payment-method-add-modal__select-cta, 
+    .ui.modal.payment-method-add-modal .payment-method-paypal-modal__select-cta, 
+    .ui.modal.payment-method-paypal-modal .payment-method-add-modal__select-cta, 
+    .ui.modal.payment-method-paypal-modal .payment-method-paypal-modal__select-cta {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .ui.modal.payment-method-add-modal .payment-method-add-modal__name, 
+    .ui.modal.payment-method-add-modal .payment-method-paypal-modal__name, 
+    .ui.modal.payment-method-paypal-modal .payment-method-add-modal__name, 
+    .ui.modal.payment-method-paypal-modal .payment-method-paypal-modal__name {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .post-ticket .payment-buttons .button {
+        margin-right: 20px;
+    }
 }
 
 /* Small Devices */
@@ -162,10 +856,26 @@
         font-size: 14px;
     }
 
+    .expert-lineitem__line {
+        max-width: 110%;
+    }
 }
+
+/* Small Devices */
+@media only screen and (max-width : 440px) {
+    .expert-lineitem__action:last-of-type {
+        margin-right: 0;
+    }
+}
+
 
 /* Extra Small Devices */
 @media only screen and (max-width : 369px) {
+    .expert-lineitem {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .footer .terms-conditions a,
     .legal-notes {
         font-size: 10px;
@@ -185,6 +895,19 @@
             margin-bottom: 10px;
             order: 1;
         }
+    }
+
+    .expert-lineitem__line .expert-lineitem__hourly-rate {
+        font-size: 14px;
+    }
+
+    .expert-lineitem__line .expert-lineitem__hourly-rate, .expert-lineitem__line .expert-lineitem__location {
+        margin-right: 10px;
+    }
+
+    .expert-lineitem {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 

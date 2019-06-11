@@ -66,8 +66,12 @@ gulp.task('libs', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/jquery-validation/dist/jquery.validate.min.js',
+		'app/libs/UI-Accordion-master/accordion.min.js',
 		'app/libs/UI-Dropdown-master/dropdown.min.js',
-		'app/libs/UI-Transition-master/transition.min.js'
+		'app/libs/UI-Dimmer-master/dimmer.min.js',
+		'app/libs/UI-Modal-master/modal.min.js',
+		'app/libs/UI-Transition-master/transition.min.js',
+		'app/libs/Clamp/clamp.min.js'
 		])
 		.pipe(concat('libs.min.js'))
 		// .pipe(uglify())
