@@ -26,7 +26,7 @@ body {
     }
 
     &.fixed {
-        position: fixed; 
+        position: fixed;
         overflow: hidden;
     }
 }
@@ -138,6 +138,10 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+header {
+    z-index: 10;
 }
 
 .text-align-center {
@@ -470,7 +474,7 @@ textarea.input {
         color: $dark-grey;
         margin-bottom: 0;
     }
-    
+
     &__label {
         display: flex;
         align-items: center;
@@ -498,7 +502,7 @@ textarea.input {
     &.error {
        &~.checkbox__notification {
            display: block;
-        } 
+        }
     }
 
     &:checked,
@@ -548,7 +552,7 @@ button,
     margin-left: auto;
     margin-right: auto;
     -webkit-appearance: none;
-    
+
     &--100 {
         width: 100%;
     }
@@ -582,7 +586,7 @@ button,
         padding: 0;
         width: auto;
         height: auto;
-            
+
         &:hover,
         &.hover {
             background: none;
@@ -594,8 +598,34 @@ button,
         margin-right: 30px !important;
     }
 
+    &--edit {
+        background-color: none;
+        color: $light-grey3;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+
+        &:hover,
+        &.hover {
+            background: none;
+            color: $light-grey3;
+        }
+
+        img {
+            margin-right: 13px;
+        }
+    }
+
     &.max-160 {
         max-width: 160px;
+    }
+
+    &.button--square {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &.max-90 {
@@ -619,7 +649,7 @@ button,
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-size: 25px 25px;
-            background-color: $blue4;    
+            background-color: $blue4;
         }
     }
 
@@ -750,11 +780,11 @@ label.error {
 }
 
 hr {
-    height:1px; 
-    border:none; 
-    color:$border-color; 
+    height:1px;
+    border:none;
+    color:$border-color;
     background-color:$border-color;
-    text-align:center; 
+    text-align:center;
     margin: 0 auto;
     width: 100%;
 }
@@ -787,7 +817,7 @@ hr {
     }
 }
 
-.ui.default.dropdown:not(.button) > .text, 
+.ui.default.dropdown:not(.button) > .text,
 .ui.dropdown:not(.button) > .default.text {
     color: $light-grey3;
 }
@@ -802,7 +832,7 @@ hr {
     }
 }
 
-.ui.dropdown > input:not(.search):first-child, 
+.ui.dropdown > input:not(.search):first-child,
 .ui.dropdown > select {
     display: block !important;
     position: absolute !important;
@@ -893,7 +923,7 @@ hr {
                             font-weight: normal;
                         }
                     }
-        
+
                     &:hover {
                         a  {
                             color: $white;
@@ -933,7 +963,7 @@ hr {
 
         &--signout {
             background-image: url('../img/sign-out-blue.svg');
-        }        
+        }
     }
 }
 
@@ -994,9 +1024,9 @@ hr {
             background-size: 16px 16px;
             background-position: 10px 50%;
         }
-    }   
-    
-    
+    }
+
+
 }
 
 .message-icon {
@@ -1158,7 +1188,7 @@ hr {
 
     .menu {
         right: 0;
-        top: calc(100% + 20px);    
+        top: calc(100% + 20px);
     }
 }
 
@@ -1184,6 +1214,11 @@ hr {
         padding-top: 65px;
         padding-bottom: 65px;
     }
+
+    &--feed {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .tile {
@@ -1194,6 +1229,10 @@ hr {
         font-weight: 500;
         font-size: 16px;
         color: $dark-grey;
+    }
+
+    &--experts-no-tickets {
+        padding: 63px;
     }
 
     &--2 {
@@ -1278,6 +1317,8 @@ hr {
 
         &.active.visible {
             > .text {
+                color: $white;
+
                 &:not(.default) {
                     color: $white;
                 }
@@ -1299,7 +1340,7 @@ hr {
 
             &:hover {
                 background-color: $blue5;
-                
+
             }
         }
 
@@ -1340,7 +1381,7 @@ hr {
 }
 
 .search-title {
-    margin-bottom: 7px; 
+    margin-bottom: 7px;
 }
 
 .search-subtitle {
@@ -1362,6 +1403,10 @@ hr {
         width: 75px;
         height: 78px;
         right: -35px;
+    }
+
+    &--long {
+        max-width: 470px;
     }
 }
 
@@ -1454,7 +1499,7 @@ hr {
                     background-color: $blue3;
                 }
             }
-            
+
             > .item {
                 width: 200px;
             }
@@ -1464,7 +1509,7 @@ hr {
             transition: all 0.2s ease;
         }
 
-        
+
         &.active.visible {
             .dropdown.icon {
                 transform: rotate(180deg);
@@ -1479,7 +1524,7 @@ hr {
             left: auto;
 
             .item {
-                
+
                 width: 300px;
                 padding: 8px 11px;
 
@@ -1491,7 +1536,7 @@ hr {
                 }
 
                 .item__subtitle {
-                    font-size: 12px; 
+                    font-size: 12px;
                     font-weight: normal;
                     color: $dark-grey;
                 }
@@ -1608,7 +1653,7 @@ hr {
 
     &.tile--ticket-in-progress {
         .ticket-header__list {
-            position: relative; 
+            position: relative;
 
             &:after {
                 content: 'Ticket in progress';
@@ -1624,7 +1669,7 @@ hr {
 
     &.tile--ticket-closed {
         .ticket-header__list {
-            position: relative; 
+            position: relative;
 
             &:after {
                 content: 'Closed Ticket';
@@ -1639,7 +1684,7 @@ hr {
 
     &.tile--ticket-posted {
         .ticket-header__list {
-            position: relative; 
+            position: relative;
 
             &:after {
                 content: 'Posted Ticket';
@@ -1797,6 +1842,14 @@ hr {
             color: $blue;
             font-size: 14px;
         }
+
+        &[disabled] {
+            color: $light-grey3;
+
+            a {
+                color: $light-grey3;
+            }
+        }
     }
 }
 
@@ -1826,6 +1879,90 @@ hr {
             font-size: 16px;
         }
     }
+
+    &--contract {
+        padding: 38px 27px;
+
+        .ticket__name {
+            margin-bottom: 0;
+        }
+
+        .applied-experts__list.expert-lineitem:hover {
+            background: $white;
+        }
+
+        .fileupload__wrapper {
+            padding-left: 0;
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+.contract {
+    &__title {
+        color: $dark-grey;
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 19px;
+    }
+
+    &__row {
+        display: flex;
+
+        p {
+            margin: 0;
+        }
+
+        &--title {
+            margin-bottom: 50px;
+        }
+
+        &--flex {
+            display: flex;
+        }
+    }
+
+    &-info-block {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &__value {
+            font-weight: 500;
+            font-size: 20px;
+
+            .input__wrapper {
+                max-width: 120px;
+            }
+        }
+
+        &__header {
+            color: $blue;
+            font-weight: 500;
+            font-size: 16px;
+            width: 100%;
+            flex-basis: 100%;
+        }
+
+        button {
+            margin-left: 45px;
+            margin-right: 0px;
+        }
+
+        &__input {
+            margin-right: 25px;
+        }
+    }
+
+    &__switch {
+        color: $blue;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
 }
 
 .payment-row {
@@ -1834,6 +1971,7 @@ hr {
     &:last-of-type,
     &.payment-row--last {
         margin-bottom: 45px;
+        flex-wrap: wrap;
     }
 
     .payment-info-block {
@@ -1855,6 +1993,14 @@ hr {
         &:last-of-type {
             margin-left: auto;
         }
+    }
+
+    .payment-alert-block {
+        width: 100%;
+        color: $light-grey3;
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-top: 10px;
     }
 
     &--info {
@@ -1923,6 +2069,10 @@ hr {
         margin-bottom: 0;
     }
 
+    &__request {
+        color: $blue;
+    }
+
     &__rate-2 {
         margin-left: auto;
         margin-top: 3px;
@@ -1961,6 +2111,24 @@ hr {
         color: $dark-grey;
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+.skills {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        background-color: $blue;
+        color: $white;
+        margin: 0;
+        margin-right: 14px;
+        margin-bottom: 14px;
+        padding: 3px 6px;
+        border-radius: 6px;
+        font-size: 14px;
     }
 }
 
@@ -2032,7 +2200,7 @@ hr {
         align-items: center;
         cursor: pointer;
         border-radius: 5px;
-        
+
         span {
             font-size: 24px;
             margin-right: 5px;
@@ -2259,7 +2427,7 @@ hr {
 }
 
 .ui.accordion {
-    .title .dropdown.icon, 
+    .title .dropdown.icon,
     .accordion .title .dropdown.icon {
         position: absolute;
         right: 15px;
@@ -2272,7 +2440,7 @@ hr {
 }
 
 .ui.accordion:not(.styled) {
-    .title ~ .content:not(.ui), 
+    .title ~ .content:not(.ui),
     .accordion .title ~ .content:not(.ui) {
         border-bottom: 1px solid $light-grey6;
         padding: 0;
@@ -2293,7 +2461,7 @@ hr {
                     a {
                         color: $blue;
                     }
-    
+
                 }
             }
         }
@@ -2599,14 +2767,113 @@ hr {
     }
 }
 
+.applied-experts {
+    &__header {
+        color: $blue;
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+
+    &__hire-descr {
+        display: flex;
+    }
+
+    &__right-descr {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__hire-btn {
+        max-width: 110px;
+        width: 110px;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        margin-left: -25px;
+        margin-right: -25px;
+
+        &.expert-lineitem {
+            padding-left: 25px;
+            padding-right: 45px;
+
+            &:hover {
+                background-color: $blue5;
+            }
+        }
+    }
+}
+
+.decline-expert-modal {
+    max-width: 600px;
+
+    &__title {
+        color: $blue;
+        font-weight: 500;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+
+        button {
+            max-width: 115px;
+            width: 115px;
+        }
+    }
+
+    .checkbox__wrapper {
+        justify-content: center;
+    }
+
+    .payment-method-add-modal__close-button {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 20px;
+        right: 20px;
+
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: $blue;
+            display: block;
+            transform: rotate(-45deg);
+        }
+
+        &:before {
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.expert-lineitem__action:last-of-type:first-of-type {
+    margin-right: auto;
+    margin-left: auto;
+}
+//Experts section END
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
 	padding:0 !important;
 	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
+	height: 1px !important;
+	width: 1px !important;
 	overflow: hidden;
 }
 
@@ -2614,23 +2881,23 @@ hr {
 .stars-wrapper:not(.stars-wrapper--static) {
   svg {
     cursor: pointer;
-    
+
     path {
       fill: #388ccb;
     }
   }
-  
-  input:checked {   
+
+  input:checked {
     ~ label svg {
       path {
         fill: grey;
       }
     }
   }
-  
+
   &:hover {
-    cursor: pointer; 
-    
+    cursor: pointer;
+
     label svg {
       path {
         fill: #388ccb;
@@ -2645,13 +2912,13 @@ hr {
   &.stars-wrapper--static {
     svg {
         cursor: pointer;
-        
+
         path {
           fill: #388ccb;
         }
       }
-      
-      input:checked {   
+
+      input:checked {
         ~ label svg {
           path {
             fill: grey;
@@ -2713,7 +2980,7 @@ hr {
             &:not(.disabled):hover {
                 text-decoration: underline;
                 color: $blue;
-                
+
                 svg path {
                     stroke: $blue;
                 }
@@ -2722,7 +2989,7 @@ hr {
         &.hidden {
             display: none;
         }
-    }    
+    }
 }
 
 #select-tickets-tabs {
@@ -2901,7 +3168,7 @@ hr {
 
     .filters-checks {
         width: calc(100%/2);
-        
+
         &:last-of-type {
             margin-left: 20px;
         }
@@ -2946,7 +3213,7 @@ hr {
         height: 40px;
         font-size: 14px;
     }
-    
+
     form {
         display: flex;
         background: #fff;
@@ -3032,5 +3299,6 @@ hr {
     overflow-y: auto;
 }
 // Files attachments END
+@import "feed";
 
 @import "media";

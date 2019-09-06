@@ -16,7 +16,7 @@
 /*==========  Desktop First  ==========*/
 
 @media only screen and (max-width: 1679px) {
-  
+
 }
 
 @media only screen and (max-width: 1279px) {
@@ -71,7 +71,14 @@
         margin-top: 22px;
         margin-bottom: 55px;
     }
-    
+
+    .tile--experts-no-tickets {
+        padding-top: 22px;
+        padding-bottom: 22px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .no-tickets-text {
         font-size: 14px;
         margin-top: 10px;
@@ -92,6 +99,12 @@
 
     .how-it-works__title {
         padding-left: 95px;
+    }
+
+    .how-it-works--expert {
+        .how-it-works__list-item-text {
+            max-width: 60%;
+        }
     }
 
     .expert-lineitem {
@@ -220,7 +233,7 @@
         > .col-6 {
             margin-top: 100px;
         }
-    
+
         &.active {
             transform: translateX(-100vw);
 
@@ -239,8 +252,8 @@
             transition: transform 0.4s ease-out;
         }
     }
-    
-     
+
+
 }
 
 /* Tablet screens */
@@ -361,7 +374,7 @@
         }
     }
 
-    button, 
+    button,
     .button {
         max-width: 100%;
     }
@@ -390,7 +403,7 @@
     #burger {
         margin-right: 0px;
     }
-    
+
     #mobile-menu {
         width: 100vw;
         padding-top: 20px;
@@ -398,7 +411,7 @@
 
     .post-ticket {
         &__title {
-            margin-top: 7px; 
+            margin-top: 7px;
             margin-bottom: 20px;
             font-size: 16px;
         }
@@ -451,7 +464,7 @@
         height: 90px;
     }
 
-    
+
     .ui.modal {
         > .content {
             padding: 30px 50px !important;
@@ -503,7 +516,7 @@
     .how-it-works {
         padding: 20px 40px 20px 30px;
     }
-    
+
     .how-it-works__list-item {
         padding-left: 75px;
     }
@@ -580,7 +593,7 @@
         font-size: 12px;
     }
 
-    .expert-lineitem__line .expert-lineitem__hourly-rate, 
+    .expert-lineitem__line .expert-lineitem__hourly-rate,
     .expert-lineitem__line .expert-lineitem__location {
         margin-right: 15px;
     }
@@ -688,7 +701,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 1;
     }
-    
+
     .line-2-mobile {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -696,7 +709,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 2;
     }
-    
+
     .line-3-mobile {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -715,7 +728,7 @@
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: 24px 24px;
-    
+
         &:hover {
             background-image: url('../img/filters-white.svg');
             background-color: $blue;
@@ -762,7 +775,7 @@
         display: flex;
         flex-direction: column;
     }
-     
+
     .filter-section-4 .filters-checks {
         width: 100%;
     }
@@ -816,24 +829,24 @@
         padding: 15px;
     }
 
-    .ui.modal.payment-method-add-modal .payment-method-add-modal__item, 
-    .ui.modal.payment-method-add-modal .payment-method-paypal-modal__item, 
-    .ui.modal.payment-method-paypal-modal .payment-method-add-modal__item, 
+    .ui.modal.payment-method-add-modal .payment-method-add-modal__item,
+    .ui.modal.payment-method-add-modal .payment-method-paypal-modal__item,
+    .ui.modal.payment-method-paypal-modal .payment-method-add-modal__item,
     .ui.modal.payment-method-paypal-modal .payment-method-paypal-modal__item {
         flex-direction: column;
     }
 
-    .ui.modal.payment-method-add-modal .payment-method-add-modal__select-cta, 
-    .ui.modal.payment-method-add-modal .payment-method-paypal-modal__select-cta, 
-    .ui.modal.payment-method-paypal-modal .payment-method-add-modal__select-cta, 
+    .ui.modal.payment-method-add-modal .payment-method-add-modal__select-cta,
+    .ui.modal.payment-method-add-modal .payment-method-paypal-modal__select-cta,
+    .ui.modal.payment-method-paypal-modal .payment-method-add-modal__select-cta,
     .ui.modal.payment-method-paypal-modal .payment-method-paypal-modal__select-cta {
         margin-left: 0;
         margin-top: 10px;
     }
 
-    .ui.modal.payment-method-add-modal .payment-method-add-modal__name, 
-    .ui.modal.payment-method-add-modal .payment-method-paypal-modal__name, 
-    .ui.modal.payment-method-paypal-modal .payment-method-add-modal__name, 
+    .ui.modal.payment-method-add-modal .payment-method-add-modal__name,
+    .ui.modal.payment-method-add-modal .payment-method-paypal-modal__name,
+    .ui.modal.payment-method-paypal-modal .payment-method-add-modal__name,
     .ui.modal.payment-method-paypal-modal .payment-method-paypal-modal__name {
         margin-left: 0;
         margin-top: 20px;
@@ -847,6 +860,26 @@
 
 /* Small Devices */
 @media only screen and (max-width : 539px) {
+    .how-it-works--expert {
+        .how-it-works__list-item-text {
+            max-width: 100%;
+            font-size: 12px;
+        }
+
+        .how-it-works__img {
+            width: 45px;
+            height: 45px;
+        }
+
+        .how-it-works__list-item {
+            padding-left: 60px;
+        }
+
+        .how-it-works__list-item-title {
+            font-size: 16px;
+        }
+    }
+
     .tile--form-login {
         padding: 32px 40px 20px;
         background-image: none;
@@ -937,20 +970,20 @@
             .form--login {
                 padding: 28px 60px 20px;
             }
-        
+
             .back-to-experts {
                 padding: 18px 60px 30px;
-        
+
                 .form__title {
                     margin-bottom: 19px;
                 }
             }
-        
+
             .link--login {
                 margin-bottom: 8px;
                 font-size: 14px;
             }
-        
+
             .form__title {
                 margin-bottom: 20px;
             }
@@ -1043,7 +1076,7 @@
 
             hr.d-md-block {
                 display: none !important;
-            } 
+            }
 
             .form__title {
                 margin-bottom: 10px;

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.976" height="27.1" viewBox="0 0 19.976 27.1">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none;stroke:#fff;fill-rule:evenodd}.cls-2{stroke-linecap:square}
+        </style>
+    </defs>
+    <g id="pencil" transform="translate(1.188 .107)">
+        <g id="Profile" transform="translate(-909 -697)">
+            <g id="Group-2" transform="translate(287 162)">
+                <g id="Rectangle-2" transform="translate(0 500)">
+                    <g id="Pencil-2" data-name="Pencil" transform="rotate(30 254.054 1200.132)">
+                        <path id="Rectangle" d="M1.731 1.387a.5.5 0 0 0-.5.5V23.14a2.5 2.5 0 0 0 .425 1.394l1.365 2.032a1.759 1.759 0 0 0 2.92 0l1.365-2.032a2.5 2.5 0 0 0 .425-1.394V1.887a.5.5 0 0 0-.5-.5z" class="cls-1"/>
+                        <path id="Line" d="M1.4 6.579h5.961" class="cls-2"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
