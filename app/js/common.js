@@ -315,6 +315,40 @@ function fixCTATile() {
     })
 }
 
+function editButton() {
+    $(document).on('click','.js-edit-button', function(){
+        var $this = $(this);
+        var $target = $this.siblings('.js-edit-target');
+
+        if ($target.length) {
+            var $amount = $target.find('.js-edit-target-amount');
+            var text = $target.find('.input__wrapper').find('input').val();
+
+            $target.find('.input__wrapper').find('input').val($amount.text().trim());
+
+            $target.find('.input__wrapper').toggleClass('hide');
+            $target.find('span').toggleClass('hide');
+
+            if (text) {$amount.text(parseInt(text));}
+        }
+    })
+}
+
+
+function switchPaymentButton() {
+    $(document).on('click','.js-contract__switch', function(e){
+        e.preventDefault();
+
+        var $this = $(this);
+        var $target = $this.parents('form');
+
+        if ($target.length) {
+            var $internalTargets = $target.find('.js-fixed, .js-hourly');
+            $internalTargets.toggleClass('hide');
+        }
+    })
+}
+
 function modalsShow() {
     $(document).on('click', '.js-show-modal', function(){
         var $self = $(this);
@@ -658,6 +692,11 @@ function initEvents() {
         addPaymentMethod();
     }
 
+    //functions called for applying-for-job page only
+    if ($('body').hasClass('applying-for-job')) {
+        addPaymentMethod();
+    }
+
     //functions called for posted-ticket page only
     if ($('body').hasClass('posted-tickets')) {
         // toggleSkillsCategories();
@@ -673,6 +712,9 @@ function initEvents() {
     customFileUpload();
     initBurger();
     notificaions();
+
+    editButton();
+    switchPaymentButton();
 
     TabOnLoad();
     addDepositButton();

@@ -131,6 +131,7 @@
         display: flex;
         flex-wrap: wrap;
         padding-right: 95px;
+        margin-left: -16px;
     }
 
     &__link {
@@ -338,10 +339,8 @@
     }
 
     &__details-row {
-        @media screen and (max-width: 767px){
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 

@@ -598,6 +598,10 @@ button,
         margin-right: 30px !important;
     }
 
+    &--14 {
+        font-size: 14px;
+    }
+
     &--edit {
         background-color: none;
         color: $light-grey3;
@@ -1219,6 +1223,12 @@ hr {
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
+
+    &--applying {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .tile {
@@ -1602,6 +1612,10 @@ hr {
     &__text {
         max-width: 60%;
         margin-left: 8px;
+
+        &--full {
+            max-width: 80%;
+        }
     }
 
     &__name {
@@ -3300,5 +3314,6 @@ hr {
 }
 // Files attachments END
 @import "feed";
+@import "application";
 
 @import "media";

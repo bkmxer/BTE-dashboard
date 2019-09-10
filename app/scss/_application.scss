@@ -1,0 +1,54 @@
+.applying-for-job {
+    &__title {
+        font-size: 22px;
+    }
+
+    &__title-wrapper {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__date {
+        margin-left: 50px;
+    }
+
+    &__details {
+        margin-bottom: 33px;
+        width: 100%;
+
+        >div:last-child {
+            margin-left: auto;
+            margin-right: 10%;
+
+            @media screen and (max-width: 1024px) {
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__ticket-body {
+        border-bottom: 1px solid $grey3;
+    }
+
+    &__details {
+        display: flex;
+    }
+
+    &__file_upload {
+        padding-left: 0;
+    }
+
+    &__switch {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
