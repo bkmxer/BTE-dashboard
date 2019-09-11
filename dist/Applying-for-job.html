@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <!-- [TODO] Add the proper title if needed -->
+    <title>Back to Experts</title>
+
+    <!-- [TODO] Add the description -->
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="img/Logo.jpg">
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Template Basic Images End -->
+
+    <!-- Load Fonts CSS Start -->
+    <link rel="stylesheet" href="css/fonts.min.css">
+    <!-- Load Fonts CSS End -->
+
+    <!-- Load Bootstrap 4 Grid Start -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- Load CusBootstrap 4 Grid End -->
+
+    <!-- Load Custom CSS Start -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- Load Custom CSS End -->
+
+
+    <!-- Custom Browsers Color Start -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content=" #2871C6">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content=" #2871C6">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content=" #2871C6">
+    <!-- Custom Browsers Color End -->
+
+</head>
+
+<body class="applying-for-job">
+    <!--[Structure] Header START -->
+    <header>
+        <!--[Structure] Navbar START -->
+        <nav class="navigation">
+            <div class="container container-fluid-small">
+                <div class="row">
+                    <div class="col-4 col-lg-2">
+                        <div class="main-logo">
+                            <a href="./Client_dashboard.html"><img src="img/logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-5  d-none d-lg-flex">
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <div class="ui dropdown dropdown-2 dropdown--my-tickets dropdown--my-experts">
+                                    <a href="#">My tickets</a>
+                                    <div class="menu">
+                                        <div class="item">
+                                            <a href="./My-feed.html">My Feed</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./Tickets-progress.html">Received propositions</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./Tickets-progress.html">Tickets in progress</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./Tickets-posted.html">Posted tickets</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./Tickets-closed.html">Closed tickets</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <div class="ui dropdown dropdown-2 dropdown--my-tickets dropdown--my-experts">
+                                    <a href="#">My Resolutions</a>
+                                    <div class="menu">
+                                        <div class="item">
+                                            <a href="./My_Experts.html?data-tab=workingnow">Working Now</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./My_Experts.html?data-tab=recent">Recent</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./My_Experts.html?data-tab=archived">Archived</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <div class="ui dropdown dropdown-2">
+                                    <a href="#">My Wallet</a>
+                                    <div class="menu">
+                                        <div class="item">
+                                            <a href="./Payments.html?data-tab=all">All Payments</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./Payments.html?data-tab=recent">Recent</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./Payments.html?data-tab=closed">Closed</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Reports</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-8 col-lg-5">
+                        <div class="account-menu">
+
+                            <!-- Messages block START -->
+                            <div class="account-menu__item">
+                                <a href="././Client_dashboard.html?data-tab=dialog">
+                                    <i class="message-icon"></i>
+                                </a>
+                            </div>
+                            <!-- Messages block END -->
+
+                                <!-- Notification block START -->
+                                <div class="account-menu__item">
+                                <!-- Notifications icon for mobile START -->
+                                <a href="./Notifications.html" class="d-inline-block d-md-none">
+                                    <i class="bell-notifications"></i>
+                                </a>
+                                <!-- Notifications icon for mobile END -->
+
+                                <!-- Notifications icon for desktop START -->
+                                <div class="d-none d-md-inline-block on-click-notifications">
+                                    <div class="ui dropdown dropdown-2 dropdown--notifications">
+                                        <i class="bell-notifications"></i>
+                                        <div class="menu">
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Notifications icon for desktop END -->
+                                </div>
+                                <!-- Notification block END -->
+
+                            <!-- Burger START -->
+                            <div id="burger">
+                                <i></i>
+                            </div>
+                            <!-- Burger END -->
+
+                            <!-- Account Menu DESKTOP START -->
+                            <div class="account-menu__item  d-none d-lg-flex">
+                                <div class="account-wrapper ui dropdown">
+                                    <div class="account__img">
+                                    <!-- <img src="../img" alt="profile-photo"> -->
+                                    </div>
+                                    <div class="account__name">
+                                        <span>Name Surname</span>
+                                    </div>
+
+                                    <div class="account__dropdown-cta">
+                                        <a href="#">
+                                            <i class="dropdown-cta"></i>
+                                        </a>
+                                    </div>
+                                    <div class="menu">
+                                        <a href="#" class="item account-menu__link account-menu__link--settings">
+                                            Account settings
+                                        </a>
+                                        <a href="#" class="item account-menu__link account-menu__link--signout">
+                                            Logout
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Account Menu DESKTOP END -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--[Structure] Navbar END -->
+    </header>
+    <!--[Structure] Header END -->
+
+    <!--[Structure] Main START -->
+    <main class="main-content main-content--applying">
+        <div class="container container-fluid-small">
+            <div class="row justify-content-center">
+
+                <div class="col-12 feed__wrapper">
+                    <div class="search-box-wrapper">
+                        <form action="#" id="search-box" class="">
+                            <label class="input__wrapper input__wrapper--search">
+                                <input type="text" class="input input-seach" placeholder="Search a Ticket" name="search-expert">
+                                <button type="button" class="button button--no-style">
+                                    <i class="search-icon-blue"></i>
+                                </button>
+                            </label>
+                        </form>
+                        <a href='#' type="button" class="button post-a-ticket-cta button--square">
+                            <span class="d-flex">
+                                <img src="./img/menu-2.svg" alt="menu">
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="tile tile--2 mb-3">
+                            <div class="ticket-header">
+                            <div class="ticket-header__list applying-for-job__title-wrapper">
+                                <h1 class="similar-to-h2 applying-for-job__title">
+                                    Applying for the job
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="ticket-body applying-for-job__ticket-body" data-tab="ticket">
+                            <h2 class="ticket__name">Anti Virus not Functioning</h2>
+                            <div class="ticket__details-row ticket__details-row--top-aligned">
+                                <div class="opened-ticket__details applying-for-job__details">
+                                    <div class="feed-item__name opened-ticket__name">
+                                        Naeem Ahmad
+                                    </div>
+
+                                    <div class="expert-lineitem__location">
+                                        <img src="./img/location.svg" alt="location icon">
+                                        <span class="d-inline">Australia</span>
+                                    </div>
+
+                                    <div class="expert-lineitem__rating">
+                                        <div class="stars-wrapper stars-wrapper--static">
+                                            <label for="r1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                            <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"></path>
+                                            </g>
+                                            </svg>
+                                            </label>
+                                            <input type="radio" class="visually-hidden" value="1" name="rating" id="r1">
+
+                                            <label for="r2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                            <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"></path>
+                                            </g>
+                                            </svg>
+                                            </label>
+                                            <input type="radio" class="visually-hidden" value="2" name="rating" id="r2">
+
+                                            <label for="r3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                            <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"></path>
+                                            </g>
+                                            </svg>
+                                            </label>
+                                            <input type="radio" class="visually-hidden" value="3" name="rating" id="r3">
+
+                                            <label for="r4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                            <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"></path>
+                                            </g>
+                                            </svg>
+                                            </label>
+                                            <input type="radio" class="visually-hidden" value="4" name="rating" id="r4">
+
+                                            <label for="r5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                            <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"></path>
+                                            </g>
+                                            </svg>
+                                            </label>
+                                            <input type="radio" class="visually-hidden" value="5" name="rating" id="r5" checked="">
+                                        </div>
+                                    </div>
+
+                                    <p class="ticket__date applying-for-job__date">
+                                        February 10 - 2019, 18:43 PM
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="opened-ticket__details-row">
+                                <div class="opened-ticket__details-2">
+                                    <span class="opened-ticket__detail-title">Category:</span>
+                                    <span class="opened-ticket__detail-value">Security</span>
+                                </div>
+                                <div class="opened-ticket__details-2">
+                                    <span class="opened-ticket__detail-title">Vendor:</span>
+                                    <span class="opened-ticket__detail-value">McAfee</span>
+                                </div>
+                            </div>
+
+                            <div class="ticket__description opened-ticket__description">Project description</div>
+
+                            <p class="ticket__description-text">
+                                Here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something
+                            </p>
+                                     <div class="ticket__description">
+                                Skills required
+                            </div>
+                            <p class="ticket__description-text skills__list">
+                                <a href="#" class="skills__item">
+                                    Business analitics
+                                </a>
+                                <a href="#" class="skills__item">
+                                    HTML
+                                </a>
+                                <a href="#" class="skills__item">
+                                    CSS
+                                </a>
+                                <a href="#" class="skills__item">
+                                    JavaScript
+                                </a>
+                                <a href="#" class="skills__item">
+                                    UI/UX
+                                </a>
+                                <a href="#" class="skills__item">
+                                    Product management
+                                </a>
+                            </p>
+                            <div class="ticket__description">
+                                Attachments
+                            </div>
+                            <div class="ticket__description-text opened-ticket__description-text">
+                                <div class="file_uploaded">
+                                    <span class="file_uploaded__icon">
+                                        <i class="icon-file"></i>
+                                    </span>
+                                    <span class="file_uploaded__name">Filename</span>
+                                    <span class="file_uploaded__size">1219 kB</span>
+                                </div>
+                                <div class="file_uploaded">
+                                    <span class="file_uploaded__icon">
+                                        <i class="icon-file"></i>
+                                    </span>
+                                    <span class="file_uploaded__name">Filename 2</span>
+                                    <span class="file_uploaded__size">119 kB</span>
+                                </div>
+                                <div class="file_uploaded">
+                                    <span class="file_uploaded__icon">
+                                        <i class="icon-file"></i>
+                                    </span>
+                                    <span class="file_uploaded__name">Filename 2</span>
+                                    <span class="file_uploaded__size">119 kB</span>
+                                </div>
+                                <div class="file_uploaded">
+                                    <span class="file_uploaded__icon">
+                                        <i class="icon-file"></i>
+                                    </span>
+                                    <span class="file_uploaded__name">Filename</span>
+                                    <span class="file_uploaded__size">1219 kB</span>
+                                </div>
+                                <div class="file_uploaded">
+                                    <span class="file_uploaded__icon">
+                                        <i class="icon-file"></i>
+                                    </span>
+                                    <span class="file_uploaded__name">Filename 2</span>
+                                    <span class="file_uploaded__size">119 kB</span>
+                                </div>
+                                <div class="file_uploaded">
+                                    <span class="file_uploaded__icon">
+                                        <i class="icon-file"></i>
+                                    </span>
+                                    <span class="file_uploaded__name">Filename 2</span>
+                                    <span class="file_uploaded__size">119 kB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket-body">
+                            <form action="#" class="form-check-close">
+                                <div class="applying-for-job__details">
+                                        <div>
+                                            <h2 class="mb-0">
+                                                What's your rate for this job?
+                                            </h2>
+                                            <p class="post-ticket__subtitle">
+                                                    Edit or leave the default hourly rate for this  job
+                                            </p>
+
+                                            <div class="contract-info-block js-hourly">
+                                                <h2 class="contract-info-block__header">
+                                                    Hourly rate
+                                                </h2>
+                                                <div class="contract-info-block__value js-edit-target js-contract-info-block__value--rate">
+                                                    <span>$</span><span class="js-edit-target-amount">17</span><span>/ hour</span>
+                                                    <label class="input__wrapper mb-0 hide">
+                                                        <input type="text" class="input" placeholder="Hourly rate" name="contract-hour-rate">
+                                                    </label>
+                                                </div>
+                                                <button type="button" class="button--no-style button--edit js-edit-button">
+                                                    <img src="./img/pencil.svg" alt="edit button">
+                                                    <span>Edit</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="contract-info-block js-fixed hide">
+                                                <h2 class="contract-info-block__header">
+                                                    Fixed Price
+                                                </h2>
+                                                <div class="contract-info-block__value js-edit-target js-contract-info-block__value--rate">
+                                                    <span>$</span><span class="js-edit-target-amount">300</span>
+                                                    <label class="input__wrapper mb-0 hide">
+                                                        <input type="text" class="input" placeholder="Hourly rate" name="contract-hour-rate">
+                                                    </label>
+                                                </div>
+                                                <button type="button" class="button--no-style button--edit js-edit-button">
+                                                    <img src="./img/pencil.svg" alt="edit button">
+                                                    <span>Edit</span>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                        <div>
+                                            <h2 class="d-none d-lg-block">
+                                                If you know the exact estimate switch to Fixed price
+                                            </h2>
+                                            <p class="post-ticket__subtitle mt-2">
+                                                <a href="#" class="contract__switch applying-for-job__switch js-contract__switch">
+                                                    <span class="js-fixed">Want to switch to Fixed price?</span>
+                                                    <span class="js-hourly hide">Want to switch to Hourly payment?</span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <h2 class="mb-0">
+                                        How would you like to get paid?
+                                    </h2>
+                                    <p class="post-ticket__subtitle">
+                                            Add a Payment method so you'll be able to receive your funds from BTE
+                                    </p>
+
+                                    <a href="#" class="contract__switch applying-for-job__switch js-button-add-payment-method">
+                                            Add Payment method
+                                    </a>
+
+                                    <h2 class="post-ticket__input-title mt-5">
+                                        Cover Letter
+                                    </h2>
+
+                                    <p class="post-ticket__subtitle">
+                                        Let the client know who you are and how exactly you can help
+                                    </p>
+                                    <label class="input__wrapper mb-2">
+                                        <textarea class="input height-150" name="description" maxlength="2000"></textarea>
+                                        <p class="input__notification">Proffesion title is required</p>
+                                    </label>
+
+                                    <div id="multiple-upload"></div>
+
+                                    <div class="fileupload__wrapper applying-for-job__file_upload file_upload">
+                                        <div class="file_upload__label"></div>
+                                        <input type="file" name="fileupload" value="fileupload" id="upload-file" multiple class="visually-hidden">
+                                        <label for="fileupload" class="fileupload__button"> <span>+</span>    Upload Files </label>
+                                    </div>
+
+                                    <label class="checkbox__wrapper checkbox__wrapper--2 mb-4 mt-3">
+                                        <input type="checkbox" class="checkbox checkbox--2" required>
+                                        <div class="checkbox__label">
+                                            I Agree on BTE Terms &amp; Conditions
+                                        </div>
+                                    </label>
+
+                                    <div class="post-ticket__buttons">
+                                        <!-- real button -->
+                                        <input type="submit" class="button button--post button--14 js-button-post max-160" value="Post my ticket">
+                                        <!-- real button -->
+
+                                        <button type="button" class="button button--no-style button--14  post-ticket__discard">Discard</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--[Structure] Main END -->
+
+    <!--[Structure] Mobile Header START -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="ui accordion">
+            <div class="title">
+                <i class="dropdown icon"></i>
+                <a href="#">My tickets</a>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li><a href="./My-feed-html">My Feed</a></li>
+                    <li><a href="#">Received propositions</a></li>
+                    <li><a href="./Tickets-progress.html">Tickets in progress</a></li>
+                    <li><a href="./Tickets-posted.html">Tickets posted</a></li>
+                    <li><a href="./Tickets-closed.html">Tickets closed</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                <a href="#">My Resolutions</a>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li><a href="./My_Experts.html?data-tab=all">All Experts</a></li>
+                    <li><a href="./My_Experts.html?data-tab=workingnow">Working Now</a></li>
+                    <li><a href="./My_Experts.html?data-tab=recent">Recent</a></li>
+                    <li><a href="./My_Experts.html?data-tab=archived">Archived</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                <a href="#">My Wallet</a>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li><a href="./Payments.html?data-tab=all">All Payments</a></li>
+                    <li><a href="./Payments.html?data-tab=recent">Recent</a></li>
+                    <li><a href="./Payments.html?data-tab=closed">Closed</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                <a href="#">Reports</a>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li>
+                        <a href="#">
+                            All Reports
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Recent
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Closed
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Archived
+                        </a>
+                    </li>
+                </ul>
+            </div>
+             <div class="title">
+                <i class="dropdown icon"></i>
+                 <div class="account-wrapper">
+                    <div class="account__img">
+                        <!-- <img src="../img" alt="profile-photo"> -->
+                    </div>
+                    <div class="account__name">
+                        <span>Name Surname</span>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li><a href="#" class="item account-menu__link account-menu__link--settings">Account settings</a></li>
+                    <li><a href="#" class="item account-menu__link account-menu__link--signout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--[Structure] Mobile Header END -->
+
+
+    <!-- [Structure] Chose payment method modal START -->
+    <div class="ui modal decline-expert-modal" id="decline-expert-modal">
+        <div class="content">
+            <div class="decline-expert-modal__title">
+                Decline expert
+            </div>
+            <p class="decline-expert-modal__subtitle">Are you sure you want to decline this Expert?</p>
+            <label class="checkbox__wrapper checkbox__wrapper--2">
+                <input type="checkbox" class="checkbox checkbox--2">
+                <div class="checkbox__label">
+                    Don't show this again
+                </div>
+            </label>
+            <div class="decline-expert-modal__buttons">
+                <!-- popup emulation button -->
+                <button type="button" class="button button--post js-modal-close">Archive</button>
+                <!-- popup emulation button -->
+
+                <button type="button" class="button button--no-style post-ticket__discard js-modal-close">Decline</button>
+            </div>
+            <button type="button" class="button button--no-style js-modal-close payment-method-add-modal__close-button"></button>
+        </div>
+    </div>
+    <!-- [Structure] Chose payment method modal START -->
+
+    <!-- [Structure] Chose payment method modal START -->
+    <div class="ui modal payment-method-add-modal" id="payment-method-add-modal">
+        <div class="content">
+            <div class="payment-method-add-modal__title">
+                Add Payment Method
+            </div>
+
+            <div class="payment-method-add-modal__item">
+                <img src="./img/pay-pal.svg" alt="paypal" class="payment-method-add-modal__img">
+                <span  class="payment-method-add-modal__name">Paypal</span>
+                <button class="payment-method-add-modal__select-cta button button--white max-90 js-show-modal"
+                        data-modal-id="payment-method-paypal-modal">
+                        Select
+                </button>
+            </div>
+            <div class="payment-method-add-modal__item">
+                <img src="./img/cards.svg" alt="mastercard / visa" class="payment-method-add-modal__img">
+                <span  class="payment-method-add-modal__name">Credit or Debit Card</span>
+                <button class="payment-method-add-modal__select-cta button button--white max-90 js-show-modal"
+                        data-modal-id="payment-method-card-1-modal">
+                        Select
+                </button>
+            </div>
+            <button type="button" class="button button--no-style js-modal-close payment-method-add-modal__close-button"></button>
+        </div>
+    </div>
+    <!-- [Structure] Chose payment method modal START -->
+
+    <!-- [Structure] Paypal modal START -->
+    <div class="ui modal payment-method-paypal-modal" id="payment-method-paypal-modal">
+        <div class="content">
+            <div class="payment-method-add-modal__title">
+                Pay with Pay-Pal
+            </div>
+
+            <div class="payment-method-add-modal__item">
+                <img src="./img/pay-pal.svg" alt="paypal" class="payment-method-add-modal__img">
+                <span  class="payment-method-add-modal__name">Paypal</span>
+                <button class="payment-method-add-modal__select-cta button button--white max-90">Pay</button>
+            </div>
+            <button type="button" class="button button--no-style js-modal-close payment-method-add-modal__close-button"></button>
+        </div>
+    </div>
+    <!-- [Structure] Paypal modal END -->
+
+    <!-- [Structure] Card modal START -->
+    <div class="ui modal payment-method-paypal-modal" id="payment-method-card-1-modal">
+        <div class="content">
+            <div class="payment-method-add-modal__title">
+                    Card Information
+            </div>
+
+            <div class="payment-method-add-modal__item payment-method-add-modal__item--only">
+                <img src="./img/cards.svg" alt="paypal" class="payment-method-add-modal__img">
+                <span  class="payment-method-add-modal__name">Credit or Debit Card</span>
+            </div>
+
+
+            <h2 class="post-ticket__input-title">Card Number</h2>
+            <label class="input__wrapper  mb-4">
+                <input type="text" class="input" placeholder="0000 0000 0000 0000" name="card-number" required>
+                <p class="input__notification">Proffesion title is required</p>
+                <span class="input__wrapper--cc d-none d-md-block"></span>
+            </label>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h2 class="post-ticket__input-title">First Name</h2>
+                    <label class="input__wrapper  mb-4">
+                        <input type="text" class="input" placeholder="First Name" name="first-name" required>
+                        <p class="input__notification">First Name is required</p>
+                    </label>
+                </div>
+
+                <div class="col-12 col-md-6">
+                        <h2 class="post-ticket__input-title">Last Name</h2>
+                    <label class="input__wrapper  mb-4">
+                        <input type="text" class="input" placeholder="Last Name" name="last-name" required>
+                        <p class="input__notification">Last Name is required</p>
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <h2 class="post-ticket__input-title">
+                        Expiry Date
+                    </h2>
+                    <label class="input__wrapper  mb-4 mb-md-5">
+                        <select name="exp-date-1" class="ui dropdown" id="exp-date-1-select" required>
+                            <option value="" selected disabled>MM</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <p class="input__notification">Expiry Date is required</p>
+                    </label>
+                </div>
+                <div class="col-6 col-md-3">
+                        <h2 class="post-ticket__input-title">
+                                Expiry Date
+                        </h2>
+                        <label class="input__wrapper  mb-4 mb-md-5">
+                            <select name="exp-date-2" class="ui dropdown" id="exp-date-2-select" required>
+                                <option value="" selected disabled>YYYY</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+                            <p class="input__notification">Expiry Date is required</p>
+                        </label>
+                </div>
+                <div class="col-12 col-md-6">
+                        <h2 class="post-ticket__input-title">CVV Code</h2>
+                    <label class="input__wrapper  mb-4">
+                        <input type="text" class="input" placeholder="123" name="cvv-number" required>
+                        <p class="input__notification">CVV Code is required</p>
+                    </label>
+                </div>
+            </div>
+
+            <div class="payment-buttons">
+                <button type="button" class="button max-160 js-show-modal"
+                data-modal-id="payment-method-card-2-modal">
+                    Next
+                </button>
+
+                <button class="button button--no-style link js-show-modal" data-modal-id="payment-method-add-modal">
+                    Return
+                </button>
+            </div>
+
+            <button type="button" class="button button--no-style js-modal-close payment-method-add-modal__close-button"></button>
+        </div>
+    </div>
+    <!-- [Structure] Card modal END -->
+
+    <!-- [Structure] Card modal 2 START -->
+    <div class="ui modal payment-method-paypal-modal" id="payment-method-card-2-modal">
+        <div class="content">
+            <div class="payment-method-add-modal__title mb-5">
+                    Payment Address
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h2 class="post-ticket__input-title">
+                        Country
+                    </h2>
+                    <label class="input__wrapper  mb-4">
+                        <select name="exp-date-2" class="ui dropdown" id="exp-date-2-select" required>
+                            <option value="" selected disabled>Select country..</option>
+                            <option value="USA">USA</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="SaudiArabia">Suadi Arabia</option>
+                        </select>
+                        <p class="input__notification">Expiry Date is required</p>
+                    </label>
+                </div>
+            </div>
+
+
+            <h2 class="post-ticket__input-title">Address</h2>
+            <label class="input__wrapper  mb-2">
+                <input type="text" class="input" placeholder="" name="address-1" required>
+                <p class="input__notification">Address is required</p>
+            </label>
+
+            <label class="input__wrapper  mb-4">
+                <input type="text" class="input" placeholder="" name="address-2">
+            </label>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                        <h2 class="post-ticket__input-title">City</h2>
+                        <label class="input__wrapper  mb-4">
+                            <input type="text" class="input" placeholder="" name="city" required>
+                            <p class="input__notification">City is required</p>
+                        </label>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h2 class="post-ticket__input-title">State</h2>
+                        <label class="input__wrapper  mb-4">
+                            <input type="text" class="input" placeholder="" name="state" required>
+                            <p class="input__notification">State is required</p>
+                        </label>
+                    </div>
+                <div class="col-12 col-md-6">
+                        <h2 class="post-ticket__input-title">ZIP Code</h2>
+                    <label class="input__wrapper  mb-5">
+                        <input type="text" class="input" placeholder="" name="zip-number" required>
+                        <p class="input__notification">ZIP Code is required</p>
+                    </label>
+                </div>
+            </div>
+
+            <div class="payment-buttons">
+                <button type="button" class="button max-160 js-show-modal"
+                data-modal-id="payment-method-added">
+                    Next
+                </button>
+
+                <button class="button button--no-style link js-show-modal" data-modal-id="payment-method-card-1-modal">
+                    Return
+                </button>
+            </div>
+
+            <button type="button" class="button button--no-style js-modal-close payment-method-add-modal__close-button"></button>
+        </div>
+    </div>
+    <!-- [Structure] Card modal 2 END -->
+
+
+    <!--[Structure] Footer START -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 pl-0 pr-0 col-lg-4">
+                    <div class="main-logo">
+                        <img src="img/logo-black.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-sm-4 pl-0 pr-0 col-lg-4 d-none d-md-block">
+                    <div class="terms-conditions">
+                        <a href="#">Terms  & Conditions Privacy statement</a>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-9 pl-0 pr-0 col-md-5 col-lg-4 flex-dir-column-small">
+                    <div class="terms-conditions d-flex d-md-none">
+                        <a href="#">Terms  & Conditions Privacy statement</a>
+                    </div>
+                    <div class="legal-notes">
+                        © 2017-2019 Back to Experts Pty Ltd.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--[Structure] Footer END -->
+
+
+    <!-- Optimized loading JS Start -->
+
+    <script>
+        var scr={scripts:[{src:"js/libs.min.js",async:!1},{src:"js/common.js",async:!1}]};!function(t,n,c){"use strict";var r=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var c=0;c<t.length;c++){var r=n.createElement("script"),s=t[c];r.src=s.src,r.async=s.async,n.body.appendChild(r)}return!0};t.addEventListener?t.addEventListener("load",function(){r(c.scripts)},!1):t.attachEvent?t.attachEvent("onload",function(){r(c.scripts)}):t.onload=function(){r(c.scripts)}}(window,document,scr);
+    </script>
+
+
+    <!-- Optimized loading JS End -->
+
+</body>
+
+</html>
