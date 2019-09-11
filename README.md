@@ -39,7 +39,7 @@
 - Added the switchPaymentButton functionality;
 
 <u>Commits included: </u>
-https://github.com/bkmxer/BTE-dashboard/commit/8f5f025cec14807cf808722204400882b6c3e660
+[link](https://github.com/bkmxer/BTE-dashboard/commit/8f5f025cec14807cf808722204400882b6c3e660)
 
 
 
