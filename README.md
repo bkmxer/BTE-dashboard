@@ -15,7 +15,7 @@
 
 <i><b>Commit inluding the changes:</b></i>
 - [link](https://github.com/bkmxer/BTE-dashboard/commit/810e5f3fe2659167c01512167ce64e16775d1e3e)
-<br>
+
 <i><b>Release files:</b></i>
 - [download the ZIP](https://drive.google.com/file/d/19eK89PYcDsFwVuZ_bwjBHm29UO9aGAdE/view?usp=sharing)
 - [Check the release branch](https://github.com/bkmxer/BTE-dashboard/tree/release/Release-1-0-2)
