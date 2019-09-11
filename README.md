@@ -1,7 +1,9 @@
 <h1> Latest releases </h1>
 
 <b>Current Release 1.0.2</b>
+<br>
 <u>Changelog:</u>
+<br>
 <i><b>Fixed the issues:</b></i>
 - click outside the edit 17$/h
 - grey out the button before the checkbox is selected
