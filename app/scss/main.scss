@@ -35,6 +35,10 @@ body {
     position: relative;
 }
 
+.not-accessible {
+    pointer-events: none;
+}
+
 .hide {
     display: none !important;
 }
@@ -593,6 +597,16 @@ button,
         }
     }
 
+    &--cancel {
+        color: $blue;
+        background-color: transparent;
+
+        &:hover,
+        &.hover {
+            color: $blue3;
+        }
+    }
+
     &--post {
         max-width: 190px;
         margin-right: 30px !important;
@@ -634,6 +648,10 @@ button,
 
     &.max-90 {
         max-width: 90px;
+    }
+
+    &.max-115 {
+        max-width: 115px;
     }
 
     &--attach {
@@ -870,6 +888,7 @@ hr {
     color: #fff !important;
     border-radius: 3px;
     background-color: $blue;
+    cursor: pointer;
 }
 
 .delete.icon {
@@ -3312,6 +3331,15 @@ hr {
     max-height: calc(100vh - 400px);
     overflow-y: auto;
 }
+
+.form-check-close:not(:valid) {
+    [type="submit"] {
+        background-color: $disabled;
+        color: $disabled-text;
+        cursor: not-allowed;
+    }
+}
+
 // Files attachments END
 @import "feed";
 @import "application";

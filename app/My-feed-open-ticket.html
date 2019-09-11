@@ -314,7 +314,7 @@
                                     My Category pool
                             </h4>
 
-                            <a href='#' class="button--no-style button--edit feed__category-edit">
+                            <a href='#' class="button--no-style button--edit feed__category-edit js-show-modal" data-modal-id="feed-category-modal">
                                 <img src="./img/pencil-white.svg" alt="edit button" class="hover">
                                 <img src="./img/pencil.svg" alt="edit button" class="hide-hover">
                                 <span class="visually-hidden">Edit</span>
@@ -347,7 +347,7 @@
                                     My skills
                             </h4>
 
-                            <a href='#' class="button--no-style button--edit feed__category-edit">
+                            <a href='#' class="button--no-style button--edit feed__category-edit js-show-modal" data-modal-id="feed-skill-modal">
                                 <img src="./img/pencil-white.svg" alt="edit button" class="hover">
                                 <img src="./img/pencil.svg" alt="edit button" class="hide-hover">
                                 <span class="visually-hidden">Edit</span>
@@ -498,9 +498,9 @@
                                     </p>
                                 </div>
                                 <div class="opened-ticket__cta-container d-none d-md-block">
-                                    <button class="button opened-ticket__cta">
+                                    <a href="./Applying-for-job.html" class="button opened-ticket__cta">
                                         Apply to Job
-                                    </button>
+                                    </a>
                                     <button class="button opened-ticket__cta opened-ticket__cta--secondary">
                                         <img src="./img/archive-blue.svg" alt="archive">
                                         Archive
@@ -889,9 +889,9 @@
                     </div>
 
                     <div class="tile tile--2 tile--sticky-bottom d-flex d-md-none js-sticky-tile">
-                            <button class="button opened-ticket__cta">
+                            <a href="./Applying-for-job.html" class="button opened-ticket__cta">
                                 Apply to Job
-                            </button>
+                            </a>
                             <button class="button opened-ticket__cta opened-ticket__cta--secondary">
                                 <img src="./img/archive-blue.svg" alt="archive">
                                 Archive
@@ -991,6 +991,204 @@
     </div>
     <!--[Structure] Mobile Header END -->
 
+    <!-- [Structure] Category choice modal START -->
+    <div class="ui modal feed-modal" id="feed-category-modal">
+        <div class="content">
+            <h2 class="feed-modal__title mt-0 mb-0" autoFocus>
+                Category
+            </h2>
+            <p class="feed-modal__subtitle">
+                Select appropriate category that fits your interests (Max 3)
+            </p>
+
+            <label class="input__wrapper  mb-4 mb-md-5">
+                <div name="skills" class="ui selection search dropdown multiple max-3" required>
+                    <input type="hidden" name="skills">
+                    <div class="default text">Select..</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu menu--with-sub-items">
+                        <div class="item" data-value="Category name 1">Category name 1</div>
+                        <div class="item" data-value="Category name 2">Category name 2</div>
+                        <div class="item" data-value="Category name 3">Category name 3</div>
+                        <div class="item" data-value="Category name 4">Category name 4</div>
+
+                    </div>
+                </div>
+                <p class="input__notification">Category is required</p>
+            </label>
+
+
+            <p class="feed-modal__description mt-5">
+                Didn't found the right category for you?
+            </p>
+            <a href="#" class="feed-modal__link js-show-modal" data-modal-id="feed-category-new">
+                Let us know
+            </a>
+
+            <div class="feed-modal__buttons">
+                <button type="button" class="button js-modal-close">
+                    Save
+                </button>
+
+                <button type="button" class="button button--no-style button--cancel js-modal-close">
+                    Cancel
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- [Structure] Category choice modal END -->
+
+    <!-- [Structure] Category adding modal START -->
+    <div class="ui modal feed-modal" id="feed-category-new">
+        <div class="content">
+            <form action="#" class="form-check-close js-form-check-close">
+                <h2 class="feed-modal__title mt-0 mb-0" autoFocus>
+                    Suggest a New Category
+                </h2>
+                <p class="feed-modal__subtitle">
+                    Type in a Category you wish to add to our pool and we'll make our best to consider it as soon as possible!
+                </p>
+
+                <label class="input__wrapper mb-3">
+                    <input type="text" class="input" name="new-category" required="">
+                    <p class="input__notification">Category name is required</p>
+                </label>
+
+                <div class="feed-modal__buttons">
+                    <button type="submit" class="button js-show-modal" data-modal-id="feed-category-added">
+                        Save
+                    </button>
+
+                    <button type="button" class="button button--no-style button--cancel js-modal-close">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- [Structure] Category adding modal END -->
+
+    <!-- [Structure] Category choice modal START -->
+    <div class="ui modal feed-modal feed-modal--success" id="feed-category-added">
+        <div class="content">
+            <h2 class="feed-modal__title mt-0 mb-0">
+                Thank you for your help by developing our big family
+            </h2>
+            <p class="feed-modal__description">
+                    We appreciate your help and effort
+                    <br>
+                    Your New Category will be considered Soon
+            </p>
+
+            <button type="button" class="button max-115 js-modal-close">
+                No problem
+            </button>
+
+        </div>
+    </div>
+    <!-- [Structure] Category choice modal END -->
+
+    <!-- [Structure] Skill choice modal START -->
+    <div class="ui modal feed-modal" id="feed-skill-modal">
+        <div class="content">
+            <h2 class="feed-modal__title mt-0 mb-0">
+                Skill
+            </h2>
+            <p class="feed-modal__subtitle">
+                Select appropriate skills that fits your abilities
+            </p>
+
+            <label class="input__wrapper  mb-4 mb-md-5">
+                <div name="skills" class="ui selection search dropdown multiple max-10" required>
+                    <input type="hidden" name="skills">
+                    <div class="default text">Select..</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu menu--with-sub-items">
+                        <div class="item" data-value="Category name 1">Skill name 1</div>
+                        <div class="item" data-value="Category name 2">Skill name 2</div>
+                        <div class="item" data-value="Category name 3">Skill name 3</div>
+                        <div class="item" data-value="Category name 4">Skill name 4</div>
+                        <div class="item" data-value="Category name 5">Skill name 5</div>
+                        <div class="item" data-value="Category name 6">Skill name 6</div>
+                        <div class="item" data-value="Category name 7">Skill name 7</div>
+                        <div class="item" data-value="Category name 8">Skill name 8</div>
+                    </div>
+                </div>
+                <p class="input__notification">Skill is required</p>
+            </label>
+
+
+            <p class="feed-modal__description mt-5">
+                Didn't found the right skill for you?
+            </p>
+            <a href="#" class="feed-modal__link js-show-modal" data-modal-id="feed-skill-new">
+                Let us know
+            </a>
+
+            <div class="feed-modal__buttons">
+                <button type="button" class="button js-modal-close">
+                    Save
+                </button>
+
+                <button type="button" class="button button--no-style button--cancel js-modal-close">
+                    Cancel
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- [Structure] Skill choice modal END -->
+
+    <!-- [Structure] Skill adding modal START -->
+    <div class="ui modal feed-modal" id="feed-skill-new">
+        <div class="content">
+            <form action="#" class="form-check-close js-form-check-close">
+                <h2 class="feed-modal__title mt-0 mb-0">
+                    Suggest a New Skill
+                </h2>
+                <p class="feed-modal__subtitle">
+                    Type in a Skill you wish to add to our pool and we'll make our best to consider it as soon as possible!
+                </p>
+
+                <label class="input__wrapper mb-3">
+                    <input type="text" class="input" name="new-category" required="">
+                    <p class="input__notification">Skill name is required</p>
+                </label>
+
+                <div class="feed-modal__buttons">
+                    <button type="submit" class="button js-show-modal" data-modal-id="feed-category-added">
+                        Save
+                    </button>
+
+                    <button type="button" class="button button--no-style button--cancel js-modal-close">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- [Structure] Skill adding modal END -->
+
+    <!-- [Structure] Skill choice modal START -->
+    <div class="ui modal feed-modal feed-modal--success" id="feed-skill-added">
+        <div class="content">
+            <h2 class="feed-modal__title mt-0 mb-0">
+                Thank you for your help by developing our big family
+            </h2>
+            <p class="feed-modal__description">
+                    We appreciate your help and effort
+                    <br>
+                    Your New Skill will be considered Soon
+            </p>
+
+            <button type="button" class="button max-115 js-modal-close">
+                No problem
+            </button>
+
+        </div>
+    </div>
+    <!-- [Structure] Skill choice modal END -->
 
     <!--[Structure] Footer START -->
     <footer class="footer">

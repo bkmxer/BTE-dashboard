@@ -316,18 +316,46 @@ function fixCTATile() {
 }
 
 function editButton() {
-    $(document).on('click','.js-edit-button', function(){
+    var $inp = $('.js-edit-target').find('input');
+
+    $(document).on('click','.js-edit-button', function(e){
+        e.preventDefault();
         var $this = $(this);
         var $target = $this.siblings('.js-edit-target');
 
         if ($target.length) {
             var $amount = $target.find('.js-edit-target-amount');
-            var text = $target.find('.input__wrapper').find('input').val();
+            var $inputWrapper = $target.find('.input__wrapper');
+            var $input = $inputWrapper.find('input');
+            var text = $input.val();
 
-            $target.find('.input__wrapper').find('input').val($amount.text().trim());
+            $input.val($amount.text().trim());
+            $inputWrapper.toggleClass('hide');
+            $target.find('span').toggleClass('hide')
+            $this.toggleClass('not-accessible');
 
+            if($this.hasClass('not-accessible')) {
+                $input.focus();
+            }
+
+            if (text) {$amount.text(parseInt(text));}
+        }
+    })
+
+    $inp.on('focusout', function(e){
+        e.preventDefault();
+        var $target = $(this).closest('.js-edit-target');
+
+        if ($target.length) {
+            var $amount = $target.find('.js-edit-target-amount');
+            var $input = $(this);
+            var text = $input.val();
+            var $editButton = $target.siblings('.js-edit-button');
+
+            $input.val($amount.text().trim());
             $target.find('.input__wrapper').toggleClass('hide');
             $target.find('span').toggleClass('hide');
+            $editButton.toggleClass('not-accessible');
 
             if (text) {$amount.text(parseInt(text));}
         }
@@ -621,6 +649,30 @@ function initEvents() {
         var $self = $(this);
         $self.closest('.modal').modal('hide');
     })
+
+    $(document).on('click', '.js-modal-check-close', function(e){
+        e.preventDefault();
+        var $self = $(this);
+        var $required = $self.closest('.modal').find('[required]');
+
+        if ($required.length && $required.is(':not(:valid)').length) {
+            // alert($required.is(':not(:valid)').length)
+        } else {
+            $self.closest('.modal').modal('hide');
+        }
+    });
+
+
+    $(document).on('submit', '.js-form-check-close', function(e){
+        e.preventDefault();
+        var $self = $(this);
+
+        if (!$self.is(':valid')) {
+            alert('ssss');
+        } else {
+            $self.closest('.modal').modal('hide');
+        }
+    });
 
     //trigger switch between the different tickets in the list
     $(document).on('click','.js-tickets-list__item', function(){

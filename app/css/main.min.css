@@ -4021,6 +4021,9 @@ body {
 .por {
   position: relative; }
 
+.not-accessible {
+  pointer-events: none; }
+
 .hide {
   display: none !important; }
 
@@ -4555,6 +4558,14 @@ button,
     .button--no-style:hover,
     .button--no-style.hover {
       background: none; }
+  button--cancel,
+  .button--cancel {
+    color: #4492da;
+    background-color: transparent; }
+    button--cancel:hover, button--cancel.hover,
+    .button--cancel:hover,
+    .button--cancel.hover {
+      color: #297FCF; }
   button--post,
   .button--post {
     max-width: 190px;
@@ -4605,6 +4616,9 @@ button,
   button.max-90,
   .button.max-90 {
     max-width: 90px; }
+  button.max-115,
+  .button.max-115 {
+    max-width: 115px; }
   button--attach,
   .button--attach {
     width: 35px;
@@ -4796,7 +4810,8 @@ hr {
   color: #fff !important;
   -webkit-border-radius: 3px;
           border-radius: 3px;
-  background-color: #4492da; }
+  background-color: #4492da;
+  cursor: pointer; }
 
 .delete.icon {
   width: 12px;
@@ -6860,6 +6875,11 @@ hr {
   max-height: calc(100vh - 400px);
   overflow-y: auto; }
 
+.form-check-close:not(:valid) [type="submit"] {
+  background-color: #dddedf;
+  color: #9f9f9f;
+  cursor: not-allowed; }
+
 .feed__header {
   color: #212529;
   font-weight: normal;
@@ -7037,6 +7057,8 @@ hr {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .feed-item__header a {
+    color: inherit; }
 
 .feed-item__title {
   margin-top: 0;
@@ -7084,6 +7106,12 @@ hr {
   line-height: 1.57;
   color: #212529;
   margin-bottom: 30px; }
+  .feed-item__description + a {
+    display: block;
+    font-size: 14px;
+    color: #4492da;
+    margin-top: -30px;
+    margin-bottom: 30px; }
 
 .feed-item__skill {
   font-size: 14px;
@@ -7112,6 +7140,56 @@ hr {
   width: calc(100% - 30px);
   bottom: 0;
   position: absolute; }
+
+.feed-modal {
+  max-width: 730px; }
+  .feed-modal__link {
+    color: #4492da;
+    text-decoration: underline; }
+  .feed-modal__title {
+    font-weight: 400; }
+  .feed-modal__subtitle {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 5px;
+    margin-bottom: 15px; }
+  .feed-modal__description {
+    color: #4b4b4b; }
+  .feed-modal__buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 55px; }
+    .feed-modal__buttons .button {
+      margin-left: 0;
+      max-width: 115px;
+      margin-right: 25px;
+      padding-left: 10px;
+      padding-right: 10px; }
+  @media screen and (max-width: 767px) {
+    .feed-modal.ui.modal .content {
+      padding: 30px 20px !important; } }
+  .feed-modal--success {
+    padding-top: 62px;
+    padding-bottom: 42px;
+    text-align: center; }
+    .feed-modal--success .feed-modal__title {
+      color: #4492da;
+      text-align: center;
+      margin-bottom: 17px;
+      font-size: 22px;
+      font-weight: 500; }
+    .feed-modal--success .feed-modal__description {
+      color: #4b4b4b;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 40px; }
 
 .opened-ticket__details {
   display: -webkit-box;

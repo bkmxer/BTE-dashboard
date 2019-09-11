@@ -169,6 +169,10 @@
         display: flex;
         margin-bottom: 20px;
         align-items: center;
+
+        a {
+            color: inherit;
+        }
     }
 
     &__title {
@@ -223,6 +227,14 @@
         line-height: 1.57;
         color: $dark-grey;
         margin-bottom: 30px;
+
+        + a {
+            display: block;
+            font-size: 14px;
+            color: $blue;
+            margin-top: -30px;
+            margin-bottom: 30px;
+        }
     }
 
     &__skill {
@@ -240,7 +252,6 @@
     }
 }
 
-
 .tile {
     &--pool-panel {
         margin-bottom: 22px;
@@ -255,6 +266,76 @@
         width: calc(100% - 30px);
         bottom: 0;
         position: absolute;
+    }
+}
+
+.feed-modal {
+    max-width: 730px;
+
+    &__link {
+        color: $blue;
+        text-decoration: underline;
+    }
+
+    &__title {
+        font-weight: 400;
+    }
+
+    &__subtitle {
+        font-size: 12px;
+        color: $light-grey3;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        color: $grey2;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 55px;
+
+        .button {
+            margin-left: 0;
+            max-width: 115px;
+            margin-right: 25px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    &.ui.modal {
+        .content {
+            @media screen and (max-width: 767px) {
+                padding: 30px 20px !important;
+            }
+        }
+    }
+
+    &--success {
+        padding-top: 62px;
+        padding-bottom: 42px;
+        text-align: center;
+
+        .feed-modal {
+            &__title {
+                color: $blue;
+                text-align: center;
+                margin-bottom: 17px;
+                font-size: 22px;
+                font-weight: 500;
+            }
+
+            &__description {
+                color: $grey2;
+                font-weight: 500;
+                font-size: 16px;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+        }
     }
 }
 
