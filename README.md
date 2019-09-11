@@ -1,6 +1,26 @@
 <h1> Latest releases </h1>
 
-<b>Current Release 1.0.1</b>
+<b>Current Release 1.0.2</b>
+<u>Changelog:</u>
+<i><b>Fixed the issues:</b></i>
+- click outside the edit 17$/h
+- grey out the button before the checkbox is selected
+- Fixed / Hourly text label update
+- Add on-submit for the application form
+
+<i><b>New changes:</b></i>
+- Added the category editting pop-up flow
+- Added the skills editting pop-up flow
+
+<u>Commits included: </u>
+https://github.com/bkmxer/BTE-dashboard/commit/810e5f3fe2659167c01512167ce64e16775d1e3e
+
+
+<hr>
+
+<h1> Previous releases </h1>
+
+<b>Previous Release 1.0.1</b>
 
 <u>Changelog:</u>
 <i><b>Fixed the issues:</b></i>
@@ -20,10 +40,6 @@ https://github.com/bkmxer/BTE-dashboard/commit/8f5f025cec14807cf808722204400882b
 
 
 
-<hr>
-
-<h1> Previous releases </h1>
-
-<b>Current Release 1.0.0</b>
+<b>Previous Release 1.0.0</b>
 
 <u>Changelog:</u>
