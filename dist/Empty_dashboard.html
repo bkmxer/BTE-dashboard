@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <!-- [TODO] Add the proper title if needed -->
+    <title>Back to Experts</title>
+
+    <!-- [TODO] Add the description -->
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="img/Logo.jpg">
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Template Basic Images End -->
+
+    <!-- Load Fonts CSS Start -->
+    <link rel="stylesheet" href="css/fonts.min.css">
+    <!-- Load Fonts CSS End -->
+
+    <!-- Load Bootstrap 4 Grid Start -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- Load CusBootstrap 4 Grid End -->
+
+    <!-- Load Custom CSS Start -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- Load Custom CSS End -->
+
+
+    <!-- Custom Browsers Color Start -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content=" #2871C6">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content=" #2871C6">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content=" #2871C6">
+    <!-- Custom Browsers Color End -->
+
+</head>
+
+<body class="dashboard">
+    <!--[Structure] Header START -->
+    <header>
+        <!--[Structure] Navbar START -->
+        <nav class="navigation">
+            <div class="container container-fluid-small">
+                <div class="row">
+                    <div class="col-4 col-lg-2">
+                        <div class="main-logo">
+                            <a href="./Client_dashboard.html"><img src="img/logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-5  d-none d-lg-flex">
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <div class="ui dropdown dropdown-2 dropdown--my-tickets dropdown--my-experts">
+                                    <a href="#">My tickets</a>
+                                    <div class="menu">
+                                        <div class="item">
+                                            <a href="./Tickets-progress.html">Tickets in progress</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./Tickets-posted.html">Posted tickets</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./Tickets-closed.html">Closed tickets</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <div class="ui dropdown dropdown-2 dropdown--my-tickets dropdown--my-experts">
+                                    <a href="#">My Experts</a>
+                                    <div class="menu">
+                                        <div class="item">
+                                            <a href="./My_Experts.html?data-tab=workingnow">Working Now</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./My_Experts.html?data-tab=recent">Recent</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./My_Experts.html?data-tab=archived">Archived</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <div class="ui dropdown dropdown-2">
+                                    <a href="#">Payments</a>
+                                    <div class="menu">
+                                        <div class="item">
+                                            <a href="./Payments.html?data-tab=all">All Payments</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./Payments.html?data-tab=recent">Recent</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="./Payments.html?data-tab=closed">Closed</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Reports</a>
+                            </li>                                                                                                                
+                        </ul>
+                        
+                    </div>
+                    <div class="col-8 col-lg-5">
+                        <div class="account-menu">
+
+                            <!-- Messages block START -->
+                            <div class="account-menu__item">
+                                <a href="././Client_dashboard.html?data-tab=dialog">
+                                    <i class="message-icon"></i>
+                                </a>
+                            </div>
+                            <!-- Messages block END -->
+
+                                <!-- Notification block START -->
+                                <div class="account-menu__item">
+                                <!-- Notifications icon for mobile START -->
+                                <a href="./Notifications.html" class="d-inline-block d-md-none">
+                                    <i class="bell-notifications"></i>
+                                </a>
+                                <!-- Notifications icon for mobile END -->
+
+                                <!-- Notifications icon for desktop START -->
+                                <div class="d-none d-md-inline-block on-click-notifications">
+                                    <div class="ui dropdown dropdown-2 dropdown--notifications">
+                                        <i class="bell-notifications"></i>
+                                        <div class="menu">
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>  
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>                                              
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>  
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>                                                                                        
+                                            <a href="./Notifications.html" class="item">
+                                                <button type="button" class="button button--no-style js-remove-notification">
+                                                    <i class="icon__remove-btn"></i>
+                                                </button>
+                                                <div class="item__title">
+                                                    Ticket request has been sent!
+                                                </div>
+                                                <div class="item__subtitle">
+                                                    Project Name or Title will be written right here...
+                                                </div>
+                                            </a>                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Notifications icon for desktop END -->
+                                </div>
+                                <!-- Notification block END -->
+
+                            <!-- Burger START -->
+                            <div id="burger">
+                                <i></i>
+                            </div>
+                            <!-- Burger END -->
+
+                            <!-- Account Menu DESKTOP START -->
+                            <div class="account-menu__item  d-none d-lg-flex">
+                                <div class="account-wrapper ui dropdown">
+                                    <div class="account__img">
+                                    <!-- <img src="../img" alt="profile-photo"> -->
+                                    </div>
+                                    <div class="account__name">
+                                        <span>Name Surname</span>
+                                    </div>
+
+                                    <div class="account__dropdown-cta">
+                                        <a href="#">
+                                            <i class="dropdown-cta"></i>
+                                        </a>
+                                    </div>
+                                    <div class="menu">
+                                        <a href="#" class="item account-menu__link account-menu__link--settings">
+                                            Account settings
+                                        </a>
+                                        <a href="#" class="item account-menu__link account-menu__link--signout">
+                                            Logout
+                                        </a>                                   
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Account Menu DESKTOP END -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--[Structure] Navbar END -->
+    </header>
+    <!--[Structure] Header END -->
+
+    <!--[Structure] Main START -->
+    <main class="main-content main-content--dashboard">
+        <div class="container container-fluid-small">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-4 order-1 order-lg-1">
+                    <div class="tile tile--2">
+                        <label class="input__wrapper input__wrapper--half">
+                            <select name="Ticket-status" class="ui dropdown dropdown-2" id="select-status">
+                                <option value="" selected disabled>Please select..</option>
+                                <option value="In-progress">In progress</option>
+                                <option value="Posted">Posted</option>
+                                <option value="Archived">Archived</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8 order-0 order-lg-1 search-box-wrapper"> 
+                    <form action="#" id="search-box" class="">
+                        <label class="input__wrapper input__wrapper--search">
+                            <input type="text" class="input input-seach" placeholder="Search Expert" name="search-expert">
+                            <button type="button" class="button button--no-style">
+                                <i class="search-icon-blue"></i>
+                            </button>
+                        </label>
+                    </form>
+                    <a href='./Post_Ticket.html' type="button" class="button rounded-small post-a-ticket-cta max-160">
+                        <span class="d-none d-md-inline">Post a ticket</span>
+                        <span class="d-inline d-md-none">+</span>
+                    </a>
+                </div>
+
+                <div class="col-12 col-lg-4 order-1 order-lg-1">
+                    <div class="tile tile--2 tile--no-tickets">
+                        No tickets yet
+                        
+                        <p class="d-block d-lg-none text-align-center no-tickets-text">
+                            Here will be displayed your tickets after you create one
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8 order-1 order-lg-1 neeed-some-help">
+                    <h1 class="text-align-center search-title">Need help with some work?</h1>
+                    <p class="search-subtitle">Select the field of your interests <br>
+                            Post a ticket and find the right expert for your job</p>
+
+                    <button type="button" class="search-post-cta">
+                        Post a ticket
+                    </button>                            
+                </div>
+
+                <div class="col-12 order-1 order-lg-1">
+                    <div class="tile tile--2">
+                        <section class="how-it-works">
+                            <!-- <button type="button" class="button button--no-style how-it-works__remove-button">
+                                <img src="img/close.png" alt="">
+                            </button> -->
+                            <h2 class="how-it-works__title">How it works</h2>
+                            <ul class="how-it-works__list">
+                                <li class="how-it-works__list-item">
+                                    <img src="img/step-1-pic.svg" alt="" class="how-it-works__img">
+                                    <h3 class="how-it-works__list-item-title">
+                                    <span>1</span>    You fill the form
+                                    </h3>
+                                    <p class="how-it-works__list-item-text">
+                                        You feel the required fields in the form and determine what
+                                        type of job you want to get done                                            
+                                    </p>
+                                </li>
+                                <li class="how-it-works__list-item">
+                                    <img src="img/step-3-pic.svg" alt="" class="how-it-works__img">
+                                    <h3 class="how-it-works__list-item-title">
+                                    <span>2</span>    Find your Expert
+                                    </h3>
+                                    <p class="how-it-works__list-item-text">
+                                            After you post, Expert from the needed by you field
+                                            will approach to you or you can find one by your own
+                                                                                  
+                                    </p>
+                                </li>
+                                <li class="how-it-works__list-item">
+                                    <img src="img/step-2-pic.svg" alt="" class="how-it-works__img">
+                                    <h3 class="how-it-works__list-item-title">
+                                    <span>3</span>    You sign a deal
+                                    </h3>
+                                    <p class="how-it-works__list-item-text">
+                                            After you choose the right expert youstart
+                                            working with him. 
+                                                                                      
+                                    </p>
+                                </li>                                                                
+                                <li class="how-it-works__list-item">
+                                    <img src="img/step-4-pic.svg" alt="" class="how-it-works__img">
+                                    <h3 class="how-it-works__list-item-title">
+                                    <span>4</span>    Receive the work and Payment
+                                    </h3>
+                                    <p class="how-it-works__list-item-text">
+                                            After the work is done, you pay the estimate
+                                            to your Expert and that's it!                                         
+                                    </p>
+                                </li>                                
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!--[Structure] Main END -->
+
+    <!--[Structure] Mobile Header START -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="ui accordion">
+            <div class="title">
+                <i class="dropdown icon"></i>
+                <a href="#">My tickets</a>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li><a href="./Tickets-progress.html">Tickets in progress</a></li>
+                    <li><a href="./Tickets-posted.html">Tickets posted</a></li>                    
+                    <li><a href="./Tickets-closed.html">Tickets closed</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                <a href="#">My Experts</a>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li><a href="./My_Experts.html?data-tab=all">All Experts</a></li>
+                    <li><a href="./My_Experts.html?data-tab=workingnow">Working Now</a></li>
+                    <li><a href="./My_Experts.html?data-tab=recent">Recent</a></li>
+                    <li><a href="./My_Experts.html?data-tab=archived">Archived</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                <a href="#">Payments</a>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li><a href="./Payments.html?data-tab=all">All Payments</a></li>
+                    <li><a href="./Payments.html?data-tab=recent">Recent</a></li>
+                    <li><a href="./Payments.html?data-tab=closed">Closed</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                <a href="#">Reports</a>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li>
+                        <a href="#">
+                            All Reports
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Recent
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="#">
+                            Closed
+                        </a>
+                    </li>    
+                    <li>
+                        <a href="#">
+                            Archived
+                        </a>
+                    </li>
+                </ul>
+            </div>   
+             <div class="title">
+                <i class="dropdown icon"></i>
+                 <div class="account-wrapper">
+                    <div class="account__img">
+                        <!-- <img src="../img" alt="profile-photo"> -->
+                    </div>
+                    <div class="account__name">
+                        <span>Name Surname</span>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <ul class="transition hidden">
+                    <li><a href="#" class="item account-menu__link account-menu__link--settings">Account settings</a></li>
+                    <li><a href="#" class="item account-menu__link account-menu__link--signout">Logout</a></li>
+                </ul>
+            </div>            
+        </div>        
+    </div>
+    <!--[Structure] Mobile Header END -->
+
+
+    <!--[Structure] Footer START -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 pl-0 pr-0 col-lg-4">
+                    <div class="main-logo">
+                        <img src="img/logo-black.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-sm-4 pl-0 pr-0 col-lg-4 d-none d-md-block">
+                    <div class="terms-conditions">
+                        <a href="#">Terms  & Conditions Privacy statement</a>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-9 pl-0 pr-0 col-md-5 col-lg-4 flex-dir-column-small">
+                    <div class="terms-conditions d-flex d-md-none">
+                        <a href="#">Terms  & Conditions Privacy statement</a>
+                    </div>
+                    <div class="legal-notes">
+                        © 2017-2019 Back to Experts Pty Ltd.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--[Structure] Footer END -->
+
+
+    <!-- Optimized loading JS Start -->
+
+    <script>
+        var scr={scripts:[{src:"js/libs.min.js",async:!1},{src:"js/common.js",async:!1}]};!function(t,n,c){"use strict";var r=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var c=0;c<t.length;c++){var r=n.createElement("script"),s=t[c];r.src=s.src,r.async=s.async,n.body.appendChild(r)}return!0};t.addEventListener?t.addEventListener("load",function(){r(c.scripts)},!1):t.attachEvent?t.attachEvent("onload",function(){r(c.scripts)}):t.onload=function(){r(c.scripts)}}(window,document,scr);
+    </script>
+
+
+    <!-- Optimized loading JS End -->
+
+</body>
+
+</html>

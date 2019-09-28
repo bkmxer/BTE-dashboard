@@ -162,6 +162,118 @@
         margin-bottom: 0;
         margin-top: 0;
     }
+
+    .tickets-list {
+        min-height: 600px;
+
+        @media only screen and (max-width : 767px) {
+            min-height: 0;
+        }
+    }
+
+    .main__my-tickets--archived,
+    .main__my-tickets--received,
+    .main__my-tickets--sent {
+        .tile--ticket {
+            .ticket-header__list {
+                @media only screen and (max-width : 767px) {
+                    flex-wrap: wrap;
+
+                    > .d-block:first-child {
+                        width: 100%;
+                        flex-basis: 100%;
+                        height: 45px;
+                    }
+                }
+
+                &:after {
+                    content: 'Archived';
+                    top: 25px;
+
+                    @media only screen and (min-width : 768px) {
+                        display: none;
+                    }
+
+                    @media only screen and (max-width : 767px) {
+                        right: 20px;
+                    }
+                }
+
+                .ticket-header__list-item {
+                    @media only screen and (max-width : 767px) {
+                        width: 25%;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .ticket-body {
+                > .ticket__name,
+                > .ticket__details-row--top-aligned,
+                > .opened-ticket__details-row,
+                > .opened-ticket__description,
+                > .ticket__description-text,
+                > .ticket__description {
+                    @media only screen and (max-width : 767px) {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+        .tile--sticky-bottom {
+            bottom: -15px;
+            max-width: calc(100vw - 30px)
+        }
+
+        #ticket-section-wrapper {
+            @media only screen and (max-width : 767px) {
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    .main__my-tickets--received {
+        .tile--ticket {
+            .ticket-header__list {
+                &:after {
+                    content: 'Received propositions';
+                }
+            }
+        }
+
+        .opened-ticket__description-text {
+            margin-bottom: 30px;
+        }
+    }
+
+    .main__my-tickets--sent {
+        .tile--ticket {
+            .ticket-header__list {
+                &:after {
+                    content: 'Sent applications';
+                }
+            }
+        }
+
+        .opened-ticket__cta--secondary {
+            @media only screen and (max-width : 767px) {
+                border-radius: 50%;
+                height: 45px;
+                width: 45px;
+                padding: 0;
+
+                img {
+                    margin: 0;
+                }
+            }
+        }
+
+
+        .opened-ticket__description-text {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .feed-item {
