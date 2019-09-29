@@ -17,7 +17,7 @@
 
 <i><b>Release files:</b></i>
 - [download the ZIP](https://drive.google.com/open?id=1paYQeR_SXIqH2oupjK03VX96Big90-4S)
-// - [Check the release branch](https://github.com/bkmxer/BTE-dashboard/tree/release/Release-1-0-3)
+- [Check the release branch](https://github.com/bkmxer/BTE-dashboard/tree/release/Release-1-0-3)
 
 <hr>
 
