@@ -1,7 +1,29 @@
 
 <h1> Latest release </h1>
 
-<b>Current Release 1.0.3</b>
+<b>Current Release 1.0.4</b>
+
+<u>Changelog:</u>
+<i><b>Fixed the issues:</b></i>
+- proper links added
+
+<i><b>New changes:</b></i>
+- Created styling, functionality and layout for the Expert Dasboard Notifications All Screens
+- Created styling, functionality and layout for the Expert Searching Results All Screens
+- Created styling, functionality and layout for the My wallet
+
+<i><b>Commit inluding the changes:</b></i>
+- [link](https://github.com/bkmxer/BTE-dashboard/commit/6179c20eb727a3ad9cfbfc22a8d7ece9aa71e698)
+
+<i><b>Release files:</b></i>
+- [download the ZIP](https://drive.google.com/open?id=1locRpt6Ap51oIgK0zyeRCW3yWYoWbWkF)
+- [Check the release branch](https://github.com/bkmxer/BTE-dashboard/tree/release/Release-1-0-4)
+
+<hr>
+
+<h1> Previous releases </h1>
+
+<b>Preious Release 1.0.3</b>
 
 <u>Changelog:</u>
 <i><b>Fixed the issues:</b></i>
@@ -19,11 +41,7 @@
 - [download the ZIP](https://drive.google.com/open?id=1paYQeR_SXIqH2oupjK03VX96Big90-4S)
 - [Check the release branch](https://github.com/bkmxer/BTE-dashboard/tree/release/Release-1-0-3)
 
-<hr>
-
-<h1> Previous releases </h1>
-
-<b>Current Release 1.0.2</b>
+<b>Previous Release 1.0.2</b>
 
 <u>Changelog:</u>
 <i><b>Fixed the issues:</b></i>
