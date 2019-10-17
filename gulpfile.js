@@ -97,7 +97,7 @@ gulp.task('imagemin', function() {
 });
 
 gulp.task('buildhtml', function() {
-  gulp.src(['app/*.html'])
+  gulp.src(['app/**/*.html'])
     .pipe(fileinclude({
       prefix: '@@'
     }))
