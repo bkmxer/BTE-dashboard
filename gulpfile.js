@@ -81,7 +81,7 @@ gulp.task('libs', function() {
 gulp.task('watch', ['sass', 'libs', 'browser-sync'], function() {
 	gulp.watch('app/header.scss', ['headersass']);
 	gulp.watch('app/scss/**/*.scss', ['sass']);
-	gulp.watch('app/*.html', browserSync.reload);
+	gulp.watch('app/**/*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
@@ -93,7 +93,7 @@ gulp.task('imagemin', function() {
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		})))
-		.pipe(gulp.dest('dist/img')); 
+		.pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('buildhtml', function() {

@@ -2623,6 +2623,10 @@ hr {
         max-width: 335px;
         margin-left: auto;
         margin-right: auto;
+
+        &--wider {
+            max-width: 100%;
+        }
     }
 
     &__subtitle {
@@ -3109,6 +3113,7 @@ hr {
 
         &--center {
             align-self: center;
+            text-align: center;
             width: 120px;
         }
     }
@@ -3351,5 +3356,6 @@ hr {
 // Files attachments END
 @import "feed";
 @import "application";
+@import "wallet";
 
 @import "media";

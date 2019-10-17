@@ -1,0 +1,234 @@
+.wallet {
+    &__title {
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        > .wallet__amount {
+            margin-left: 24px;
+        }
+    }
+
+    &__amount {
+        color: black;
+    }
+
+    &__subtitle {
+        color: $light-grey3;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    &__button {
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    &__info {
+        font-size: 16px;
+        color: $grey2;
+    }
+
+    &__add-cta {
+        color: $blue;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+
+    .search-box-wrapper {
+        .input__wrapper--search {
+            @media screen and (max-width: 991px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .my-experts-title {
+        @media screen and (max-width: 991px) {
+            margin-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    .tile--wallet {
+        @media screen and (max-width: 991px) {
+            min-height: 50vh;
+        }
+    }
+
+    .ticket-header__list {
+        @media screen and (max-width: 767px) {
+            bottom: unset;
+            border-bottom: 1px solid $border-color;
+            height: 55px;
+        }
+    }
+
+    .mobile-section-title__name {
+        @media screen and (max-width: 767px) {
+            top: 50%;
+            transform: translateY(-50%);
+            line-height: 26px;
+        }
+    }
+}
+
+#get-paid-now,
+#remove-payment-method {
+    max-width: 730px;
+}
+
+.wallet-section {
+    padding: 55px;
+
+    @media screen and (max-width: 767px) {
+        padding: 28px 18px;
+    }
+
+    &--progress {
+        padding: 0;
+    }
+
+    .payment-lineitem:first-of-type {
+        margin-top: 0;
+    }
+
+    &--payment-methods {
+        padding-top: 38px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.payment-methods {
+    &__add {
+        margin-left: 0;
+        max-width: 180px;
+        margin-top: 20px;
+    }
+
+    &__add-text {
+        color: $grey2;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__section {
+        padding-left: 65px;
+        padding-right: 65px;
+
+        &--bordered {
+            border-bottom: 1px solid $border-color;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
+        &--populated {
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+    }
+}
+
+.payment-method {
+    &__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__img {
+        width: calc(125 / 990 * 100%);
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__card-info {
+        width: calc(515 / 990 * 100%);
+        display: flex;
+        color: $light-grey3;
+        font-size: 20px;
+        align-items: center;
+        padding-left: 10px;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__remove {
+        @media screen and (max-width: 767px) {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    &__name {
+        width: calc(200 / 635 * 100%);
+        font-size: 16px;
+        line-height: 16px;
+
+        @media screen and (max-width: 767px) {
+            min-width: 20%;
+            margin-right: 10px;
+            width: auto;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        min-width: calc(350 / 990 * 100%);
+        margin-left: auto;
+
+        button {
+            width: 95px;
+            height: 40px;
+
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+}
+
+.modal {
+    .payment-method__item {
+        text-align: center;
+        align-items: center;
+        margin-top: 35px;
+        justify-content: center;
+
+        .payment-method__img {
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        .payment-method__card-info {
+            width: auto;
+        }
+    }
+}
+
+#remove-payment-method {
+    .ticket-posted-modal__title {
+        max-width: 100%;
+    }
+}

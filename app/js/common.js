@@ -624,7 +624,7 @@ function initEvents() {
                 'left' : indicatorPos,
             })
 
-            $('.ticket-body, .payment-lineitem, .expert-lineitem:not(.expert-line-static)').addClass('hide');
+            $('.ticket-body, .payment-lineitem:not(.wallet-ticket), .expert-lineitem:not(.expert-line-static)').addClass('hide');
 
             if ($(this).data('tab') == 'all') {
                 $('.ticket-body[data-tab], .payment-lineitem[data-tab], .expert-lineitem[data-tab]').removeClass('hide');

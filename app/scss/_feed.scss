@@ -8,6 +8,13 @@
         border-bottom: 1px solid rgba($light-grey, 0.18);
     }
 
+    &__list {
+        &--my-experts {
+            padding-left: 95px;
+            padding-right: 95px;
+        }
+    }
+
     &__list-element {
         padding: 35px 28px 35px 18px;
         border-bottom: 1px solid rgba($light-grey, 0.18);
@@ -282,7 +289,7 @@
         margin-bottom: 20px;
         align-items: center;
 
-        a {
+        > h3 > a {
             color: inherit;
         }
     }
@@ -298,6 +305,11 @@
         font-size: 14px;
         color: $light-grey3;
         margin-bottom: 20px;
+    }
+
+    &__date-inline {
+        font-size: 14px;
+        color: $light-grey3;
     }
 
     &__details {
@@ -317,6 +329,25 @@
 
                 &:last-child {
                     margin-right: 0;
+                }
+            }
+        }
+
+        @media only screen and (max-width : 767px) {
+            flex-wrap: wrap;
+
+            & > * {
+                order: 1;
+            }
+
+            & > .feed-item__date-inline {
+                font-size: 14px;
+                color: $light-grey3;
+
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    order: 0;
+                    margin-bottom: 10px;
                 }
             }
         }
@@ -356,10 +387,12 @@
         background: $light-grey5;
         border-radius: 3px;
         padding: 5px;
-        margin-left: 10px;
+        margin-right: 10px;
+        display: inline-block;
+        margin-bottom: 10px;
 
         &:first-child {
-            margin-left: 0;
+            margin-right: 0;
         }
     }
 }
@@ -541,6 +574,50 @@
     &__details-row {
         &--top-aligned {
             align-items: flex-start;
+        }
+    }
+}
+
+.my-expert-search {
+    .filters-header {
+        padding-left: 95px;
+
+        @media screen and (max-width: 991px) {
+            padding-left: 18px;
+        }
+    }
+
+    .feed__list-element {
+        padding-left: 95px;
+        padding-right: 95px;
+
+        @media screen and (max-width: 991px) {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+
+    .feed__list--my-experts {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .feed-item__title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .filters-wrapper-content {
+        @media screen and (max-width: 991px) {
+            flex-wrap: nowrap;
+            padding-bottom: 80px;
+            max-height: unset;
+        }
+    }
+
+    .search-box-wrapper {
+        @media screen and (max-width: 991px) {
+            margin-bottom: 20px;
         }
     }
 }
