@@ -7871,12 +7871,18 @@ hr {
       @media screen and (max-width: 767px) {
         .progres-step:last-child:before {
           width: 150px; } }
+    .progres-step:last-child a {
+      color: #212529; }
   .progres-step--active {
     color: white;
     background-color: #4492da;
     border-color: #4492da; }
     .progres-step--active:last-child:before {
       background-color: #4492da; }
+    .progres-step--active:last-child a {
+      color: #fff; }
+    .progres-step--active a {
+      color: #fff; }
 
 .my-resolutions__img-wrapper {
   width: 40%; }

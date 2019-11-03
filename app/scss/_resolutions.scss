@@ -90,6 +90,10 @@
                 width: 150px;
             }
         }
+
+        a {
+            color: $dark-grey;
+        }
     }
 
     &--active {
@@ -101,6 +105,14 @@
             &:before {
                 background-color: $blue;
             }
+
+            a {
+                color: $white;
+            }
+        }
+
+        a {
+            color: $white;
         }
     }
 }
