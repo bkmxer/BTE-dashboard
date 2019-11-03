@@ -145,9 +145,16 @@
         color: $blue6;
 
         &--with-p {
-            padding-right: 16px;
-            padding-left: 16px;
+            padding-right: 10px;
+            padding-left: 10px;
             margin-bottom: 17px;
+            background-color: #4492da;
+            color: #fff;
+            border-radius: 3px;
+            margin-right: 5px;
+            height: 24px;
+            display: flex;
+            align-items: center;
         }
     }
 

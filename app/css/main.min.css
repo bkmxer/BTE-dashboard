@@ -7095,9 +7095,23 @@ hr {
 .feed__link {
   color: #4492da; }
   .feed__link--with-p {
-    padding-right: 16px;
-    padding-left: 16px;
-    margin-bottom: 17px; }
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 17px;
+    background-color: #4492da;
+    color: #fff;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    margin-right: 5px;
+    height: 24px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 .feed__pool-li {
   padding: 14px 31px;
