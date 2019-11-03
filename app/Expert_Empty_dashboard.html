@@ -143,7 +143,8 @@
                         <div class="account-menu">
 
                             <!-- Messages block START -->
-                            <div class="account-menu__item">
+                            <!-- Add a condition if (new messages) { add a class 'account-menu__item--new-message' below} -->
+                            <div class="account-menu__item account-menu__item--new-message">
                                 <a href="././Client_dashboard.html?data-tab=dialog">
                                     <i class="message-icon"></i>
                                 </a>
@@ -151,7 +152,8 @@
                             <!-- Messages block END -->
 
                                 <!-- Notification block START -->
-                                <div class="account-menu__item">
+                                <!-- Add a condition if (new notifications) { add a class 'account-menu__item--new-notification' below} -->
+                                <div class="account-menu__item account-menu__item--new-notification">
                                 <!-- Notifications icon for mobile START -->
                                 <a href="./Notifications.html" class="d-inline-block d-md-none">
                                     <i class="bell-notifications"></i>
@@ -275,7 +277,7 @@
                     <div class="tile tile--2">
                         <label class="input__wrapper input__wrapper--half">
                             <select name="Ticket-status" class="ui dropdown dropdown-2" id="select-status">
-                                <option value="" selected disabled>Receinved proposals</option>
+                                <option value="" selected disabled>Received proposals</option>
                                 <option value="In-progress">Work in progress</option>
                                 <option value="Posted">Posted</option>
                                 <option value="Archived">Archived</option>

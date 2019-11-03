@@ -291,6 +291,24 @@ function initBurger() {
 //     })
 // }
 
+
+/**
+ * @description A function to toggle the resolution sharing means on the My-Resolutions page
+ */
+function shareResolutionToggle() {
+    $(document).on('click', '.js-resolution-share', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        var $self = $(this);
+        var $detailsButton = $self.siblings('.button');
+        var $socialShareTab = $self.siblings('.social-share');
+
+        $self.toggleClass('active');
+        $detailsButton.toggleClass('hide');
+        $socialShareTab.toggleClass('hide');
+    })
+}
+
 function addPaymentMethod() {
     $('.js-button-add-payment-method').on('click', function(e) {
         e.preventDefault();
@@ -362,7 +380,6 @@ function editButton() {
     })
 }
 
-
 function switchPaymentButton() {
     $(document).on('click','.js-contract__switch', function(e){
         e.preventDefault();
@@ -383,6 +400,23 @@ function modalsShow() {
         var modalId = $self.data('modal-id');
         if (modalId && $('#' + modalId).length) {
             $('#' + modalId).modal('show');
+            $('#' + modalId).modal({onVisible: function () {
+                console.log('visible');
+              }})
+        }
+    })
+}
+
+function modalsShowSkills() {
+    $(document).on('click', '.js-show-modal-skills', function(){
+        var $self = $(this);
+        var modalId = $self.data('modal-id');
+        if (modalId && $('#' + modalId).length) {
+            $('#' + modalId).modal({onShow: function () {
+                $('#' + modalId).find('.dropdown').first().dropdown('set selected',
+                    ['Cloud','Network', 'Security test', 'Marketing', 'Design', 'Business analitycs']
+                );
+            }}).modal('show')
         }
     })
 }
@@ -397,8 +431,19 @@ function deleteNotifications() {
                 $('section.notifications').addClass('empty');
             }
         }, 600);
-
     });
+}
+
+function storeId() {
+    $(document).on('click', '.js-show-modal-store-id', function(){
+        var $self = $(this);
+        var modalId = $self.data('modal-id');
+        if (modalId && $('#' + modalId).length) {
+            $('#' + modalId).modal({onShow: function () {
+                localStorage.setItem('currentPaymentMethod', $self.closest('.payment-methods__section').attr('id'));
+            }}).modal('show')
+        }
+    })
 }
 
 //Function to get URL parametes by name
@@ -650,6 +695,15 @@ function initEvents() {
         $self.closest('.modal').modal('hide');
     })
 
+    $(document).on('click', '.js-payment-method-delete', function(){
+        var $self = $(this);
+        var currentPaymentMethod = localStorage.getItem('currentPaymentMethod');
+        $self.closest('.modal').modal('hide');
+        $('#' + currentPaymentMethod).remove();
+
+        localStorage.removeItem('currentPaymentMethod');
+    })
+
     $(document).on('click', '.js-modal-check-close', function(e){
         e.preventDefault();
         var $self = $(this);
@@ -743,6 +797,11 @@ function initEvents() {
 
     dropdownActiveLinkEnable();
 
+    //functions called for resolutions-list page only
+    if ($('body').hasClass('resolutions-list')) {
+        shareResolutionToggle();
+    }
+
     //functions called for post-ticket page only
     if ($('body').hasClass('post-ticket')) {
         toggleSkillsCategories();
@@ -766,9 +825,12 @@ function initEvents() {
     }
 
     modalsShow();
+    modalsShowSkills();
     customFileUpload();
     initBurger();
     notificaions();
+
+    storeId();
 
     editButton();
     switchPaymentButton();

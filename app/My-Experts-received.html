@@ -90,10 +90,10 @@
                                             <a href="./Tickets-progress.html">Tickets in progress</a>
                                         </div>
                                         <div class="item">
-                                            <a href="./Tickets-posted.html">Posted tickets</a>
+                                            <a href="./My-Experts-sent.html">Sent application tickets</a>
                                         </div>
                                         <div class="item">
-                                            <a href="./Tickets-closed.html">Closed tickets</a>
+                                            <a href="./My-Experts-archived.html">Archived tickets</a>
                                         </div>
                                     </div>
                                 </div>
@@ -143,6 +143,7 @@
                         <div class="account-menu">
 
                             <!-- Messages block START -->
+                            <!-- Add a condition if (new messages) { add a class 'account-menu__item--new-message' below} -->
                             <div class="account-menu__item">
                                 <a href="././Client_dashboard.html?data-tab=dialog">
                                     <i class="message-icon"></i>
@@ -151,6 +152,7 @@
                             <!-- Messages block END -->
 
                                 <!-- Notification block START -->
+                                <!-- Add a condition if (new notifications) { add a class 'account-menu__item--new-notification' below} -->
                                 <div class="account-menu__item">
                                 <!-- Notifications icon for mobile START -->
                                 <a href="./Notifications.html" class="d-inline-block d-md-none">
@@ -295,8 +297,10 @@
                                 <a href="#" class="text">Received propositions</a>
                                 <i class="dropdown icon"></i>
                                 <div class="menu">
-                                    <div class="item"><a href="./My-Experts-sent.html">Sent applications</a></div>
+                                    <div class="item"><a href="./My-feed.html">My feed</a></div>
                                     <div class="item"><a href="./My-Experts-received.html">Received propositions</a></div>
+                                    <div class="item"><a href="./My-Experts-In-progress.html">Tickets in progress</a></div>
+                                    <div class="item"><a href="./My-Experts-sent.html">Sent applications</a></div>
                                     <div class="item"><a href="./My-Experts-archived.html">Archived</a></div>
                                 </div>
                             </div>
@@ -431,11 +435,11 @@
                                 </div>
                                 <div class="opened-ticket__cta-container d-none d-md-block">
                                     <a href="./Applying-for-job.html" class="button opened-ticket__cta">
-                                        Apply to Job
+                                        Accept
                                     </a>
                                     <button class="button opened-ticket__cta opened-ticket__cta--secondary">
-                                        <img src="./img/archive-blue.svg" alt="delete">
-                                        Archive
+                                        <!-- <img src="./img/archive-blue.svg" alt="delete"> -->
+                                        Decline
                                     </button>
                                 </div>
 
@@ -537,7 +541,7 @@
                                     <div class="expert-lineitem__line">
                                         <div class="expert-lineitem__name-section">
                                             <p class="expert-lineitem__name">
-                                                Expert name
+                                                Client name
                                             </p>
                                             <p class="expert-lineitem__title">
                                                 Antivirus specialist <span class="d-none d-md-inline">antivirus specialist </span>
@@ -1021,7 +1025,7 @@
                                 </div>
                                 <div class="opened-ticket__cta-container d-none d-md-block">
                                     <a href="./Applying-for-job.html" class="button opened-ticket__cta">
-                                        Apply to Job
+                                        Accept
                                     </a>
                                     <button class="button opened-ticket__cta opened-ticket__cta--secondary">
                                         <img src="./img/archive-blue.svg" alt="delete">
@@ -1392,7 +1396,7 @@
 
                     <div class="tile tile--2 tile--sticky-bottom d-flex d-md-none">
                             <a href="./Applying-for-job.html" class="button opened-ticket__cta">
-                                Apply to Job
+                                Accept
                             </a>
                             <button class="button opened-ticket__cta opened-ticket__cta--secondary">
                                 <img src="./img/archive-blue.svg" alt="delete">
@@ -1417,8 +1421,7 @@
                     <li><a href="./My-feed-html">My Feed</a></li>
                     <li><a href="#">Received propositions</a></li>
                     <li><a href="./Tickets-progress.html">Tickets in progress</a></li>
-                    <li><a href="./Tickets-posted.html">Tickets posted</a></li>
-                    <li><a href="./Tickets-closed.html">Tickets closed</a></li>
+                    <li><a href="./My-Experts-sent.html">Sent application</a></li>
                 </ul>
             </div>
             <div class="title">

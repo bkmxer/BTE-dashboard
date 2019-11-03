@@ -150,6 +150,10 @@ ul {
 
 header {
     z-index: 10;
+
+    @media screen and (max-width: 991px) {
+        padding-top: 70px;
+    }
 }
 
 .text-align-center {
@@ -221,6 +225,12 @@ p {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @media screen and (max-width: 991px) {
+        position: fixed;
+        width: 100vw;
+        top: 0;
+    }
 }
 
 .footer {
@@ -648,6 +658,34 @@ button,
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:hover {
+            .hover {
+                display: block;
+            }
+
+            .hide-hover {
+                display: none;
+            }
+        }
+    }
+
+    &.button--square-small {
+        height: 30px;
+        width: 30px;
+        margin-right: 17px;
+        margin-left: 0;
+
+        @media screen and (max-width: 1199px) {
+            margin-right: 12px;
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+        }
+
+        @media screen and (max-width: 992px) {
+            margin-right: 5px;
+        }
     }
 
     &.max-90 {
@@ -980,6 +1018,22 @@ hr {
         &:last-of-type {
             margin-right: 0;
         }
+
+        &--new-message {
+            position: relative;
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background-color: $blue;
+                border-radius: 50%;
+                top: 0;
+                right: -5px;
+            }
+        }
     }
 
     &__link {
@@ -1144,6 +1198,12 @@ hr {
             background-position: 50% 50%;
         }
     }
+
+    .account-menu__item--new-notification & {
+        &:before {
+            background-image: url('../img/notification-bell-red.svg');
+        }
+    }
 }
 
 .search-icon-blue {
@@ -1278,6 +1338,19 @@ hr {
 
     &--filters {
         position: relative;
+    }
+
+    &--resolutions {
+        padding: 30px;
+        display: flex;
+        color: $dark-grey;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            margin-bottom: 20px;
+            padding: 0;
+        }
     }
 }
 
@@ -3357,5 +3430,6 @@ hr {
 @import "feed";
 @import "application";
 @import "wallet";
+@import "resolutions";
 
 @import "media";

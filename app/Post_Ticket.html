@@ -126,14 +126,15 @@
                             </li>
                             <li class="menu__item">
                                 <a href="#">Reports</a>
-                            </li>                                                                                                                
+                            </li>
                         </ul>
-                        
+
                     </div>
                     <div class="col-8 col-lg-5">
                         <div class="account-menu">
 
                             <!-- Messages block START -->
+                            <!-- Add a condition if (new messages) { add a class 'account-menu__item--new-message' below} -->
                             <div class="account-menu__item">
                                 <a href="././Client_dashboard.html?data-tab=dialog">
                                     <i class="message-icon"></i>
@@ -142,6 +143,7 @@
                             <!-- Messages block END -->
 
                                 <!-- Notification block START -->
+                                <!-- Add a condition if (new notifications) { add a class 'account-menu__item--new-notification' below} -->
                                 <div class="account-menu__item">
                                 <!-- Notifications icon for mobile START -->
                                 <a href="./Notifications.html" class="d-inline-block d-md-none">
@@ -164,7 +166,7 @@
                                                 <div class="item__subtitle">
                                                     Project Name or Title will be written right here...
                                                 </div>
-                                            </a>  
+                                            </a>
                                             <a href="./Notifications.html" class="item">
                                                 <button type="button" class="button button--no-style js-remove-notification">
                                                     <i class="icon__remove-btn"></i>
@@ -175,7 +177,7 @@
                                                 <div class="item__subtitle">
                                                     Project Name or Title will be written right here...
                                                 </div>
-                                            </a>                                              
+                                            </a>
                                             <a href="./Notifications.html" class="item">
                                                 <button type="button" class="button button--no-style js-remove-notification">
                                                     <i class="icon__remove-btn"></i>
@@ -186,7 +188,7 @@
                                                 <div class="item__subtitle">
                                                     Project Name or Title will be written right here...
                                                 </div>
-                                            </a>  
+                                            </a>
                                             <a href="./Notifications.html" class="item">
                                                 <button type="button" class="button button--no-style js-remove-notification">
                                                     <i class="icon__remove-btn"></i>
@@ -197,7 +199,7 @@
                                                 <div class="item__subtitle">
                                                     Project Name or Title will be written right here...
                                                 </div>
-                                            </a>                                                                                        
+                                            </a>
                                             <a href="./Notifications.html" class="item">
                                                 <button type="button" class="button button--no-style js-remove-notification">
                                                     <i class="icon__remove-btn"></i>
@@ -208,7 +210,7 @@
                                                 <div class="item__subtitle">
                                                     Project Name or Title will be written right here...
                                                 </div>
-                                            </a>                                          
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -243,12 +245,12 @@
                                         </a>
                                         <a href="#" class="item account-menu__link account-menu__link--signout">
                                             Logout
-                                        </a>                                   
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <!-- Account Menu DESKTOP END -->
-                            
+
                         </div>
                     </div>
                 </div>
@@ -262,7 +264,7 @@
     <main class="main-content main-content--dashboard">
         <div class="container container-fluid-small">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 d-lg-none order-0 order-lg-1 search-box-wrapper"> 
+                <div class="col-12 col-lg-8 d-lg-none order-0 order-lg-1 search-box-wrapper">
                     <form action="#" id="search-box" class="">
                         <label class="input__wrapper input__wrapper--search">
                             <input type="text" class="input input-seach" placeholder="Search Expert" name="search-expert">
@@ -349,21 +351,21 @@
                                     <div class="menu menu--with-sub-items">
                                         <div class="item" data-category="Database" data-value="Delphi">Delphi</div>
                                         <div class="item" data-category="Database" data-value="MySQL">MySQL</div>
-                                        
+
                                         <div class="item" data-category="Database" data-value="Oracle">Oracle</div>
                                         <div class="item sub-item" data-category="Database" data-value="Oracle-MySQL">Data Protection</div>
-                                        
+
                                         <div class="item" data-category="Database" data-value="Microsoft">Microsoft</div>
                                         <div class="item sub-item" data-category="Database" data-value="Microsoft-PostgreSQL">SQL 2016</div>
                                         <div class="item sub-item" data-category="Database" data-value="Microsoft-DB-Manager">DataBase Manager</div>
-                                        
+
                                         <div class="item" data-category="CloudServer" data-value="AWS">AWS (Amazon Web Services)</div>
                                         <div class="item sub-item" data-category="CloudServer" data-value="ServerManagement">Server Management</div>
                                     </div>
                                 </div>
                                 <p class="input__notification">Category is required</p>
                             </label>
-                            
+
 
                              <h2 class="post-ticket__input-title">
                                 Want to assign this project to a Archived expert?
@@ -379,8 +381,8 @@
                                     <option value="a333">Designer name</option>
                                 </select>
                                 <p class="input__notification">Category is required</p>
-                            </label>  
-                            
+                            </label>
+
 
                             <h2 class="post-ticket__input-title">
                                 Add Payment Method
@@ -396,7 +398,7 @@
                                 <!-- real button -->
                                 <!-- <input type="submit" class="button button--post js-button-post" value="Post my ticket"> -->
                                 <!-- real button -->
-                                
+
                                 <!-- popup emulation button -->
                                 <button type="button" class="button button--post js-show-modal" data-modal-id="ticket-posted-modal">Post my ticket</button>
                                 <!-- popup emulation button -->
@@ -421,7 +423,7 @@
             <div class="content">
                 <ul class="transition hidden">
                     <li><a href="./Tickets-progress.html">Tickets in progress</a></li>
-                    <li><a href="./Tickets-posted.html">Tickets posted</a></li>                    
+                    <li><a href="./Tickets-posted.html">Tickets posted</a></li>
                     <li><a href="./Tickets-closed.html">Tickets closed</a></li>
                 </ul>
             </div>
@@ -463,19 +465,19 @@
                         <a href="#">
                             Recent
                         </a>
-                    </li>                    
+                    </li>
                     <li>
                         <a href="#">
                             Closed
                         </a>
-                    </li>    
+                    </li>
                     <li>
                         <a href="#">
                             Archived
                         </a>
                     </li>
                 </ul>
-            </div>   
+            </div>
              <div class="title">
                 <i class="dropdown icon"></i>
                  <div class="account-wrapper">
@@ -492,8 +494,8 @@
                     <li><a href="#" class="item account-menu__link account-menu__link--settings">Account settings</a></li>
                     <li><a href="#" class="item account-menu__link account-menu__link--signout">Logout</a></li>
                 </ul>
-            </div>            
-        </div>        
+            </div>
+        </div>
     </div>
     <!--[Structure] Mobile Header END -->
 
@@ -515,7 +517,7 @@ You'll receive notifications
         </div>
     </div>
     <!-- [Structure] Ticket created modal START -->
-    
+
     <!-- [Structure] Chose payment method modal START -->
     <div class="ui modal payment-method-add-modal" id="payment-method-add-modal">
         <div class="content">
@@ -526,7 +528,7 @@ You'll receive notifications
             <div class="payment-method-add-modal__item">
                 <img src="./img/pay-pal.svg" alt="paypal" class="payment-method-add-modal__img">
                 <span  class="payment-method-add-modal__name">Paypal</span>
-                <button class="payment-method-add-modal__select-cta button button--white max-90 js-show-modal" 
+                <button class="payment-method-add-modal__select-cta button button--white max-90 js-show-modal"
                         data-modal-id="payment-method-paypal-modal">
                         Select
                 </button>
@@ -542,7 +544,7 @@ You'll receive notifications
             <button type="button" class="button button--no-style js-modal-close payment-method-add-modal__close-button"></button>
         </div>
     </div>
-    <!-- [Structure] Chose payment method modal START -->    
+    <!-- [Structure] Chose payment method modal START -->
 
     <!-- [Structure] Paypal modal START -->
     <div class="ui modal payment-method-paypal-modal" id="payment-method-paypal-modal">
@@ -588,7 +590,7 @@ You'll receive notifications
                         <input type="text" class="input" placeholder="First Name" name="first-name" required>
                         <p class="input__notification">First Name is required</p>
                     </label>
-                </div>      
+                </div>
 
                 <div class="col-12 col-md-6">
                      <h2 class="post-ticket__input-title">Last Name</h2>
@@ -703,7 +705,7 @@ You'll receive notifications
                 <input type="text" class="input" placeholder="" name="address-1" required>
                 <p class="input__notification">Address is required</p>
             </label>
-            
+
             <label class="input__wrapper  mb-4">
                 <input type="text" class="input" placeholder="" name="address-2">
             </label>
@@ -747,14 +749,14 @@ You'll receive notifications
         </div>
     </div>
     <!-- [Structure] Card modal 2 END -->
-    
+
     <!-- [Structure] Payment method was added modal START -->
     <div class="ui modal ticket-posted-modal" id="payment-method-added">
             <div class="content">
                 <div class="ticket-posted-modal__title">
                     Greate, you've added a Payment Method!
                 </div>
-    
+
                 <div class="ticket-posted-modal__subtitle">
                         Now you're able to Post Tickets, Start Contracts and pay for the work done by Experts
                     </div>
@@ -764,7 +766,7 @@ You'll receive notifications
             </div>
         </div>
         <!-- [Structure] Ticket created modal START -->
-        
+
     <!--[Structure] Footer START -->
     <footer class="footer">
         <div class="container">

@@ -722,7 +722,7 @@
         min-height: 50px;
     }
 
-    .filters-cta {
+    .filters-cta:not(.button--square) {
         background-image: url('../img/filters-blue.svg');
         background-color: $white;
         background-repeat: no-repeat;
