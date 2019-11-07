@@ -6,7 +6,7 @@
 <u>Changelog:</u>
 <i><b>Fixed the issues:</b></i>
 - [Check any editButton to switch between input/label (for example 17$/h).. #1](https://github.com/bkmxer/BTE-dashboard/issues/1)
--[Check any page to have Want to switch to Fixed price? working ](https://github.com/bkmxer/BTE-dashboard/issues/2)
+- [Check any page to have Want to switch to Fixed price? working ](https://github.com/bkmxer/BTE-dashboard/issues/2)
 - [Make posted selection by default on posted page #4](https://github.com/bkmxer/BTE-dashboard/issues/4)
 - [https://github.com/bkmxer/BTE-dashboard/issues/6](https://github.com/bkmxer/BTE-dashboard/issues/6)
 - [Remove the button border on Sent applications #7](https://github.com/bkmxer/BTE-dashboard/issues/7)
