@@ -136,7 +136,7 @@
                                 <!-- Messages block START -->
                                 <!-- Add a condition if (new messages) { add a class 'account-menu__item--new-message' below} -->
                                 <div class="account-menu__item">
-                                    <a href="././Client_dashboard.html?data-tab=dialog">
+                                    <a href="./Client_dashboard.html?data-tab=dialog">
                                         <i class="message-icon"></i>
                                     </a>
                                 </div>
@@ -1334,21 +1334,37 @@
                             </div>
 
                             <div class="contract__row contract__row--flex">
-                                <div class="contract-info-block">
-                                    <h2 class="contract-info-block__header">
-                                        Hourly rate
-                                    </h2>
-                                    <div class="contract-info-block__value js-contract-info-block__value--rate">
-                                            $<span class="">17</span>/ hour
-                                        <label class="input__wrapper hide">
-                                            <input type="text" class="input" placeholder="Hourly rate" name="contract-hour-rate">
-                                        </label>
+                                    <div class="contract-info-block js-hourly">
+                                        <h2 class="contract-info-block__header">
+                                            Hourly rate
+                                        </h2>
+                                        <div class="contract-info-block__value js-edit-target js-contract-info-block__value--rate">
+                                            <span>$</span><span class="js-edit-target-amount">17</span><span>/ hour</span>
+                                            <label class="input__wrapper mb-0 hide">
+                                                <input type="text" class="input" placeholder="Hourly rate" name="contract-hour-rate">
+                                            </label>
+                                        </div>
+                                        <button type="button" class="button--no-style button--edit js-edit-button">
+                                            <img src="./img/pencil.svg" alt="edit button">
+                                            <span>Edit</span>
+                                        </button>
                                     </div>
-                                    <button class="button--no-style button--edit js-edit-button">
-                                        <img src="./img/pencil.svg" alt="edit button">
-                                        <span>Edit</span>
-                                    </button>
-                                </div>
+
+                                    <div class="contract-info-block js-fixed hide">
+                                        <h2 class="contract-info-block__header">
+                                            Fixed Price
+                                        </h2>
+                                        <div class="contract-info-block__value js-edit-target js-contract-info-block__value--rate">
+                                            <span>$</span><span class="js-edit-target-amount">300</span>
+                                            <label class="input__wrapper mb-0 hide">
+                                                <input type="text" class="input" placeholder="Hourly rate" name="contract-hour-rate">
+                                            </label>
+                                        </div>
+                                        <button type="button" class="button--no-style button--edit js-edit-button">
+                                            <img src="./img/pencil.svg" alt="edit button">
+                                            <span>Edit</span>
+                                        </button>
+                                    </div>
 
                                 <div class="contract-info-block">
                                     <h2 class="contract-info-block__header">

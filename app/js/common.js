@@ -385,7 +385,7 @@ function switchPaymentButton() {
         e.preventDefault();
 
         var $this = $(this);
-        var $target = $this.parents('form');
+        var $target = $this.parents('form, .ticket-body');
 
         if ($target.length) {
             var $internalTargets = $target.find('.js-fixed, .js-hourly');
