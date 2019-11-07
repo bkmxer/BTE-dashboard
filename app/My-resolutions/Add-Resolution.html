@@ -62,7 +62,7 @@
 
 </head>
 
-<body class="wallet">
+<body class="add-resolution">
     <!--[Structure] Header START -->
     <header>
         <!--[Structure] Navbar START -->
@@ -155,7 +155,7 @@
                                 <!-- Add a condition if (new notifications) { add a class 'account-menu__item--new-notification' below} -->
                                 <div class="account-menu__item">
                                 <!-- Notifications icon for mobile START -->
-                                <a href="../Notifications.html" class="d-inline-block d-md-none">
+                                <a href="./My-Experts-Notifications.html" class="d-inline-block d-md-none">
                                     <i class="bell-notifications"></i>
                                 </a>
                                 <!-- Notifications icon for mobile END -->
@@ -165,7 +165,7 @@
                                     <div class="ui dropdown dropdown-2 dropdown--notifications">
                                         <i class="bell-notifications"></i>
                                         <div class="menu">
-                                            <a href="../Notifications.html" class="item">
+                                            <a href="./My-Experts-Notifications.html" class="item">
                                                 <button type="button" class="button button--no-style js-remove-notification">
                                                     <i class="icon__remove-btn"></i>
                                                 </button>
@@ -176,7 +176,7 @@
                                                     Project Name or Title will be written right here...
                                                 </div>
                                             </a>
-                                            <a href="../Notifications.html" class="item">
+                                            <a href="./My-Experts-Notifications.html" class="item">
                                                 <button type="button" class="button button--no-style js-remove-notification">
                                                     <i class="icon__remove-btn"></i>
                                                 </button>
@@ -187,7 +187,7 @@
                                                     Project Name or Title will be written right here...
                                                 </div>
                                             </a>
-                                            <a href="../Notifications.html" class="item">
+                                            <a href="./My-Experts-Notifications.html" class="item">
                                                 <button type="button" class="button button--no-style js-remove-notification">
                                                     <i class="icon__remove-btn"></i>
                                                 </button>
@@ -198,7 +198,7 @@
                                                     Project Name or Title will be written right here...
                                                 </div>
                                             </a>
-                                            <a href="../Notifications.html" class="item">
+                                            <a href="./My-Experts-Notifications.html" class="item">
                                                 <button type="button" class="button button--no-style js-remove-notification">
                                                     <i class="icon__remove-btn"></i>
                                                 </button>
@@ -209,7 +209,7 @@
                                                     Project Name or Title will be written right here...
                                                 </div>
                                             </a>
-                                            <a href="../Notifications.html" class="item">
+                                            <a href="./My-Experts-Notifications.html" class="item">
                                                 <button type="button" class="button button--no-style js-remove-notification">
                                                     <i class="icon__remove-btn"></i>
                                                 </button>
@@ -467,9 +467,9 @@
                                         <p>Here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description</p>
 
                                     </div>
-                                    <div class="add-resolutions__section row align-flex-end">
-                                        <div class="col-7">
-                                            <h2 class="post-ticket__input-title mt-3">Resolution title</h2>
+                                    <div class="add-resolutions__section add-resolutions__section--custom row align-flex-start ml-0 mr-0">
+                                        <div class="col-12 col-md-10 col-lg-7 order-1">
+                                            <h2 class="post-ticket__input-title mt-2">Resolution title</h2>
                                             <p class="post-ticket__subtitle">
                                                     Please Name your Resolution in few words
                                             </p>
@@ -477,22 +477,7 @@
                                                 <input type="text" class="input" placeholder="Antivirus  not functioning" name="resolution-title" required>
                                                 <p class="input__notification">Resolution title is required</p>
                                             </label>
-                                        </div>
-                                        <div class="col-1"></div>
-                                        <div class="col-4">
-                                            <h2 class="post-ticket__input-title mt-3">Resolution title</h2>
-                                            <label class="input__wrapper">
-                                                <select name="exp-date-1" class="ui dropdown" id="add-resolution-privacy" required>
-                                                    <option value="" selected disabled>Select the privacy level</option>
-                                                    <option value="private">Available by url</option>
-                                                    <option value="public">Free to public</option>
-                                                </select>
-                                                <p class="input__notification">Expiry Date is required</p>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="add-resolutions__section row align-flex-end">
-                                        <div class="col-6">
+
                                             <h2 class="post-ticket__input-title mt-5">
                                                 Cover Image
                                             </h2>
@@ -501,136 +486,188 @@
                                                 Let the client know who you are and how exactly you can help
                                             </p>
                                             <label class="input__wrapper mb-2">
-                                                <div class="cover-image">
+                                                <div class="cover-image cover-image--md-6">
                                                     <img src="../img/photo-camera-1.svg" alt="">
                                                 </div>
                                             </label>
                                         </div>
-                                    </div>
+                                        <div class="col-md-1 order-1"></div>
+                                        <div class="col-12 col-lg-4 order-0 order-lg-1 resolution__sidebar">
+                                            <div>
+                                                <h2 class="post-ticket__input-title mt-4">
+                                                    Access
+                                                </h2>
 
+                                                <label class="input__wrapper mt-3">
+                                                    <select name="exp-date-1" class="ui dropdown" id="add-resolution-privacy" required>
+                                                        <option value="" selected disabled>Select the privacy level</option>
+                                                        <option value="private">Available by url</option>
+                                                        <option value="public">Free to public</option>
+                                                    </select>
+                                                    <p class="input__notification">Expiry Date is required</p>
+                                                </label>
+                                            </div>
 
-
-
-
-                                    <div class="row">
-                                        <div class="col-12 col-md-6">
-
+                                            <div class="contract-info-block mt-5">
+                                                <h2 class="post-ticket__input-title mb-3">
+                                                    Cost of the resolution
+                                                </h2>
+                                                <div class="contract-info-block__value js-edit-target js-contract-info-block__value--rate">
+                                                    <span>$</span><span class="js-edit-target-amount">17</span><span>/ hour</span>
+                                                    <label class="input__wrapper mb-0 hide">
+                                                        <input type="text" class="input" placeholder="Hourly rate" name="contract-hour-rate">
+                                                    </label>
+                                                </div>
+                                                <button type="button" class="button--no-style button--edit js-edit-button">
+                                                    <img src="../img/pencil.svg" alt="edit button">
+                                                    <span>Edit</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div class="row">
-                                        <div class="col-12 col-md-6">
-                                            <h2 class="post-ticket__input-title mt-5">
-                                                Screenshots
+                                    <div class="add-resolutions__section add-resolutions__section--custom row align-flex-start ml-0 mr-0">
+                                        <div class="col-12 col-md-10 col-lg-7">
+                                            <h2 class="post-ticket__input-title mt-3">
+                                                Resolution description
                                             </h2>
 
-                                            <p class="post-ticket__subtitle">
-                                                Let the client know who you are and how exactly you can help
+                                            <p class="post-ticket__subtitle"></p>
+                                                Describe how you solved this ticket problem. Make sure the description  is detailed showing step after step.
                                             </p>
                                             <label class="input__wrapper mb-2">
-                                                <div class="cover-image">
-                                                    <img src="../img/photo-camera-1.svg" alt="">
-                                                </div>
+                                                <textarea class="input height-150" name="description" maxlength="2000"></textarea>
+                                                <p class="input__notification">Text is required</p>
                                             </label>
                                         </div>
-                                        <div class="col-12 col-md-6">
-                                            <h2 class="post-ticket__input-title mt-5" style="visibility: hidden;">Screenshots
+                                    </div>
+
+                                    <div class="add-resolutions__section add-resolutions__section--custom row align-flex-start ml-0 mr-0">
+                                        <div class="col-12">
+                                            <h2 class="post-ticket__input-title mt-3">
+                                                Screenshot description
                                             </h2>
-
-                                            <p class="post-ticket__subtitle" style="visibility: hidden;">
-                                                Let the client know who you are and how exactly you can help
-                                            </p>
-                                            <label class="input__wrapper mb-2">
-                                                <div class="cover-image">
-                                                    <img src="../img/photo-camera-1.svg" alt="">
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <div class="col-12 col-md-6">
                                             <p class="post-ticket__subtitle">
-                                                Let the client know who you are and how exactly you can help
+                                                Add some screenshots and describe them for better understanding
                                             </p>
-                                            <label class="input__wrapper mb-2">
-                                                <div class="cover-image">
-                                                    <img src="../img/photo-camera-1.svg" alt="">
-                                                </div>
-                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-9 col-lg-6 mt-4">
+                                            <div class="screenshot-block">
+                                                <label class="input__wrapper mb-2">
+                                                    <div class="cover-image">
+                                                        <img src="../img/photo-camera-1.svg" alt="">
+                                                        <input type="file" class="hide">
+                                                    </div>
+                                                </label>
+                                                <label class="input__wrapper mb-2">
+                                                    <textarea class="input height-115 ta-no-resize" name="description" maxlength="2000">Here Should be description of the screen shot Here Should be description of the screen shot Here Should be description of the screen shot It is a long established fact that a reader when looking at its layout. The point of using Lorem Ipsum is that it ...</textarea>
+                                                    <p class="input__notification">Text is required</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 col-lg-6 mt-4">
+                                            <div class="screenshot-block">
+                                                <label class="input__wrapper mb-2">
+                                                    <div class="cover-image">
+                                                        <img src="../img/photo-camera-1.svg" alt="">
+                                                        <input type="file" class="hide">
+                                                    </div>
+                                                </label>
+                                                <label class="input__wrapper mb-2">
+                                                    <textarea class="input height-115 ta-no-resize" name="description" maxlength="2000">Here Should be description of the screen shot Here Should be description of the screen shot Here Should be description of the screen shot It is a long established fact that a reader when looking at its layout. The point of using Lorem Ipsum is that it ...</textarea>
+                                                    <p class="input__notification">Text is required</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-9 col-lg-6 mt-4">
+                                            <div class="screenshot-block">
+                                                <label class="input__wrapper mb-2">
+                                                    <div class="cover-image">
+                                                        <img src="../img/photo-camera-1.svg" alt="">
+                                                        <input type="file" class="hide">
+                                                    </div>
+                                                </label>
+                                                <label class="input__wrapper mb-2">
+                                                    <textarea class="input height-115 ta-no-resize" name="description" maxlength="2000">Here Should be description of the screen shot Here Should be ...</textarea>
+                                                    <p class="input__notification">Text is required</p>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <h2 class="post-ticket__input-title mt-5">
-                                        Cover Letter
-                                    </h2>
+                                    <div class="add-resolutions__section add-resolutions__section--custom row align-flex-start ml-0 mr-0">
+                                        <div class="col-12">
+                                            <h2 class="post-ticket__input-title mt-3">
+                                                Attachments
+                                            </h2>
+                                            <p class="post-ticket__subtitle">
+                                                If you have any files you would like to help clients with
+                                            </p>
 
-                                    <p class="post-ticket__subtitle">
-                                        Let the client know who you are and how exactly you can help
-                                    </p>
-                                    <label class="input__wrapper mb-2">
-                                        <textarea class="input height-150" name="description" maxlength="2000"></textarea>
-                                        <p class="input__notification">Proffesion title is required</p>
-                                    </label>
+                                            <div class="ticket__description-text opened-ticket__description-text pl-0 mt-4">
+                                                <div class="file_uploaded">
+                                                    <span class="file_uploaded__icon">
+                                                        <i class="icon-file"></i>
+                                                    </span>
+                                                    <span class="file_uploaded__name">Filename</span>
+                                                    <span class="file_uploaded__size">1219 kB</span>
+                                                </div>
+                                                <div class="file_uploaded">
+                                                    <span class="file_uploaded__icon">
+                                                        <i class="icon-file"></i>
+                                                    </span>
+                                                    <span class="file_uploaded__name">Filename 2</span>
+                                                    <span class="file_uploaded__size">119 kB</span>
+                                                </div>
+                                                <div class="file_uploaded">
+                                                    <span class="file_uploaded__icon">
+                                                        <i class="icon-file"></i>
+                                                    </span>
+                                                    <span class="file_uploaded__name">Filename 2</span>
+                                                    <span class="file_uploaded__size">119 kB</span>
+                                                </div>
+                                                <div class="file_uploaded">
+                                                    <span class="file_uploaded__icon">
+                                                        <i class="icon-file"></i>
+                                                    </span>
+                                                    <span class="file_uploaded__name">Filename</span>
+                                                    <span class="file_uploaded__size">1219 kB</span>
+                                                </div>
+                                                <div class="file_uploaded">
+                                                    <span class="file_uploaded__icon">
+                                                        <i class="icon-file"></i>
+                                                    </span>
+                                                    <span class="file_uploaded__name">Filename 2</span>
+                                                    <span class="file_uploaded__size">119 kB</span>
+                                                </div>
+                                                <div class="file_uploaded">
+                                                    <span class="file_uploaded__icon">
+                                                        <i class="icon-file"></i>
+                                                    </span>
+                                                    <span class="file_uploaded__name">Filename 2</span>
+                                                    <span class="file_uploaded__size">119 kB</span>
+                                                </div>
 
-                                <div class="ticket__description">
-                                    Attachments
+                                                <label for="fileupload" class="fileupload__button mt-3"> <span>+</span>    Upload Files </label>
+                                            </div>
+
+                                            <label class="checkbox__wrapper checkbox__wrapper--2 mb-4 mt-4">
+                                                <input type="checkbox" class="checkbox checkbox--2" required>
+                                                <div class="checkbox__label">
+                                                    I Agree on BTE Terms &amp; Conditions
+                                                </div>
+                                            </label>
+
+                                            <div class="post-ticket__buttons mb-5 mt-4">
+                                                <!-- real button -->
+                                                <input type="submit" class="button button--post button--14 js-button-post max-160" value="Add Resolution">
+                                                <!-- real button -->
+
+                                                <button type="button" class="button button--no-style button--14  post-ticket__discard">Discard</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="ticket__description-text opened-ticket__description-text">
-                                    <div class="file_uploaded">
-                                        <span class="file_uploaded__icon">
-                                            <i class="icon-file"></i>
-                                        </span>
-                                        <span class="file_uploaded__name">Filename</span>
-                                        <span class="file_uploaded__size">1219 kB</span>
-                                    </div>
-                                    <div class="file_uploaded">
-                                        <span class="file_uploaded__icon">
-                                            <i class="icon-file"></i>
-                                        </span>
-                                        <span class="file_uploaded__name">Filename 2</span>
-                                        <span class="file_uploaded__size">119 kB</span>
-                                    </div>
-                                    <div class="file_uploaded">
-                                        <span class="file_uploaded__icon">
-                                            <i class="icon-file"></i>
-                                        </span>
-                                        <span class="file_uploaded__name">Filename 2</span>
-                                        <span class="file_uploaded__size">119 kB</span>
-                                    </div>
-                                    <div class="file_uploaded">
-                                        <span class="file_uploaded__icon">
-                                            <i class="icon-file"></i>
-                                        </span>
-                                        <span class="file_uploaded__name">Filename</span>
-                                        <span class="file_uploaded__size">1219 kB</span>
-                                    </div>
-                                    <div class="file_uploaded">
-                                        <span class="file_uploaded__icon">
-                                            <i class="icon-file"></i>
-                                        </span>
-                                        <span class="file_uploaded__name">Filename 2</span>
-                                        <span class="file_uploaded__size">119 kB</span>
-                                    </div>
-                                    <div class="file_uploaded">
-                                        <span class="file_uploaded__icon">
-                                            <i class="icon-file"></i>
-                                        </span>
-                                        <span class="file_uploaded__name">Filename 2</span>
-                                        <span class="file_uploaded__size">119 kB</span>
-                                    </div>
-                                </div>
-
-                                <label class="checkbox__wrapper checkbox__wrapper--2 mb-4 mt-3">
-                                    <input type="checkbox" class="checkbox checkbox--2" required>
-                                    <div class="checkbox__label">
-                                        I Agree on BTE Terms &amp; Conditions
-                                    </div>
-                                </label>
-
-                                <div class="post-ticket__buttons">
-                                <!-- real button -->
-                                <input type="submit" class="button button--post button--14 js-button-post max-160" value="Add Resolution">
-                                <!-- real button -->
-
-                                <button type="button" class="button button--no-style button--14  post-ticket__discard">Discard</button>
                             </div>
                         </section>
 

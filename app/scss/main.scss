@@ -392,6 +392,10 @@ textarea.input {
         height: 150px;
     }
 
+    &.height-115 {
+        height: 115px;
+    }
+
     .label {
         border-radius: 3px;
         background-color: $blue;
@@ -428,6 +432,10 @@ textarea.input {
     text-align: right;
 }
 
+.align-flex-start {
+    align-items: flex-start;
+}
+
 .align-flex-end {
     align-items: flex-end;
 }
@@ -445,6 +453,10 @@ textarea.input {
     max-width: 125px;
     margin-left: auto;
     text-align: center;
+}
+
+.ta-no-resize {
+    resize: none;
 }
 
 .checkbox {
@@ -645,6 +657,49 @@ button,
 
         img {
             margin-right: 13px;
+        }
+    }
+
+    &--disabled {
+        background-color: $light-grey2;
+        color: white;
+    }
+
+    &--sent-message {
+        border: none;
+        background: #fff;
+        color: $blue;
+        padding-left: 0;
+        display: flex;
+
+
+        img {
+            margin-right: 10px;
+        }
+
+        &:hover,
+        &:active {
+            color: $blue;
+            background-color: #fff;
+
+        }
+    }
+
+    &--no-border {
+        border: none !important;
+        background-color: white;
+        margin-left: 0;
+        width: auto;
+        color: $blue;
+
+        img {
+            margin-right: 10px;
+        }
+
+        &:hover,
+        &:active {
+            background-color: #fff;
+            color: $blue;
         }
     }
 
@@ -1482,7 +1537,8 @@ hr {
         }
     }
 
-    button {
+    button,
+    .button {
         position: absolute;
         right: 15px;
         top: 50%;
@@ -3230,6 +3286,7 @@ hr {
     overflow: hidden;
     transition: max-height 0.6s linear;
     top: 0px;
+    z-index: 1;
 
     &-content {
         padding: 50px 35px 50px 65px;
@@ -3416,6 +3473,14 @@ hr {
 .messages {
     max-height: calc(100vh - 400px);
     overflow-y: auto;
+
+    &--dialog {
+        .message-list__item {
+            &:nth-of-type(2n) {
+                background-color: $blue5;
+            }
+        }
+    }
 }
 
 .form-check-close:not(:valid) {

@@ -269,6 +269,8 @@
     &__stats-item {
         margin-bottom: 12px;
         color: $light-grey3;
+        display: flex;
+        align-items: center;
 
         @media screen and (max-width: 992px) {
             font-size: 12px;
@@ -280,6 +282,7 @@
 
         b {
             font-size: 22px;
+            margin-right: 10px;
             color: $light-grey3;
 
             @media screen and (max-width: 992px) {
@@ -331,6 +334,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+
+    &--md-6 {
+        max-width: calc(100% / 7 * 6);
+
+        @media screen and (max-width: 767px) {
+            max-width: 100%;
+        }
+    }
+
+    &--primary {
+        @media screen and (max-width: 991px) {
+            max-width: 100%;
+        }
+    }
 }
 
 .social-share  {
@@ -386,5 +404,235 @@
     &__section {
         padding: 38px 29px 56px;
         border-bottom: 1px solid $border-color;
+
+        &--custom {
+            border-bottom: 0;
+            padding-bottom: 0;
+
+        }
+
+        .col-12 {
+            @media screen and (max-width: 767px) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        .post-ticket__input-title {
+            &--withlink {
+                display: flex;
+
+                a {
+                    margin-left: auto;
+                    color: $blue;
+                    text-decoration: underline;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        .contract-info-block {
+            .post-ticket__input-title {
+                width: 100%;
+
+                @media screen and (max-width: 991px) {
+                    text-align: right;
+                }
+
+                @media screen and (max-width: 767px) {
+                    text-align: left;
+                }
+            }
+
+            @media screen and (max-width: 991px) {
+                display: flex;
+                width: auto;
+                max-width: 45%;
+                margin-left: auto;
+                margin-top: 24px !important;
+                justify-content: flex-end;
+                align-items: end;
+            }
+
+            @media screen and (max-width: 767px) {
+                max-width: 100%;
+                margin-left: 0;
+                justify-content: flex-start;
+                margin-bottom: 32px;
+            }
+        }
+
+        .contract-info-block__value {
+            display: inline-block;
+        }
+
+        .button--edit {
+            margin-left: 45px;
+            margin-right: 0;
+        }
+    }
+}
+
+
+.resolution {
+    &__sidebar {
+        display: block;
+
+        @media screen and (max-width: 991px) {
+            display: flex;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+
+        > div {
+            @media screen and (max-width: 991px) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+
+        &--bordered {
+            border-left: 1px solid $border-color;
+        }
+
+        &-hr {
+            background-color: $border-color;
+            width: calc(100% + 15px + 15px + 29px);
+            position: relative;
+            left: -15px;
+        }
+    }
+
+    &__sidebar-buttons {
+        display: flex;
+        justify-content: space-between;
+
+        .button {
+            width: calc(100% / 2 - 10px);
+
+            img {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__primary-description {
+        @media screen and (max-width: 991px) and (min-width: 768px){
+            width: 200%;
+            margin-top: 40px;
+        }
+    }
+}
+
+.add-resolution {
+    .resolutions__title {
+        @media screen and (max-width: 991px) {
+            margin-top: 0;
+        }
+    }
+
+    .ticket-header {
+        border-bottom: 1px solid $border-color;
+    }
+
+    .my-resolutions__category {
+        @media screen and (max-width: 991px) {
+            font-size: 14px;
+
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.comments {
+    @media screen and (max-width: 767px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+    .col-12 {
+        @media screen and (max-width: 767px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    &__link {
+        color: $blue;
+        text-decoration: underline;
+        font-weight: normal;
+    }
+}
+
+.my-resolution-open {
+    .resolution__sidebar--bordered {
+        @media screen and (max-width: 991px) {
+            border-left: none;
+        }
+    }
+
+    .new-message-container form {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .my-resolutions__rating {
+        @media screen and (max-width: 767px) {
+            position: relative;
+        }
+    }
+
+    .link {
+        color: $blue;
+        text-decoration: underline;
+    }
+}
+
+.label {
+    &--unlocked {
+        margin-left: 20px;
+        line-height: 18px;
+        display: inline-flex;
+        align-items: flex-end;
+        font-size: 14px;
+        color: $light-grey3;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+.screenshot-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    &__item {
+        width: 125px;
+        height: 125px;
+        border-radius: 4px;
+        border: 1px solid $border-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+
+        @media screen and (max-width: 767px) {
+            width: 90px;
+            height: 90px;
+        }
     }
 }
