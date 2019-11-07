@@ -62,7 +62,7 @@
 
 </head>
 
-<body class="wallet">
+<body class="applying-for-job">
     <!--[Structure] Header START -->
     <header>
         <!--[Structure] Navbar START -->
@@ -81,19 +81,19 @@
                                     <a href="#">My tickets</a>
                                     <div class="menu">
                                         <div class="item">
-                                            <a href="../My-feed.html">My Feed</a>
+                                            <a href="./My-feed.html">My Feed</a>
                                         </div>
                                         <div class="item">
-                                            <a href="../Tickets-progress.html">Received propositions</a>
+                                            <a href="./Tickets-progress.html">Received propositions</a>
                                         </div>
                                         <div class="item">
-                                            <a href="../Tickets-progress.html">Tickets in progress</a>
+                                            <a href="./Tickets-progress.html">Tickets in progress</a>
                                         </div>
                                         <div class="item">
-                                            <a href="../Tickets-posted.html">Posted tickets</a>
+                                            <a href="./Tickets-posted.html">Posted tickets</a>
                                         </div>
                                         <div class="item">
-                                            <a href="../Tickets-closed.html">Closed tickets</a>
+                                            <a href="./Tickets-closed.html">Closed tickets</a>
                                         </div>
                                     </div>
                                 </div>
@@ -103,19 +103,19 @@
                                     <a href="#">My Resolutions</a>
                                     <div class="menu">
                                         <div class="item">
-                                            <a href="./How-to-Add-Resolution.html">Resolution Market</a>
+                                            <a href="./My_Experts.html?data-tab=workingnow">Working Now</a>
                                         </div>
                                         <div class="item">
-                                            <a href="./How-to-Add-Resolution.html">My Resolution list</a>
+                                            <a href="./My_Experts.html?data-tab=recent">Recent</a>
                                         </div>
                                         <div class="item">
-                                            <a href="./How-to-Add-Resolution.html">How to add Resolution</a>
+                                            <a href="./My_Experts.html?data-tab=archived">Archived</a>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="menu__item">
-                                <div class="ui dropdown dropdown-2 dropdown--my-tickets dropdown--my-experts">
+                                <div class="ui dropdown dropdown-2">
                                     <a href="#">My Wallet</a>
                                     <div class="menu">
                                         <div class="item">
@@ -145,7 +145,7 @@
                             <!-- Messages block START -->
                             <!-- Add a condition if (new messages) { add a class 'account-menu__item--new-message' below} -->
                             <div class="account-menu__item">
-                                <a href=".././Client_dashboard.html?data-tab=dialog">
+                                <a href="./Client_dashboard.html?data-tab=dialog">
                                     <i class="message-icon"></i>
                                 </a>
                             </div>
@@ -270,266 +270,298 @@
     <!--[Structure] Header END -->
 
     <!--[Structure] Main START -->
-    <main class="main-content main-content--dashboard">
+    <main class="main-content main-content--applying">
         <div class="container container-fluid-small">
             <div class="row justify-content-center">
-                <div class="col-12 feed__wrapper order-1">
-                    <div class="tile tile--2 tile--wallet">
-                        <div class="ticket-header">
-                           <h2 class="resolutions__title">
-                               How to add Resolutions
-                           </h2>
+
+                <div class="col-12 feed__wrapper">
+                    <div class="search-box-wrapper">
+                        <form action="#" id="search-box" class="">
+                            <label class="input__wrapper input__wrapper--search">
+                                <input type="text" class="input input-seach" placeholder="Search a Ticket" name="search-expert">
+                                <a href="./My-expert-search/My-expert-searching-result.html" type="button" class="button button--no-style">
+                                    <i class="search-icon-blue"></i>
+                                </a>
+                                <!-- <button type="button" class="button button--no-style">
+                                    <i class="search-icon-blue"></i>
+                                </button> -->
+                            </label>
+                        </form>
+                        <a href='#' type="button" class="button post-a-ticket-cta button--square">
+                            <span class="d-flex">
+                                <img src="../img/menu-2.svg" alt="menu">
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="tile tile--2 mb-3">
+                            <div class="ticket-header">
+                            <div class="ticket-header__list applying-for-job__title-wrapper">
+                                <h1 class="similar-to-h2 applying-for-job__title">
+                                    Applying for the job
+                                </h1>
+                            </div>
                         </div>
-
-                                                <div class="filters-wrapper">
-                            <form action="#" class="filters-wrapper-content">
-
-                                <div class="filter-section-1 order-0 order-md-0">
-                                    <div class="filters-checks">
-
-                                        <h3 class="filter__section-label">
-                                            Tickets
-                                        </h3>
-
-                                        <label class="checkbox__wrapper checkbox__wrapper--2">
-                                            <input type="checkbox" class="checkbox checkbox--2">
-                                            <div class="checkbox__label">
-                                                All
-                                            </div>
-                                        </label>
-
-                                        <label class="checkbox__wrapper checkbox__wrapper--2 ">
-                                            <input type="checkbox" class="checkbox checkbox--2">
-                                            <div class="checkbox__label">
-                                                Directly assigned to me
-                                            </div>
-                                        </label>
-
-                                    </div>
-                                    <div class="filters-checks">
-
-                                        <h3 class="filter__section-label">
-                                            Clients
-                                        </h3>
-
-                                        <label class="checkbox__wrapper checkbox__wrapper--2 ">
-                                            <input type="checkbox" class="checkbox checkbox--2">
-                                            <div class="checkbox__label">
-                                                All
-                                            </div>
-                                        </label>
-
-                                        <label class="checkbox__wrapper checkbox__wrapper--2 ">
-                                            <input type="checkbox" class="checkbox checkbox--2">
-                                            <div class="checkbox__label">
-                                                Previous clients
-                                            </div>
-                                        </label>
-
-                                    </div>
-                                </div>
-
-                                <div class="filter-section-2 order-0 order-md-0">
-                                    <div class="filters-checks">
-
-                                        <h3 class="filter__section-label">
-                                            Select pool (select max 3)
-                                        </h3>
-                                        <label class="input__wrapper  mb-4">
-                                            <select name="category" class="ui selection dropdown multiple max-3" id="category-select">
-                                                <option value="" selected disabled>Please select..</option>
-                                                <option value="Database">Database</option>
-                                                <option value="Security">Security</option>
-                                                <option value="CloudServer">Cloud Server</option>
-                                                <option value="Server">Server</option>
-                                            </select>
-                                        </label>
-
-
-                                    </div>
-                                    <div class="filters-checks">
-
-                                        <h3 class="filter__section-label">
-                                            Languages
-                                        </h3>
-                                        <label class="input__wrapper  mb-4">
-                                            <select name="lang" class="ui selection dropdown multiple max-3" id="lang-select">
-                                                <option value="" selected disabled>Please select..</option>
-                                                <option value="russian">Russian</option>
-                                                <option value="english">English</option>
-                                                <option value="design">Arabic</option>
-                                            </select>
-                                            <p class="input__notification">Category is required</p>
-                                        </label>
-
-
+                        <div class="ticket-body applying-for-job__ticket-body" data-tab="ticket">
+                            <h2 class="ticket__name">Anti Virus not Functioning</h2>
+                            <div class="ticket__details-row ticket__details-row--top-aligned">
+                                <div class="opened-ticket__details applying-for-job__details">
+                                    <div class="feed-item__name opened-ticket__name">
+                                        Naeem Ahmad
                                     </div>
 
-                                </div>
-
-
-                                <div class="filter-section-1 filter-section-3 order-1 order-md-1 order-lg-0">
-                                    <div class="filters-checks">
-
-                                        <h3 class="filter__section-label">
-                                            Skills (type max 10)
-                                        </h3>
-                                        <label class="input__wrapper  mb-4 mb-md-5">
-                                            <div name="skills" class="ui selection search dropdown multiple max-10" id="skills-select">
-                                                <input type="hidden" name="skills" multiple>
-                                                <div class="default text">Select..</div>
-                                                <i class="dropdown icon"></i>
-                                                <div class="menu menu--with-sub-items">
-                                                    <div class="item" data-category="Database" data-value="Delphi">Delphi</div>
-                                                    <div class="item" data-category="Database" data-value="MySQL">MySQL</div>
-
-                                                    <div class="item" data-category="Database" data-value="Oracle">Oracle</div>
-                                                    <div class="item sub-item" data-category="Database" data-value="Oracle-MySQL">Data Protection</div>
-
-                                                    <div class="item" data-category="Database" data-value="Microsoft">Microsoft</div>
-                                                    <div class="item sub-item" data-category="Database" data-value="Microsoft-PostgreSQL">SQL 2016</div>
-                                                    <div class="item sub-item" data-category="Database" data-value="Microsoft-DB-Manager">DataBase Manager</div>
-
-                                                    <div class="item" data-category="CloudServer" data-value="AWS">AWS (Amazon Web Services)</div>
-                                                    <div class="item sub-item" data-category="CloudServer" data-value="ServerManagement">Server Management</div>
-                                                </div>
-                                            </div>
-                                            <p class="input__notification">Category is required</p>
-                                        </label>
+                                    <div class="expert-lineitem__location">
+                                        <img src="../img/location.svg" alt="location icon">
+                                        <span class="d-inline">Australia</span>
                                     </div>
-                                </div>
 
-
-                                <div class="filter-section-2 filter-section-4 order-0 order-md-0">
-                                    <div class="filters-checks">
-
-                                            <h3 class="filter__section-label">
-                                                Country
-                                            </h3>
-                                            <label class="input__wrapper  mb-4">
-                                                <select name="lang" class="ui selection dropdown" id="lang-select">
-                                                    <option value="" selected disabled>Please select..</option>
-                                                    <option value="USA">USA</option>
-                                                    <option value="France">France</option>
-                                                    <option value="SaudiArabia">Saudi Arabia</option>
-                                                </select>
-                                                <p class="input__notification">Category is required</p>
+                                    <div class="expert-lineitem__rating">
+                                        <div class="stars-wrapper stars-wrapper--static">
+                                            <label for="r1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                            <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"></path>
+                                            </g>
+                                            </svg>
                                             </label>
+                                            <input type="radio" class="visually-hidden" value="1" name="rating" id="r1">
 
-                                    </div>
-                                    <div class="filters-checks">
-
-                                            <h3 class="filter__section-label">
-                                                City
-                                            </h3>
-                                            <label class="input__wrapper  mb-4">
-                                                <select name="lang" class="ui selection dropdown" id="lang-select">
-                                                    <option value="" selected disabled>Please select..</option>
-                                                    <option value="NewYork">New York</option>
-                                                    <option value="Boston">Boston</option>
-                                                    <option value="Paris">Paris</option>
-                                                    <option value="Dubai">Dubai</option>
-                                                </select>
-                                                <p class="input__notification">Category is required</p>
+                                            <label for="r2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                            <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"></path>
+                                            </g>
+                                            </svg>
                                             </label>
+                                            <input type="radio" class="visually-hidden" value="2" name="rating" id="r2">
 
+                                            <label for="r3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                            <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"></path>
+                                            </g>
+                                            </svg>
+                                            </label>
+                                            <input type="radio" class="visually-hidden" value="3" name="rating" id="r3">
 
+                                            <label for="r4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                            <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"></path>
+                                            </g>
+                                            </svg>
+                                            </label>
+                                            <input type="radio" class="visually-hidden" value="4" name="rating" id="r4">
+
+                                            <label for="r5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.112" viewBox="0 0 14.798 14.112">
+                                            <g id="star_with_fill" data-name="star with fill" transform="translate(0)">
+                                                <path id="Path_91" data-name="Path 91" d="M7.749.684,9.631,5.14l4.819.414a.38.38,0,0,1,.216.665L11.011,9.386l1.1,4.711a.379.379,0,0,1-.566.411L7.4,12.01l-4.141,2.5a.38.38,0,0,1-.566-.411l1.1-4.711L.131,6.218a.38.38,0,0,1,.216-.665l4.819-.414L7.049.684a.379.379,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#388ccb"></path>
+                                            </g>
+                                            </svg>
+                                            </label>
+                                            <input type="radio" class="visually-hidden" value="5" name="rating" id="r5" checked="">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="payment-buttons width-100 order-1">
-                                    <button type="button" class="button max-160">
-                                        Search
-                                    </button>
-
-                                    <button class="button button--no-style link js-search-clear">
-                                        Clear All
-                                    </button>
-                                </div>
-                            </form>
-
-                        </div>
-
-                        <section class="how-add-resolutions" data-tab="get-paid">
-                            <div class="row justify-content-center">
-                                <div class="col-12 col-lg-6 pr-3 how-add-resolutions__left-col">
-                                    <ul class="progres-steps mt-5 mb-5">
-                                        <li class="progres-step progres-step--active">
-                                            <a href="How-to-Add-Resolution.html" class="button button--no-style">1</a>
-                                        </li>
-                                        <li class="progres-step progres-step--active">
-                                            <a href="How-to-Add-Resolution-2.html" class="button button--no-style">2</a>
-                                        </li>
-                                    </ul>
-                                    <h2 class="how-add-resolutions__title">
-                                        How to add Resolution?
-                                    </h2>
-                                    <p class="how-add-resolutions__subtitle">
-                                            Once you complete a Ticket it becomes
-                                            <a href="../Tickets-closed.html" class="how-add-resolutions__link">"Closed Ticket"</a>
-                                            at the section <b>Payments</b>
-                                            of a closed ticket there is an option to <b>"Add Ticket to Resolutions"</b>.
-                                            Hit that button and complete the formula
-                                    </p>
-
-                                    <h2 class="how-add-resolutions__title">
-                                        Formula "Add Resolution":
-                                    </h2 class="how-add-resolutions__subtitle">
-                                    <p class="how-add-resolutions__subtitle">
-                                        Name your Resolution by adding a relevant <b>Title</b>
-
-                                        <br>
-                                        <br>
-
-                                        Add a meaningful picture to represent the <b>Cover</b> of your Resolution.
-                                        It's the first thing a client will see.
-
-                                        <br>
-                                        <br>
-
-                                        Description of the resolution. Tell people what is the resolution about and what value they will receive by purchasing your product
-                                    </p>
-
-                                    <h2 class="how-add-resolutions__title">
-                                        Screenshots and descriptions
-                                    </h2 class="how-add-resolutions__subtitle">
-                                    <p class="how-add-resolutions__subtitle">
-                                        This is where you bring value to the client! Make sure to add as many screenshots as needed to describe your step by step process as you were solving the task.
-
-                                        <br>
-                                        <br>
-
-                                        Below each screenshot put a small description of the step you took, this way you will make sure people understand the screenshot.
+                                    <p class="ticket__date applying-for-job__date">
+                                        February 10 - 2019, 18:43 PM
                                     </p>
                                 </div>
-                                <div class="col-12 col-lg-6 d-none d-lg-flex how-add-resolutions__right-col">
-                                    <img src="../img/undraw-process-e-90-d.svg" alt="img">
-                                </div>
 
-                                <div class="col-12 col-lg-6 pr-3 how-add-resolutions__left-col">
-                                    <h2 class="how-add-resolutions__title mt-0">
-                                        Attachments
-                                    </h2>
-                                    <p class="how-add-resolutions__subtitle">
-                                        Be sure to help out clients with some ready to use materials and attach them in the formula. This will make clients leave better feedback on the Resolution
-                                    </p>
+                            </div>
+
+                            <div class="opened-ticket__details-row">
+                                <div class="opened-ticket__details-2">
+                                    <span class="opened-ticket__detail-title">Category:</span>
+                                    <span class="opened-ticket__detail-value">Security</span>
                                 </div>
-                                <div class="col-12 col-lg-6">
-                                    <h2 class="how-add-resolutions__title mt-0">
-                                        Money rate
-                                    </h2 class="how-add-resolutions__subtitle">
-                                    <p class="how-add-resolutions__subtitle">
-                                        Put a smart price on your product and the income might become higher
-                                    </p>
-                                </div>
-                                <div class="col-12 col-lg-12">
-                                    <a href="./How-to-Add-Resolution-2.html" class="button resolutions__cta">
-                                        Next
-                                    </a>
+                                <div class="opened-ticket__details-2">
+                                    <span class="opened-ticket__detail-title">Vendor:</span>
+                                    <span class="opened-ticket__detail-value">McAfee</span>
                                 </div>
                             </div>
-                        </section>
 
+                            <div class="ticket__description opened-ticket__description">Project description</div>
+
+                            <p class="ticket__description-text">
+                                Here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something here Should be some info about the problem, like a description or something
+                            </p>
+                                     <div class="ticket__description">
+                                Skills required
+                            </div>
+                            <p class="ticket__description-text skills__list">
+                                <a href="#" class="skills__item">
+                                    Business analitics
+                                </a>
+                                <a href="#" class="skills__item">
+                                    HTML
+                                </a>
+                                <a href="#" class="skills__item">
+                                    CSS
+                                </a>
+                                <a href="#" class="skills__item">
+                                    JavaScript
+                                </a>
+                                <a href="#" class="skills__item">
+                                    UI/UX
+                                </a>
+                                <a href="#" class="skills__item">
+                                    Product management
+                                </a>
+                            </p>
+                            <div class="ticket__description">
+                                Attachments
+                            </div>
+                            <div class="ticket__description-text opened-ticket__description-text">
+                                <div class="file_uploaded">
+                                    <span class="file_uploaded__icon">
+                                        <i class="icon-file"></i>
+                                    </span>
+                                    <span class="file_uploaded__name">Filename</span>
+                                    <span class="file_uploaded__size">1219 kB</span>
+                                </div>
+                                <div class="file_uploaded">
+                                    <span class="file_uploaded__icon">
+                                        <i class="icon-file"></i>
+                                    </span>
+                                    <span class="file_uploaded__name">Filename 2</span>
+                                    <span class="file_uploaded__size">119 kB</span>
+                                </div>
+                                <div class="file_uploaded">
+                                    <span class="file_uploaded__icon">
+                                        <i class="icon-file"></i>
+                                    </span>
+                                    <span class="file_uploaded__name">Filename 2</span>
+                                    <span class="file_uploaded__size">119 kB</span>
+                                </div>
+                                <div class="file_uploaded">
+                                    <span class="file_uploaded__icon">
+                                        <i class="icon-file"></i>
+                                    </span>
+                                    <span class="file_uploaded__name">Filename</span>
+                                    <span class="file_uploaded__size">1219 kB</span>
+                                </div>
+                                <div class="file_uploaded">
+                                    <span class="file_uploaded__icon">
+                                        <i class="icon-file"></i>
+                                    </span>
+                                    <span class="file_uploaded__name">Filename 2</span>
+                                    <span class="file_uploaded__size">119 kB</span>
+                                </div>
+                                <div class="file_uploaded">
+                                    <span class="file_uploaded__icon">
+                                        <i class="icon-file"></i>
+                                    </span>
+                                    <span class="file_uploaded__name">Filename 2</span>
+                                    <span class="file_uploaded__size">119 kB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket-body">
+                            <form action="#" class="form-check-close">
+                                <div class="applying-for-job__details">
+                                        <div>
+                                            <h2 class="mb-0">
+                                                What's your rate for this job?
+                                            </h2>
+                                            <p class="post-ticket__subtitle">
+                                                    Edit or leave the default hourly rate for this  job
+                                            </p>
+
+                                            <div class="contract-info-block js-hourly">
+                                                <h2 class="contract-info-block__header">
+                                                    Hourly rate
+                                                </h2>
+                                                <div class="contract-info-block__value js-edit-target js-contract-info-block__value--rate">
+                                                    <span>$</span><span class="js-edit-target-amount">17</span><span>/ hour</span>
+                                                    <label class="input__wrapper mb-0 hide">
+                                                        <input type="text" class="input" placeholder="Hourly rate" name="contract-hour-rate">
+                                                    </label>
+                                                </div>
+                                                <button type="button" class="button--no-style button--edit js-edit-button">
+                                                    <img src="../img/pencil.svg" alt="edit button">
+                                                    <span>Edit</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="contract-info-block js-fixed hide">
+                                                <h2 class="contract-info-block__header">
+                                                    Fixed Price
+                                                </h2>
+                                                <div class="contract-info-block__value js-edit-target js-contract-info-block__value--rate">
+                                                    <span>$</span><span class="js-edit-target-amount">300</span>
+                                                    <label class="input__wrapper mb-0 hide">
+                                                        <input type="text" class="input" placeholder="Hourly rate" name="contract-hour-rate">
+                                                    </label>
+                                                </div>
+                                                <button type="button" class="button--no-style button--edit js-edit-button">
+                                                    <img src="../img/pencil.svg" alt="edit button">
+                                                    <span>Edit</span>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                        <div>
+                                            <h2 class="d-none d-lg-block">
+                                                If you know the exact estimate switch to Fixed price
+                                            </h2>
+                                            <p class="post-ticket__subtitle mt-2">
+                                                <a href="#" class="contract__switch applying-for-job__switch js-contract__switch">
+                                                    <span class="js-fixed">Want to switch to Fixed price?</span>
+                                                    <span class="js-hourly hide">Want to switch to Hourly payment?</span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <h2 class="mb-0">
+                                        How would you like to get paid?
+                                    </h2>
+                                    <p class="post-ticket__subtitle">
+                                            Add a Payment method so you'll be able to receive your funds from BTE
+                                    </p>
+
+                                    <a href="#" class="contract__switch applying-for-job__switch js-button-add-payment-method">
+                                            Add Payment method
+                                    </a>
+
+                                    <h2 class="post-ticket__input-title mt-5">
+                                        Cover Letter
+                                    </h2>
+
+                                    <p class="post-ticket__subtitle">
+                                        Let the client know who you are and how exactly you can help
+                                    </p>
+                                    <label class="input__wrapper mb-2">
+                                        <textarea class="input height-150" name="description" maxlength="2000"></textarea>
+                                        <p class="input__notification">Proffesion title is required</p>
+                                    </label>
+
+                                    <div id="multiple-upload"></div>
+
+                                    <div class="fileupload__wrapper applying-for-job__file_upload file_upload">
+                                        <div class="file_upload__label"></div>
+                                        <input type="file" name="fileupload" value="fileupload" id="upload-file" multiple class="visually-hidden">
+                                        <label for="fileupload" class="fileupload__button"> <span>+</span>    Upload Files </label>
+                                    </div>
+
+                                    <label class="checkbox__wrapper checkbox__wrapper--2 mb-4 mt-3">
+                                        <input type="checkbox" class="checkbox checkbox--2" required>
+                                        <div class="checkbox__label">
+                                            I Agree on BTE Terms &amp; Conditions
+                                        </div>
+                                    </label>
+
+                                    <div class="post-ticket__buttons">
+                                        <!-- real button -->
+                                        <input type="submit" class="button button--post button--14 js-button-post max-160" value="Post My Application">
+                                        <!-- real button -->
+
+                                        <button type="button" class="button button--no-style button--14  post-ticket__discard">Discard</button>
+                                    </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -546,11 +578,11 @@
             </div>
             <div class="content">
                 <ul class="transition hidden">
-                    <li><a href="../My-feed-html">My Feed</a></li>
+                    <li><a href="./My-feed-html">My Feed</a></li>
                     <li><a href="#">Received propositions</a></li>
-                    <li><a href="../Tickets-progress.html">Tickets in progress</a></li>
-                    <li><a href="../Tickets-posted.html">Tickets posted</a></li>
-                    <li><a href="../Tickets-closed.html">Tickets closed</a></li>
+                    <li><a href="./Tickets-progress.html">Tickets in progress</a></li>
+                    <li><a href="./Tickets-posted.html">Tickets posted</a></li>
+                    <li><a href="./Tickets-closed.html">Tickets closed</a></li>
                 </ul>
             </div>
             <div class="title">
@@ -559,10 +591,10 @@
             </div>
             <div class="content">
                 <ul class="transition hidden">
-                    <li><a href="../My_Experts.html?data-tab=all">All Experts</a></li>
-                    <li><a href="../My_Experts.html?data-tab=workingnow">Working Now</a></li>
-                    <li><a href="../My_Experts.html?data-tab=recent">Recent</a></li>
-                    <li><a href="../My_Experts.html?data-tab=archived">Archived</a></li>
+                    <li><a href="./My_Experts.html?data-tab=all">All Experts</a></li>
+                    <li><a href="./My_Experts.html?data-tab=workingnow">Working Now</a></li>
+                    <li><a href="./My_Experts.html?data-tab=recent">Recent</a></li>
+                    <li><a href="./My_Experts.html?data-tab=archived">Archived</a></li>
                 </ul>
             </div>
             <div class="title">
@@ -625,6 +657,32 @@
         </div>
     </div>
     <!--[Structure] Mobile Header END -->
+
+
+    <!-- [Structure] Decline expert modal START -->
+    <div class="ui modal decline-expert-modal" id="decline-expert-modal">
+        <div class="content">
+            <div class="decline-expert-modal__title">
+                Decline expert
+            </div>
+            <p class="decline-expert-modal__subtitle">Are you sure you want to decline this Expert?</p>
+            <label class="checkbox__wrapper checkbox__wrapper--2">
+                <input type="checkbox" class="checkbox checkbox--2">
+                <div class="checkbox__label">
+                    Don't show this again
+                </div>
+            </label>
+            <div class="decline-expert-modal__buttons">
+                <!-- popup emulation button -->
+                <button type="button" class="button button--post js-modal-close">Archive</button>
+                <!-- popup emulation button -->
+
+                <button type="button" class="button button--no-style post-ticket__discard js-modal-close">Decline</button>
+            </div>
+            <button type="button" class="button button--no-style js-modal-close payment-method-add-modal__close-button"></button>
+        </div>
+    </div>
+    <!-- [Structure] Decline expert modal START -->
 
     <!-- [Structure] Chose payment method modal START -->
     <div class="ui modal payment-method-add-modal" id="payment-method-add-modal">
@@ -858,75 +916,6 @@
     </div>
     <!-- [Structure] Card modal 2 END -->
 
-    <!-- [Structure] Payment method was added modal START -->
-    <div class="ui modal ticket-posted-modal" id="payment-method-added">
-        <div class="content">
-            <div class="ticket-posted-modal__title">
-                Greate, you've added a Payment Method!
-            </div>
-
-            <div class="ticket-posted-modal__subtitle">
-                    Now you're able to Post Tickets, Start Contracts and pay for the work done by Experts
-                </div>
-            <button type="button" class="button js-modal-close">
-                    Got it
-            </button>
-        </div>
-    </div>
-    <!-- [Structure] Ticket created modal END -->
-
-    <!-- [Structure] Payment method remove START -->
-    <div class="ui modal ticket-posted-modal" id="remove-payment-method">
-        <div class="content">
-            <div class="ticket-posted-modal__title">
-                Are you sure you want to detele payment method:
-            </div>
-
-            <div>
-                <div class="payment-method__item">
-                    <div class="payment-method__img">
-                        <img src="../img/pay-pal.svg" alt="pay-pal">
-                    </div>
-                    <div class="payment-method__card-info">
-                        <div class="payment-method__name d-none d-lg-block">
-
-                        </div>
-                        <div class="payment-method__number">
-                            (Emailaddress@mail.com)
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decline-expert-modal__buttons">
-                <!-- popup emulation button -->
-                <button type="button" class="button button--post js-modal-close">Delete</button>
-                <!-- popup emulation button -->
-
-                <button type="button" class="button button--no-style post-ticket__discard js-modal-close">Cancel</button>
-            </div>
-        </div>
-    </div>
-    <!-- [Structure] Payment method remove END -->
-
-
-    <!-- [Structure] Get paid now modal START -->
-    <div class="ui modal ticket-posted-modal" id="get-paid-now">
-        <div class="content">
-            <div class="ticket-posted-modal__title ticket-posted-modal__title--wider">
-                In order to get paid you need to add a payment method
-            </div>
-
-            <div class="ticket-posted-modal__subtitle">
-                Your earned funds will be on BTE website
-                until you add a Payment method
-                </div>
-            <button type="button" class="button js-show-modal" data-modal-id="payment-method-add-modal">
-                Add payment method
-            </button>
-        </div>
-    </div>
-    <!-- [Structure] Get paid now modal START -->
 
     <!--[Structure] Footer START -->
     <footer class="footer">
