@@ -10,7 +10,7 @@
 - [Make posted selection by default on posted page #4](https://github.com/bkmxer/BTE-dashboard/issues/4)
 - [https://github.com/bkmxer/BTE-dashboard/issues/6](https://github.com/bkmxer/BTE-dashboard/issues/6)
 - [Remove the button border on Sent applications #7](https://github.com/bkmxer/BTE-dashboard/issues/7)
-- [sticky header #8] (https://github.com/bkmxer/BTE-dashboard/issues/8)
+- [sticky header #8](https://github.com/bkmxer/BTE-dashboard/issues/8)
 - [search expert - > search ticket #9](https://github.com/bkmxer/BTE-dashboard/issues/9)
 - [fix hourly/fixed price #11](https://github.com/bkmxer/BTE-dashboard/issues/11)
 - [Update the label design #14](https://github.com/bkmxer/BTE-dashboard/issues/14)
